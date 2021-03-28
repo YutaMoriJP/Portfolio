@@ -5,6 +5,8 @@ const dataStructureName = [
   "stack",
   "hashMap",
   "tree",
+  "minHeap",
+  "graph",
 ];
 
 export default dataStructureName;

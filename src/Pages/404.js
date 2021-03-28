@@ -18,7 +18,7 @@ const ErrorPage = () => {
   return (
     <Center column={true}>
       <h1>
-        The page <Path>{pathname}</Path> you looked for was not found :(
+        The page <Path>{pathname}</Path> you looked for was not found
       </h1>
       <StyledLink to="/">
         <Button

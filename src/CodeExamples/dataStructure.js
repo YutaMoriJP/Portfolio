@@ -4,6 +4,8 @@ import Queue from "./DataStructure/Queue";
 import Stack from "./DataStructure/Stack";
 import HashMap from "./DataStructure/HashMap";
 import Tree from "./DataStructure/Tree";
+import MinHeap from "./DataStructure/MinHeap";
+import Graph from "./DataStructure/Graph";
 
 const dataStructure = [
   {
@@ -35,6 +37,16 @@ const dataStructure = [
     tree: Tree,
     explanation:
       "A Tree is a Complex Data Structure is built with Tree Nodes (has a data and children property) and a way of storing hierarchical data, used for file system, DOM, etc. Tree data structure, data grows DOWN from the ROOT NODE. The Node at the bottom, so a node without a child is called a LEAF NODE. The DEPTH of a Tree structure is how deep the tree can go, going one level deep from the root node. And counting from the Leaf Node is the height. WIDE TREE is a tree with many sibglings and it gets wider and wider. DEEP TREE is a tree with many parent-child connectsions and it goes deeper and deeper. A BINARY TREE puts constraints like that there can be AT MOST only 2 CHILD NODES, where the LEFT CHILD must have DATA THAT IS LESS THAN THE PARENT NODE's DATA and the RIGHT CHILD must have DATA THAT IS GREATER THAN THE PARENT NODE's DATA. This allows for a more efficient data searching by a quicker TRAVERSING OF THE BINARY TREE.",
+  },
+  {
+    minHeap: MinHeap,
+    explanation:
+      "A Heap is a binary tree data structure that either maintains the minimum value with a Min Heap or the maximum value with a Max Heap. In a Heap, the root value is always the min or max value. When we add a new value in a min heap and the parent is not smaller than the child then we run a heapify process and continue to swap the child with the parent as long parent > child is true since the min heap rule is child > parent. When we remove a value, it's always to retrieve the min/max value off the root node. For that we swap the root node with last element in array or the leaf node in a binary tree representation. But that will likely break the heap structure that the parent must always be smaller than left and right child in a min heap (and the opposite in a max heap). We again heapify, but this time we heapify down, so we swap parent with the smaller value (either left or right). To get the parent, right, and left child, we have helper functions.",
+  },
+  {
+    graph: Graph,
+    explanation:
+      "A Graph is a data structure that represents a Network of Nodes/Vertices connected by edges. When representing a map with a graph, then each town is a vertex/node that has a data and edges (array) object that connects the starting vertex (current vertex object) and the ending vertex and an optional weight property, if it's a weighted graph. The graph can be either an undirected graph which looks like A <--> B, then the addEdge method would call vertexA.addEdge(vertexB) and vertexB.addEdge(vertexA), and if it's a directed graph, then only vertexA.addEdge(vertexB) would be called. Whether it's a directed and weighted graph is determined when instantiating the Graph Class like const pokemonMap = new Graph(true, true). All of our operations are done on the graph instance calling addVertex, removeVertex, addEdge, removeEdge etc. And inside those methods, it makes use the of the vertex and edge instance.",
   },
 ];
 
