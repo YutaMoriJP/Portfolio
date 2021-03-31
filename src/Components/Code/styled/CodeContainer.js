@@ -8,12 +8,12 @@ const CodeContainer = styled(SyntaxHighlighter)`
   font-size: 1rem;
   margin: auto;
   @media screen and (min-width: 200px) and (max-width: 500px) {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     width: 100%;
   }
   @media screen and (min-width: 361px) and (max-width: 500px) {
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   @media screen and (min-width: 501px) and (max-width: 1000px) {
     font-size: 0.9rem;

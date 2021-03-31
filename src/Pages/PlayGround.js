@@ -13,6 +13,8 @@ import StyledLink from "../StyledComponent/StyledLink";
 import SimpleList from "../Components/List/SimpleList";
 import ListItem from "@material-ui/core/ListItem";
 
+import Helmet from "react-helmet";
+
 const PlayGround = () => {
   const { path } = useRouteMatch();
   const { pathname } = useLocation();
@@ -21,6 +23,9 @@ const PlayGround = () => {
   const handleClick = name => history.push(`${path}/${name}`);
   return (
     <>
+      <Helmet>
+        <title>Playground</title>
+      </Helmet>
       {pathname === "/playground" && (
         <SimpleList>
           {pageNames.map((pageName, index) => (

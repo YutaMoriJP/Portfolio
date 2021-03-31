@@ -17,6 +17,8 @@ import ListItem from "@material-ui/core/ListItem";
 
 import algorithm from "../CodeExamples/algorithm";
 
+import Helmet from "react-helmet";
+
 const CodeExamples = () => {
   const { path } = useRouteMatch();
   const { pathname } = useLocation();
@@ -24,6 +26,9 @@ const CodeExamples = () => {
   const handleClick = name => history.push(`${path}/${name}`);
   return (
     <>
+      <Helmet>
+        <title>Code Examples</title>
+      </Helmet>
       {/^\/?code-examples\/?$/.test(pathname) && (
         <>
           <h1>Data Structures</h1>
