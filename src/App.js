@@ -16,6 +16,7 @@ import Home from "./Pages/Home";
 import CodeExamples from "./Pages/CodeExamples";
 import ErrorPage from "./Pages/404";
 import PlayGround from "./Pages/PlayGround";
+import Project from "./Pages/Project";
 
 //custom context hook
 import { useGlobalContext } from "./ContextProvider/ContextProvider";
@@ -41,6 +42,9 @@ const App = () => {
               </Route>
               <Route path="/playground">
                 <PlayGround />
+              </Route>
+              <Route path="/project">
+                <Project />
               </Route>
               <Route>
                 <ErrorPage />

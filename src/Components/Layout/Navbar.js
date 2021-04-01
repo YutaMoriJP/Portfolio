@@ -21,8 +21,9 @@ const Navbar = () => {
         {matches && (
           <>
             <StyledLink to="/">Home</StyledLink>
+            <StyledLink to="/project">Project</StyledLink>
             <StyledLink to="/code-examples">Code Examples</StyledLink>
-            <StyledLink to="/playground">Playground</StyledLink>
+            <StyledLink to="/playground">Playground</StyledLink>{" "}
           </>
         )}
         {!matches && (
