@@ -7,7 +7,7 @@ import Title from "../StyledComponent/Title";
 const Project = () => {
   return (
     <ProjectStyled id="project">
-      <Title variant="h3">Projects:</Title>
+      <Title variant="h4">Projects:</Title>
       <Grid container spacing={5} justify="center">
         {projects.map(project => (
           <Card

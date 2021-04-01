@@ -14,8 +14,8 @@ export const Home = () => {
       </Helmet>
       <StyledHome>
         <HomeTitle variant="h4">
-          I am a front end web developer from Japan, who grew up in Germany and
-          currently living in Canada.
+          Hi, I am Yuta, a front end web developer from Japan, who grew up in
+          Germany and currently living in Canada.
         </HomeTitle>
         <More>
           <h1>See Projects</h1>

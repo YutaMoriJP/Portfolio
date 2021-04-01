@@ -26,7 +26,7 @@ const P = styled(Typography)`
 
 const Card = ({ header, img, description, tags, url }) => {
   return (
-    <Grid item xs={10} sm={7} md={5} xl={4}>
+    <Grid item xs={11} sm={6} md={4} xl={4}>
       <PaperStyled elevation={15}>
         <P variant="h5" header="true">
           {header}

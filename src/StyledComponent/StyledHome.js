@@ -29,6 +29,9 @@ export const More = styled.article`
 
 export const Project = styled.article`
   height: 100vh;
+  @media screen and (max-width: 960px) {
+    margin: 30px;
+  }
 `;
 
 export default StyledHome;
