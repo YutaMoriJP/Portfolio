@@ -12,7 +12,6 @@ import IconButton from "@material-ui/core/IconButton";
 import HomeIcon from "@material-ui/icons/Home";
 import StyledLink from "../../StyledComponent/StyledLink";
 import HighlightIcon from "@material-ui/icons/Highlight";
-import PriorityHighIcon from "@material-ui/icons/PriorityHigh";
 import PaletteIcon from "@material-ui/icons/Palette";
 
 const useStyles = makeStyles({
