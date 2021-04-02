@@ -1,6 +1,7 @@
 import React from "react";
 import { Zoom } from "react-awesome-reveal";
-import Typography from "@material-ui/core/Typography";
+import TextGradient from "../../StyledComponent/TextGradient";
+
 /*
 ”bounce", "flash", "headShake”, "heartBeat", "jello”, "pulse", "rubberBand", “shake”, “shakeX", "shakeY”, "swing”, "tada" and “wobble”.
 
@@ -9,9 +10,9 @@ const Text = ({ children, header, delay }) => {
   return (
     <Zoom triggerOnce delay={delay}>
       {header ? (
-        <Typography variant="h4">{children}</Typography>
+        <TextGradient variant="h4">{children}</TextGradient>
       ) : (
-        <Typography variant="h4">{children}</Typography>
+        <TextGradient variant="h4">{children}</TextGradient>
       )}
     </Zoom>
   );

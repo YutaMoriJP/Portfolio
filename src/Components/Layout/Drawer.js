@@ -7,10 +7,13 @@ import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import IconButton from "@material-ui/core/IconButton";
+import HomeIcon from "@material-ui/icons/Home";
+import StyledLink from "../../StyledComponent/StyledLink";
+import HighlightIcon from "@material-ui/icons/Highlight";
+import PriorityHighIcon from "@material-ui/icons/PriorityHigh";
+import PaletteIcon from "@material-ui/icons/Palette";
 
 const useStyles = makeStyles({
   list: {
@@ -24,6 +27,19 @@ const useStyles = makeStyles({
     justifyContent: "flex-end",
   },
 });
+
+const navText = {
+  "/": "Home",
+  "/project": "Project",
+  "/code-examples": "Code Examples",
+  "/playground": "Playground",
+};
+
+const NavIcon = {
+  "/": <HomeIcon />,
+  "/project": <HighlightIcon />,
+  "/code-examples": <PaletteIcon />,
+};
 
 export default function Drawer({ open, onOpen, onClose }) {
   const classes = useStyles();
@@ -42,13 +58,13 @@ export default function Drawer({ open, onOpen, onClose }) {
       </article>
       <Divider />
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
+        {["/", "/project", "/code-examples"].map((text, index) => (
+          <StyledLink to={text} key={text} nopadding="true">
+            <ListItem button>
+              <ListItemIcon>{NavIcon[text]}</ListItemIcon>
+              <ListItemText>{navText[text]}</ListItemText>
+            </ListItem>
+          </StyledLink>
         ))}
       </List>
     </div>
@@ -67,3 +83,15 @@ export default function Drawer({ open, onOpen, onClose }) {
     </div>
   );
 }
+/*
+ {["/", "/project", "/code-examples", "/playground"].map(
+          (text, index) => (
+            <ListItem button key={text}>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <StyledLink to={`${text}`}>{text}</StyledLink>
+            </ListItem>
+          )
+        )}
+        */

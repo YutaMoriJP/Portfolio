@@ -7,7 +7,6 @@ import Tags from "../Tags/Tags";
 import styled, { css } from "styled-components";
 import StyledButton from "../../StyledComponent/StyledButton";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import { AttentionSeeker, Zoom, JackInTheBox } from "react-awesome-reveal";
 
 const P = styled(Typography)`
   padding: 5px 10px;
@@ -15,14 +14,13 @@ const P = styled(Typography)`
   text-align: left;
   font-weight: ${props => props.bold && 900};
   color: ${props => props.title && props.theme.titleColor};
-
   ${props =>
     props.header &&
     css`
       text-align: center;
       font-weight: 900;
       color: ${props => props.theme.titleColor};
-    `}
+    `};
 `;
 
 const Card = ({ header, img, description, tags, url }) => {

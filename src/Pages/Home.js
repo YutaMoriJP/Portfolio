@@ -16,7 +16,7 @@ export const Home = () => {
       </Helmet>
       <StyledHome>
         <HomeTitle variant="h4">
-          <Text>
+          <Text variant="h4">
             Hi, I am Yuta, a front end web developer from Japan. I grew up in
             Germany and currently live in Canada.
           </Text>

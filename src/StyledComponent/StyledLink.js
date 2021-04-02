@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 const StyledLink = styled(Link)`
@@ -8,6 +8,11 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     color: ${props => props.theme.color};
     padding: 0 10px;
+    ${props =>
+      props.nopadding &&
+      css`
+        padding: 0;
+      `}
   }
 `;
 
