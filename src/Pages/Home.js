@@ -6,7 +6,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
 import Project from "./Project";
 import Text from "../Components/Animation/Text";
-import { AttentionSeeker } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 export const Home = () => {
   return (
@@ -17,18 +17,20 @@ export const Home = () => {
       <StyledHome>
         <HomeTitle variant="h4">
           <Text>
-            Hi, I am Yuta, a front end web developer from Japan, who grew up in
-            Germany and currently living in Canada.
+            Hi, I am Yuta, a front end web developer from Japan. I grew up in
+            Germany and currently live in Canada.
           </Text>
         </HomeTitle>
         <More>
-          <h1>See Projects</h1>
+          <Zoom delay={100} triggerOnce>
+            <h1>See Projects</h1>
+          </Zoom>
           <a href="#project">
-            <AttentionSeeker triggerOnce>
+            <Zoom effect="bounce" triggerOnce delay={200}>
               <IconButton>
                 <ExpandMoreIcon />
               </IconButton>
-            </AttentionSeeker>
+            </Zoom>
           </a>
         </More>
       </StyledHome>

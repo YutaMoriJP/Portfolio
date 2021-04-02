@@ -1,16 +1,19 @@
 import React from "react";
-import { Fade } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 import Typography from "@material-ui/core/Typography";
+/*
+”bounce", "flash", "headShake”, "heartBeat", "jello”, "pulse", "rubberBand", “shake”, “shakeX", "shakeY”, "swing”, "tada" and “wobble”.
 
-const Text = ({ children, header }) => {
+*/
+const Text = ({ children, header, delay }) => {
   return (
-    <Fade direction="left" triggerOnce effect="bounce">
+    <Zoom triggerOnce delay={delay}>
       {header ? (
         <Typography variant="h4">{children}</Typography>
       ) : (
         <Typography variant="h4">{children}</Typography>
       )}
-    </Fade>
+    </Zoom>
   );
 };
 

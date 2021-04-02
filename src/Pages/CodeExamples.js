@@ -12,11 +12,8 @@ import dataStructureName from "../CodeExamples/dataStructureName";
 import DataDisplay from "../Components/DataStructure/DataStructureDisplay";
 //material ui for display list data
 import SimpleList from "../Components/List/SimpleList";
-
 import ListItem from "@material-ui/core/ListItem";
-
 import algorithm from "../CodeExamples/algorithm";
-
 import Helmet from "react-helmet";
 
 const CodeExamples = () => {

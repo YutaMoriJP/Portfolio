@@ -7,6 +7,7 @@ import Tags from "../Tags/Tags";
 import styled, { css } from "styled-components";
 import StyledButton from "../../StyledComponent/StyledButton";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import { AttentionSeeker, Zoom, JackInTheBox } from "react-awesome-reveal";
 
 const P = styled(Typography)`
   padding: 5px 10px;
