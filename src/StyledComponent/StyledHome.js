@@ -7,7 +7,11 @@ const StyledHome = styled.div`
   grid-template-areas: "a a a" "a a a" "a a a " "a a a " "a a a " "c c c";
   @media screen and (max-width: 375px) {
     height: 100vh;
-    grid-template-areas: "a a a" "a a a" "a a a" "a a a" "c c c";
+    grid-template-areas: "a a a" "a a a" "c c c";
+  }
+  @media screen and (max-width: 575px) {
+    height: 100vh;
+    grid-template-areas: "a a a" "a a a" "a a a" "c c c";
   }
 `;
 
