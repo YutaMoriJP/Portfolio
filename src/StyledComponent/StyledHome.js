@@ -5,11 +5,10 @@ const StyledHome = styled.div`
   height: 100vh;
   display: grid;
   grid-template-areas: "a a a" "a a a" "a a a " "a a a " "a a a " "c c c";
-  @media screen and (max-width: 375px) {
-    height: 100vh;
-    grid-template-areas: "a a a" "a a a" "c c c";
+  @media screen and (min-width: 200px) and (max-width: 420px) {
+    grid-template-areas: "a a a" "c c c";
   }
-  @media screen and (max-width: 575px) {
+  @media screen and (min-width: 421px) and (max-width: 575px) {
     height: 100vh;
     grid-template-areas: "a a a" "a a a" "a a a" "c c c";
   }
