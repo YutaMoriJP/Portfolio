@@ -1,6 +1,8 @@
 import nytt from "../Images/nyt.png";
 import todoo from "../Images/note.png";
 import tictactoe from "../Images/tictactoe.png";
+import shiritori from "../Images/shiritori.png";
+
 import { v4 as uuidv4 } from "uuid";
 
 const projects = [
@@ -52,6 +54,23 @@ const projects = [
       { tag: "React JS", id: uuidv4() },
       { tag: "Styled Component", id: uuidv4() },
       { tag: "React Confetti", id: uuidv4() },
+    ],
+  },
+  {
+    name: "Shiritori Game",
+    img: shiritori,
+    id: uuidv4(),
+    url: "https://goofy-lamport-69eea7.netlify.app/",
+    description:
+      "Shiritori is a Japanese word game in which the starting player picks a word of their choosing and the competing player must pick a word that begins with the ending character from the preceding player. The rule implementation for this app is a player loses when they choose a word that ends with the character 'N' or runs out of time (30 seconds).",
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "HTML5", id: uuidv4() },
+      { tag: "CSS3", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "owlbot-js", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+      { tag: "Material UI", id: uuidv4() },
     ],
   },
 ];
