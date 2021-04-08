@@ -25,9 +25,9 @@ export const Home = () => {
           <Zoom delay={100} triggerOnce>
             <h1>See Projects</h1>
           </Zoom>
-          <a href="#project">
+          <a href="#project" aria-label="Move down to Project page">
             <Zoom effect="bounce" triggerOnce delay={200}>
-              <IconButton>
+              <IconButton aria-label="Move down to Project page">
                 <ExpandMoreIcon />
               </IconButton>
             </Zoom>

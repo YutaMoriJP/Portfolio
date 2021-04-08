@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 //ThemeProviders from styledComponent & materialUI
 import ThemeProviders from "./GlobalStyle/ThemeProviders";
 //Global Styled from styled component
@@ -13,15 +13,18 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 //Page components
 import Home from "./Pages/Home";
-import CodeExamples from "./Pages/CodeExamples";
-import ErrorPage from "./Pages/404";
-import PlayGround from "./Pages/PlayGround";
+//Project component
 import Project from "./Pages/Project";
 
 //custom context hook
 import { useGlobalContext } from "./ContextProvider/ContextProvider";
 //useStyle function using makeStyle
 import useStyle from "./GlobalStyle/useStyle";
+
+//const CodeExamples = loadable(() => import("./Pages/CodeExamples"));
+const CodeExamples = lazy(() => import("./Pages/CodeExamples"));
+const PlayGround = lazy(() => import("./Pages/PlayGround"));
+const ErrorPage = lazy(() => import("./Pages/404"));
 
 const App = () => {
   const { isDark } = useGlobalContext();
@@ -38,16 +41,22 @@ const App = () => {
                 <Home />
               </Route>
               <Route path="/code-examples">
-                <CodeExamples />
+                <Suspense fallback={<div>Loading Content...</div>}>
+                  <CodeExamples />
+                </Suspense>
               </Route>
               <Route path="/playground">
-                <PlayGround />
+                <Suspense fallback={<div>Loading Content...</div>}>
+                  <PlayGround />
+                </Suspense>
               </Route>
               <Route path="/project">
                 <Project />
               </Route>
               <Route>
-                <ErrorPage />
+                <Suspense fallback={<div>Loading Content...</div>}>
+                  <ErrorPage />
+                </Suspense>
               </Route>
             </Switch>
           </Layout>

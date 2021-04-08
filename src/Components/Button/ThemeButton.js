@@ -13,11 +13,11 @@ const ThemeButton = () => {
   return (
     <article className={classes.themeButton}>
       {isDark ? (
-        <IconButton onClick={handleClick}>
+        <IconButton onClick={handleClick} aria-label="Change to Light Theme">
           <Brightness7Icon />
         </IconButton>
       ) : (
-        <IconButton onClick={handleClick}>
+        <IconButton onClick={handleClick} aria-label="Change to Dark Theme">
           <Brightness2Icon />
         </IconButton>
       )}

@@ -27,7 +27,10 @@ const Navbar = () => {
           </>
         )}
         {!matches && (
-          <IconButton onClick={() => setOpen(prevOpen => !prevOpen)}>
+          <IconButton
+            onClick={() => setOpen(prevOpen => !prevOpen)}
+            aria-label="navbar icon"
+          >
             <MenuIcon />
           </IconButton>
         )}
