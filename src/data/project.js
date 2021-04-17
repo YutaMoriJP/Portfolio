@@ -2,10 +2,30 @@ import nytt from "../Images/nyt.png";
 import todoo from "../Images/note.png";
 import tictactoe from "../Images/tictactoe.png";
 import shiritori from "../Images/shiritori.png";
+import crudapi from "../Images/crudapi.png";
 
 import { v4 as uuidv4 } from "uuid";
 
 const projects = [
+  {
+    name: "NYT API",
+    img: crudapi,
+    id: uuidv4(),
+    url: "https://dazzling-wright-f8bd93.netlify.app/",
+    description:
+      "A CRUD API built with Node.js, Express, MongoDB, and Mongoose for the back end and React for the front end. The back end is deployed to Heroku and Frontend is deployed to Netlify. The CRUD API allows users to create a user profile with 3 attributes, Name, Username, and Age. The Database stores a maximum of 3 users, so the oldest user profile will be deleted when a POST request is sent to create a new user.",
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "React Router", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+      { tag: "Fetch API", id: uuidv4() },
+      { tag: "Node.js", id: uuidv4() },
+      { tag: "Express.js", id: uuidv4() },
+      { tag: "MongoDB", id: uuidv4() },
+      { tag: "Mongoose", id: uuidv4() },
+    ],
+  },
   {
     name: "NYT API",
     img: nytt,

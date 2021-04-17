@@ -11,10 +11,8 @@ import Container from "@material-ui/core/Container";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //Layout component
 import Layout from "./Components/Layout/Layout";
-//Page components
-import Home from "./Pages/Home";
-//Project component
-import Project from "./Pages/Project";
+//Loading component
+import Loading from "./Components/Loading/Loading";
 
 //custom context hook
 import { useGlobalContext } from "./ContextProvider/ContextProvider";
@@ -22,6 +20,8 @@ import { useGlobalContext } from "./ContextProvider/ContextProvider";
 import useStyle from "./GlobalStyle/useStyle";
 
 //const CodeExamples = loadable(() => import("./Pages/CodeExamples"));
+const Home = lazy(() => import("./Pages/Home"));
+const Project = lazy(() => import("./Pages/Project"));
 const CodeExamples = lazy(() => import("./Pages/CodeExamples"));
 const PlayGround = lazy(() => import("./Pages/PlayGround"));
 const ErrorPage = lazy(() => import("./Pages/404"));
@@ -36,29 +36,25 @@ const App = () => {
         <StyledGlobal />
         <Router>
           <Layout isDark={isDark}>
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route path="/code-examples">
-                <Suspense fallback={<div>Loading Content...</div>}>
+            <Suspense fallback={<Loading />}>
+              <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route path="/code-examples">
                   <CodeExamples />
-                </Suspense>
-              </Route>
-              <Route path="/playground">
-                <Suspense fallback={<div>Loading Content...</div>}>
+                </Route>
+                <Route path="/playground">
                   <PlayGround />
-                </Suspense>
-              </Route>
-              <Route path="/project">
-                <Project />
-              </Route>
-              <Route>
-                <Suspense fallback={<div>Loading Content...</div>}>
+                </Route>
+                <Route path="/project">
+                  <Project />
+                </Route>
+                <Route>
                   <ErrorPage />
-                </Suspense>
-              </Route>
-            </Switch>
+                </Route>
+              </Switch>
+            </Suspense>
           </Layout>
         </Router>
       </ThemeProviders>
