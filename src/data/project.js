@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const projects = [
   {
-    name: "NYT API",
+    name: "CRUD API",
     img: crudapi,
     id: uuidv4(),
     url: "https://dazzling-wright-f8bd93.netlify.app/",
