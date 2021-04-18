@@ -18,6 +18,7 @@ const Project = () => {
             {projects.map(project => (
               <Card
                 header={project.name}
+                details={project.details}
                 img={project.img}
                 key={project.id}
                 description={project.description}

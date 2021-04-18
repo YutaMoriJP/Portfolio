@@ -13,7 +13,19 @@ const projects = [
     id: uuidv4(),
     url: "https://dazzling-wright-f8bd93.netlify.app/",
     description:
-      "A CRUD API built with Node.js, Express, MongoDB, and Mongoose for the back end and React for the front end. The back end is deployed to Heroku and Frontend is deployed to Netlify. The CRUD API allows users to create a user profile with 3 attributes, Name, Username, and Age. The Database stores a maximum of 3 users, so the oldest user profile will be deleted when a POST request is sent to create a new user.",
+      "A CRUD API built with Node.js, Express, MongoDB, and Mongoose for the back end and React for the front end. The CRUD API allows users to create a user profile with 3 attributes, Name, Username, and Age.",
+    details: [
+      {
+        title: "Header",
+        content:
+          "Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content",
+      },
+      {
+        title: "Header",
+        content:
+          "Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content",
+      },
+    ],
     tags: [
       { tag: "JavaScript", id: uuidv4() },
       { tag: "React JS", id: uuidv4() },
@@ -32,7 +44,8 @@ const projects = [
     id: uuidv4(),
     url: "https://xenodochial-mcclintock-d84f7d.netlify.app/",
     description:
-      "A project utilizing the NYT API to read condensed articles. The user can either type in a keyword or simply click on the suggested tag like 'news' and make a request that way. If no matching article is found, a message notifying the user is rendered instead.",
+      "A project utilizing the NYT API to read condensed articles. The user can either type in a keyword or simply click on the suggested tag like 'news' and make a request that way.",
+    details: [{ title: "Header", content: "Content" }],
     tags: [
       { tag: "JavaScript", id: uuidv4() },
       { tag: "HTML5", id: uuidv4() },
@@ -50,7 +63,8 @@ const projects = [
     id: uuidv4(),
     url: "https://wonderful-euclid-5863c6.netlify.app/",
     description:
-      "A todo app that allows users to create a todo list and either mark the post as completed or remove it. Users also have the option to change the background color of the post as well as sort their posts where the new posts appear at the top or bottom.",
+      "A todo app that allows users to create a todo list and either mark the post as completed or remove it. The app allows for setting changes like note background and sort order.",
+    details: [{ title: "Header", content: "Content" }],
     tags: [
       { tag: "JavaScript", id: uuidv4() },
       { tag: "HTML5", id: uuidv4() },
@@ -67,6 +81,7 @@ const projects = [
     url: "https://unruffled-wright-087758.netlify.app/",
     description:
       "A simple Tic Tac Toe game. 2 players can play the game where one player is represented with 'X' and the other is represented with 'O'. There are a possible 8 winning combination and once that winning combination is met by player O or X, the game is finished.",
+    details: [{ title: "Header", content: "Content" }],
     tags: [
       { tag: "JavaScript", id: uuidv4() },
       { tag: "HTML5", id: uuidv4() },
@@ -82,7 +97,8 @@ const projects = [
     id: uuidv4(),
     url: "https://goofy-lamport-69eea7.netlify.app/",
     description:
-      "Shiritori is a Japanese word game in which the starting player picks a word of their choosing and the competing player must pick a word that begins with the ending character from the preceding player. The rule implementation for this app is a player loses when they choose a word that ends with the character 'N' or runs out of time (30 seconds).",
+      "Shiritori is a Japanese word game in which the starting player picks a word of their choosing and the competing player must pick a word that begins with the ending character from the preceding player. A Player loses when a word that ends with 'N' is chosen or 30 seconds have passed.",
+    details: [{ title: "Header", content: "Content" }],
     tags: [
       { tag: "JavaScript", id: uuidv4() },
       { tag: "HTML5", id: uuidv4() },

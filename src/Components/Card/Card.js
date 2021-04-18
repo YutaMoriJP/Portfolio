@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Image from "../Image/Image";
@@ -7,8 +7,10 @@ import Tags from "../Tags/Tags";
 import styled, { css } from "styled-components";
 import StyledButton from "../../StyledComponent/StyledButton";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import AddIcon from "@material-ui/icons/Add";
+import Dialog from "../Dialog/Dialog";
 
-const P = styled(Typography)`
+const Text = styled(Typography)`
   padding: 5px 10px;
   margin: 0;
   text-align: left;
@@ -23,33 +25,65 @@ const P = styled(Typography)`
     `};
 `;
 
-const Card = ({ header, img, description, tags, url }) => {
+const Button = styled(StyledButton)`
+  margin: 8px;
+  font-size: 0.6rem;
+  padding: 3px;
+  span {
+    padding: 4px;
+  }
+  @media screen and (min-width: 800px) {
+    font-size: 0.7rem;
+  }
+`;
+
+const ButtonContainer = styled.article`
+  display: flex;
+  justify-content: flex-start;
+`;
+
+const Card = ({ header, img, description, tags, url, details }) => {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
   return (
-    <Grid item xs={11} sm={6} md={4} xl={4}>
-      <PaperStyled elevation={10}>
-        <P variant="h5" header="true">
-          {header}
-        </P>
-        <Image src={img} alt={header} width="100%" height="180px" />{" "}
-        <P bold="true" title="true">
-          About Project:
-        </P>
-        <P variant="subtitle2">{description}</P>
-        <P bold="true" title="true">
-          Code Technology used:
-        </P>
-        <Tags tags={tags} />
-        <a href={url} target="_blank" rel="noreferrer">
-          <StyledButton
-            variant="contained"
-            color="primary"
-            endIcon={<ChevronRightIcon />}
-          >
-            See Project
-          </StyledButton>
-        </a>
-      </PaperStyled>
-    </Grid>
+    <>
+      <Grid item xs={11} sm={6} md={4} xl={4}>
+        <PaperStyled elevation={10}>
+          <Text variant="h5" header="true">
+            {header}
+          </Text>
+          <Image src={img} alt={header} width="100%" height="180px" />{" "}
+          <Text bold="true" title="true">
+            About Project:
+          </Text>
+          <Text variant="subtitle2">{description}</Text>
+          <ButtonContainer>
+            <Button
+              color="primary"
+              variant="contained"
+              endIcon={<AddIcon />}
+              onClick={handleOpen}
+            >
+              Read more
+            </Button>
+          </ButtonContainer>
+          <Text bold="true" title="true">
+            Code Technology used:
+          </Text>
+          <Tags tags={tags} />
+          <a href={url} target="_blank" rel="noreferrer">
+            <StyledButton
+              variant="contained"
+              color="primary"
+              endIcon={<ChevronRightIcon />}
+            >
+              See Project
+            </StyledButton>
+          </a>
+        </PaperStyled>
+      </Grid>
+      <Dialog open={open} setOpen={setOpen} details={details} />
+    </>
   );
 };
 
