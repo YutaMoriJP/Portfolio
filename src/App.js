@@ -30,7 +30,7 @@ const App = () => {
   const { isDark } = useGlobalContext();
   const classes = useStyle();
   return (
-    <Container className={classes.container}>
+    <Container className={classes.container} fixed>
       <ThemeProviders isDark={isDark}>
         <CssBaseLine />
         <StyledGlobal />
