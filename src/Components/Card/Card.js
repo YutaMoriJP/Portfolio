@@ -7,7 +7,7 @@ import Tags from "../Tags/Tags";
 import styled, { css } from "styled-components";
 import StyledButton from "../../StyledComponent/StyledButton";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import AddIcon from "@material-ui/icons/Add";
+import MenuBookIcon from "@material-ui/icons/MenuBook";
 import Dialog from "../Dialog/Dialog";
 
 const Text = styled(Typography)`
@@ -61,7 +61,7 @@ const Card = ({ header, img, description, tags, url, details }) => {
             <Button
               color="primary"
               variant="contained"
-              endIcon={<AddIcon />}
+              endIcon={<MenuBookIcon />}
               onClick={handleOpen}
             >
               Read more

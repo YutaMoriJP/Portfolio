@@ -20,6 +20,12 @@ export const Title = styled(Typography)`
   font-weight: 900;
   max-width: 800px;
   margin: auto;
+  @media screen and (min-width: 200px) and (max-width: 800px) {
+    padding: 0 30px;
+  }
+  @media screen and (min-width: 700px) and (max-width: 900px) {
+    padding: 0 40px;
+  }
 `;
 
 export const More = styled.article`

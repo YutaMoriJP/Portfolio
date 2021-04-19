@@ -13,7 +13,7 @@ const Project = () => {
     <Container>
       <Zoom triggerOnce>
         <ProjectStyled id="project">
-          <h1>PROJECT</h1>　
+          <h1>PROJECTS</h1>　
           <Grid container spacing={5} justify="center">
             {projects.map(project => (
               <Card
