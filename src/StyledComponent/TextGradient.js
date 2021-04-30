@@ -1,16 +1,29 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import Typography from "@material-ui/core/Typography";
 
 const TextGradient = styled(Typography)`
   font-weight: 900;
-  background: ${props => props.theme.titleGradient.background};
-  background: ${props => props.theme.titleGradient.webkit};
-  background: ${props => props.theme.titleGradient.moz};
-  background: ${props => props.theme.titleGradient.linear};
+  background: ${props =>
+    props.theme?.titleGradient?.background || props.theme.color};
+  background: ${props =>
+    props.theme?.titleGradient?.webkit || props.theme.color};
+  background: ${props => props.theme?.titleGradient?.moz || props.theme.color};
+  background: ${props =>
+    props.theme?.titleGradient?.linear || props.theme.color};
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  ${props =>
+    props.normal &&
+    css`
+      color: pink;
+    `}
 `;
+
+export const NonGradient = styled(Typography)`
+  padding: 10px;
+`;
+
 /*
 const TextGradient = styled.h1`
   background: #fff0f6;

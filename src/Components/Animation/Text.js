@@ -1,18 +1,30 @@
 import React from "react";
 import { Zoom } from "react-awesome-reveal";
-import TextGradient from "../../StyledComponent/TextGradient";
+import TextGradient, { NonGradient } from "../../StyledComponent/TextGradient";
 
 /*
 ”bounce", "flash", "headShake”, "heartBeat", "jello”, "pulse", "rubberBand", “shake”, “shakeX", "shakeY”, "swing”, "tada" and “wobble”.
 
 */
-const Text = ({ children, header, delay }) => {
+const Text = ({ children, header, delay, ...rest }) => {
   return (
     <Zoom triggerOnce delay={delay}>
       {header ? (
-        <TextGradient variant="h4">{children}</TextGradient>
+        <TextGradient {...rest}>{children}</TextGradient>
       ) : (
-        <TextGradient variant="h4">{children}</TextGradient>
+        <TextGradient {...rest}>{children}</TextGradient>
+      )}
+    </Zoom>
+  );
+};
+
+export const NormalText = ({ children, header, delay, ...rest }) => {
+  return (
+    <Zoom triggerOnce delay={delay}>
+      {header ? (
+        <NonGradient {...rest}>{children}</NonGradient>
+      ) : (
+        <NonGradient {...rest}>{children}</NonGradient>
       )}
     </Zoom>
   );
