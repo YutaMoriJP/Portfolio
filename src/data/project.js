@@ -5,6 +5,7 @@ import shiritori from "../Images/shiritori.png";
 import crudapi from "../Images/crudapi.png";
 import shopping from "../Images/shopping.png";
 import { v4 as uuidv4 } from "uuid";
+import timer from "../Images/timer.png";
 
 const projects = [
   {
@@ -102,6 +103,24 @@ const projects = [
     ],
   },
   {
+    name: "Shiritori Game",
+    img: shiritori,
+    id: uuidv4(),
+    url: "https://goofy-lamport-69eea7.netlify.app/",
+    description:
+      "Shiritori is a Japanese word game in which the starting player picks a word of their choosing and the competing player must pick a word that begins with the ending character from the preceding player. A Player loses when a word that ends with 'N' is chosen or 30 seconds have passed.",
+    details: [{ title: "Header", content: "Content" }],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "HTML5", id: uuidv4() },
+      { tag: "CSS3", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "owlbot-js", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+      { tag: "Material UI", id: uuidv4() },
+    ],
+  },
+  {
     name: "Tic-Tac-Toe Game",
     img: tictactoe,
     id: uuidv4(),
@@ -119,21 +138,19 @@ const projects = [
     ],
   },
   {
-    name: "Shiritori Game",
-    img: shiritori,
+    name: "Timer App",
+    img: timer,
     id: uuidv4(),
-    url: "https://goofy-lamport-69eea7.netlify.app/",
-    description:
-      "Shiritori is a Japanese word game in which the starting player picks a word of their choosing and the competing player must pick a word that begins with the ending character from the preceding player. A Player loses when a word that ends with 'N' is chosen or 30 seconds have passed.",
+    url: "https://keen-northcutt-0a7688.netlify.app/",
+    description: "A Timer App built with React.",
     details: [{ title: "Header", content: "Content" }],
     tags: [
       { tag: "JavaScript", id: uuidv4() },
       { tag: "HTML5", id: uuidv4() },
       { tag: "CSS3", id: uuidv4() },
       { tag: "React JS", id: uuidv4() },
-      { tag: "owlbot-js", id: uuidv4() },
       { tag: "Styled Component", id: uuidv4() },
-      { tag: "Material UI", id: uuidv4() },
+      { tag: "setInterval", id: uuidv4() },
     ],
   },
 ];
