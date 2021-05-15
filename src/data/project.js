@@ -4,37 +4,11 @@ import tictactoe from "../Images/tictactoe.png";
 import shiritori from "../Images/shiritori.png";
 import crudapi from "../Images/crudapi.png";
 import shopping from "../Images/shopping.png";
+import flex from "../Images/flex.png";
 import { v4 as uuidv4 } from "uuid";
 import timer from "../Images/timer.png";
 
 const projects = [
-  {
-    name: "Shopping App",
-    img: shopping,
-    id: uuidv4(),
-    url: "https://quizzical-lovelace-17ea0b.netlify.app/",
-    description:
-      "An app designed to help users to help their shopping experience by allowing them to list what they need to buy.",
-    details: [
-      {
-        title: "Header",
-        content:
-          "Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content",
-      },
-      {
-        title: "Header",
-        content:
-          "Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content",
-      },
-    ],
-    tags: [
-      { tag: "JavaScript", id: uuidv4() },
-      { tag: "React JS", id: uuidv4() },
-      { tag: "Localforage", id: uuidv4() },
-      { tag: "Fetch API", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
-    ],
-  },
   {
     name: "CRUD API",
     img: crudapi,
@@ -64,6 +38,58 @@ const projects = [
       { tag: "Express.js", id: uuidv4() },
       { tag: "MongoDB", id: uuidv4() },
       { tag: "Mongoose", id: uuidv4() },
+    ],
+  },
+  {
+    name: "Flex Playground",
+    img: flex,
+    id: uuidv4(),
+    url: "https://csb-3nczf.netlify.app/",
+    description:
+      "An app that helps users learn about the Flex Layout by playing with a visual tool.",
+    details: [
+      {
+        title: "Header",
+        content:
+          "Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content",
+      },
+      {
+        title: "Header",
+        content:
+          "Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+    ],
+  },
+  {
+    name: "Shopping App",
+    img: shopping,
+    id: uuidv4(),
+    url: "https://quizzical-lovelace-17ea0b.netlify.app/",
+    description:
+      "An app designed to help users to help their shopping experience by allowing them to list what they need to buy.",
+    details: [
+      {
+        title: "Header",
+        content:
+          "Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content",
+      },
+      {
+        title: "Header",
+        content:
+          "Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content Fillter content",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Localforage", id: uuidv4() },
+      { tag: "Fetch API", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
     ],
   },
   {
