@@ -116,7 +116,7 @@ const projects = [
     name: "<Delay/>",
     img: delay,
     id: uuidv4(),
-    url: "https://objective-williams-4b941f.netlify.app/",
+    url: "https://amazing-hoover-fd23f2.netlify.app/",
     description:
       "A React <Delay/> component that allows users to delay the data from rendering.",
     details: [{ title: "Header", content: "Content" }],
