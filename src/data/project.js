@@ -7,6 +7,7 @@ import shopping from "../Images/shopping.png";
 import flex from "../Images/flex.png";
 import { v4 as uuidv4 } from "uuid";
 import timer from "../Images/timer.png";
+import delay from "../Images/delay.png";
 
 const projects = [
   {
@@ -108,6 +109,24 @@ const projects = [
       { tag: "React Router", id: uuidv4() },
       { tag: "Styled Component", id: uuidv4() },
       { tag: "Fetch API", id: uuidv4() },
+      { tag: "Material UI", id: uuidv4() },
+    ],
+  },
+  {
+    name: "<Delay/>",
+    img: delay,
+    id: uuidv4(),
+    url: "https://objective-williams-4b941f.netlify.app/",
+    description:
+      "A React <Delay/> component that allows users to delay the data from rendering.",
+    details: [{ title: "Header", content: "Content" }],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "HTML5", id: uuidv4() },
+      { tag: "CSS3", id: uuidv4() },
+      { tag: "JsonPlaceHolder", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
       { tag: "Material UI", id: uuidv4() },
     ],
   },
