@@ -8,6 +8,7 @@ import flex from "../Images/flex.png";
 import { v4 as uuidv4 } from "uuid";
 import timer from "../Images/timer.png";
 import delay from "../Images/delay.png";
+import bubble from "../Images/bubble.png";
 
 const projects = [
   {
@@ -109,6 +110,24 @@ const projects = [
       { tag: "React Router", id: uuidv4() },
       { tag: "Styled Component", id: uuidv4() },
       { tag: "Fetch API", id: uuidv4() },
+      { tag: "Material UI", id: uuidv4() },
+    ],
+  },
+  {
+    name: "Bubble Sort Algorithm Visualized",
+    img: bubble,
+    id: uuidv4(),
+    url: "https://modest-ptolemy-30f1ac.netlify.app/",
+    description:
+      "An App that visualizes how the bubble sort algorithm sorts the displayed array.",
+    details: [{ title: "Header", content: "Content" }],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "HTML5", id: uuidv4() },
+      { tag: "CSS3", id: uuidv4() },
+      { tag: "JsonPlaceHolder", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
       { tag: "Material UI", id: uuidv4() },
     ],
   },
