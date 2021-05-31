@@ -54,7 +54,7 @@ const About = () => {
         <p>
           Currently, I am learning TypeScript and Next.js, and I plan to start
           learning Vue.js soon. If you have time, please browse through my{" "}
-          <StyledLink underline={1} nopadding={1} normalFont={1}>
+          <StyledLink underline={1} nopadding={1} normalFont={1} to="./project">
             projects
           </StyledLink>
           . It would be awesome if you could take a chance on me :) I hope to
