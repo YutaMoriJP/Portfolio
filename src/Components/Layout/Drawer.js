@@ -13,7 +13,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import StyledLink from "../../StyledComponent/StyledLink";
 import HighlightIcon from "@material-ui/icons/Highlight";
 import PaletteIcon from "@material-ui/icons/Palette";
-
+import AccountBoxIcon from "@material-ui/icons/AccountBox";
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -32,12 +32,14 @@ const navText = {
   "/project": "Project",
   "/code-examples": "Code Examples",
   "/playground": "Playground",
+  "/about": "About me",
 };
 
 const NavIcon = {
   "/": <HomeIcon />,
   "/project": <HighlightIcon />,
   "/code-examples": <PaletteIcon />,
+  "/about": <AccountBoxIcon />,
 };
 
 export default function Drawer({ open, onOpen, onClose }) {
@@ -57,7 +59,7 @@ export default function Drawer({ open, onOpen, onClose }) {
       </article>
       <Divider />
       <List>
-        {["/", "/project"].map((text, index) => (
+        {["/", "/project", "/about"].map((text, index) => (
           <StyledLink to={text} key={text} nopadding="true">
             <ListItem button>
               <ListItemIcon>{NavIcon[text]}</ListItemIcon>

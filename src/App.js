@@ -25,6 +25,7 @@ const Project = lazy(() => import("./Pages/Project"));
 const CodeExamples = lazy(() => import("./Pages/CodeExamples"));
 const PlayGround = lazy(() => import("./Pages/PlayGround"));
 const ErrorPage = lazy(() => import("./Pages/404"));
+const About = lazy(() => import("./Pages/About"));
 
 const App = () => {
   const { isDark } = useGlobalContext();
@@ -49,6 +50,9 @@ const App = () => {
                 </Route>
                 <Route path="/project">
                   <Project />
+                </Route>
+                <Route path="/about">
+                  <About />
                 </Route>
                 <Route>
                   <ErrorPage />
