@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const StyledLink = styled(Link)`
   && {
-    font-family: "Montserrat", sans-serif;
+    font-family: ${props => (props.normalFont ? "arial" : "Montserrat")};
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: ${props => (props.underline ? "underline" : "0")};
     color: ${props => props.theme.color};
     padding: 0 10px;
     ${props =>

@@ -4,6 +4,7 @@ export const styledTheme = {
     color: "#f8f9fa",
     black: "#212529",
     buttonLink: "#212529",
+    link: { color: "#f8f9fa", textDecoration: 0, fontWeight: 900 },
     titleColor: "#e5dbff",
     titleGradient: {
       background: "#fff0f6",
@@ -14,6 +15,7 @@ export const styledTheme = {
   },
   light: {
     background: "#dee2e6",
+    link: { color: "#111827", textDecoration: 0, fontWeight: 900 },
     color: "#111827",
     black: "#212529",
     buttonLink: "#e9ecef",
