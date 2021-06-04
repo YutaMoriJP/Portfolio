@@ -137,12 +137,13 @@ const projects = [
     img: blogGrid,
     id: uuidv4(),
     url: "https://optimistic-yalow-468b7e.netlify.app/",
-    description: "A website that creates a blog like layout with CSS Grid.",
+    description:
+      "A website that that uses CSS Grid to achieve a blog like layout.",
     details: [
       {
         title: "Grid Layout - Blog",
         content:
-          "This project tries to simulate a simple blog like layout with CSS Grid. The header's grid area is the full 10 column grid cell. And the sidebar only spans couple cells and the main section's grid area covers the remaining grid cells. The footer has the same treatment as the header. To make the layout responsive, I used media queries, to push the sidebar below the main section, using grid-row, so the sidebar is placed right below the main content. The other change is also that now the sidebar and main section's grid area now covers the entire column.",
+          "This project tries to simulate a simple blog like layout with CSS Grid. The header's grid area is the full 10 column grid cell. And the sidebar only spans couple cells while the main section's grid area covers the remaining grid cells. The footer has the same treatment as the header. To make the layout responsive, I used media queries, to push the sidebar below the main section, using grid-row, so the sidebar is placed right below the main content. The other change is that now the sidebar and main section's grid area now covers the entire column. The reasoning is the limited view port of a mobile device.",
       },
     ],
     tags: [
