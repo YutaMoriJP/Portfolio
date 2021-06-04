@@ -9,6 +9,7 @@ import { v4 as uuidv4 } from "uuid";
 import timer from "../Images/timer.png";
 import delay from "../Images/delay.png";
 import bubble from "../Images/bubble.png";
+import blogGrid from "../Images/blogGrid.png";
 
 const projects = [
   {
@@ -131,6 +132,27 @@ const projects = [
       { tag: "Material UI", id: uuidv4() },
     ],
   },
+  {
+    name: "Grid Layout - Blog",
+    img: blogGrid,
+    id: uuidv4(),
+    url: "https://optimistic-yalow-468b7e.netlify.app/",
+    description: "A website that creates a blog like layout with CSS Grid.",
+    details: [
+      {
+        title: "Grid Layout - Blog",
+        content:
+          "This project tries to simulate a simple blog like layout with CSS Grid. The header's grid area is the full 10 column grid cell. And the sidebar only spans couple cells and the main section's grid area covers the remaining grid cells. The footer has the same treatment as the header. To make the layout responsive, I used media queries, to push the sidebar below the main section, using grid-row, so the sidebar is placed right below the main content. The other change is also that now the sidebar and main section's grid area now covers the entire column.",
+      },
+    ],
+    tags: [
+      { tag: "HTML5", id: uuidv4() },
+      { tag: "CSS3", id: uuidv4() },
+      { tag: "CSS Grid", id: uuidv4() },
+      { tag: "Parcel", id: uuidv4() },
+    ],
+  },
+
   {
     name: "<Delay/>",
     img: delay,
