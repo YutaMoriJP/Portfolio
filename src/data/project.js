@@ -174,11 +174,13 @@ const projects = [
       },
     ],
     tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
       { tag: "HTML5", id: uuidv4() },
       { tag: "CSS3", id: uuidv4() },
       { tag: "CSS Grid", id: uuidv4() },
-      { tag: "Parcel", id: uuidv4() },
-      { tag: "Netlify", id: uuidv4() },
+      { tag: "CSS Flexbox", id: uuidv4() },
+      { tag: "Styled-Components", id: uuidv4() },
     ],
   },
 
