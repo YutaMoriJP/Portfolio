@@ -8,6 +8,32 @@ import Project from "./Project";
 import Text, { NormalText } from "../Components/Animation/Text";
 import { Zoom } from "react-awesome-reveal";
 
+const RemovedLater = () => {
+  const [auth, setAuth] = React.useState(false);
+  const [val, setVal] = React.useState("");
+  const handleChange = e => {
+    const pass = e.target.value;
+    setVal(pass);
+    if (pass === "0214") {
+      setAuth(true);
+    }
+  };
+  return (
+    <>
+      <label htmlFor="pass">password</label>
+      <input type="text" id="pass" value={val} onChange={handleChange} />
+      {auth && (
+        <>
+          <p>emphasize yourself being trilingual</p>
+          <p>talk more about your work experience</p>
+          <p>talk to bjorn to pass resume and get reference letter</p>
+          <p>covid notice that you have not left canada</p>
+        </>
+      )}
+    </>
+  );
+};
+
 export const Home = () => {
   return (
     <>
@@ -16,6 +42,7 @@ export const Home = () => {
       </Helmet>
       <StyledHome>
         <HomeTitle variant="h4">
+          <RemovedLater />
           <Text variant="h5">
             Hi, I am Yuta, a front end web developer from Japan.
           </Text>
