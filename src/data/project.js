@@ -10,6 +10,7 @@ import timer from "../Images/timer.png";
 import delay from "../Images/delay.png";
 import bubble from "../Images/bubble.png";
 import blogGrid from "../Images/blogGrid.png";
+import usefulCSS from "../Images/css.png";
 
 const projects = [
   {
@@ -148,6 +149,28 @@ const projects = [
         title: "Grid Layout - Blog",
         content:
           "This project tries to simulate a simple blog like layout with CSS Grid. The header's grid area covers the full 10 column grid cells. The sidebar only spans couple cells while the main section's grid area covers the remaining grid cells. The footer has the same treatment as the header. To make the layout responsive, I used media queries and changes to the grid-row property, to push the sidebar below the main section, so that the sidebar is placed right below the main content. The other change in the mobile viewport is that the sidebar and main section's grid area now covers the entire column, like the header and footer area do. The reasoning for that change is the limited view port of mobile devices.",
+      },
+    ],
+    tags: [
+      { tag: "HTML5", id: uuidv4() },
+      { tag: "CSS3", id: uuidv4() },
+      { tag: "CSS Grid", id: uuidv4() },
+      { tag: "Parcel", id: uuidv4() },
+      { tag: "Netlify", id: uuidv4() },
+    ],
+  },
+  {
+    name: "Useful CSS Placements",
+    img: usefulCSS,
+    id: uuidv4(),
+    url: "https://csb-7slsg.netlify.app/",
+    description:
+      "A website that provides useful CSS placements, like cernting the content, using CSS Flexbox and CSS Grid.",
+    details: [
+      {
+        title: "Useful CSS Placements",
+        content:
+          "This project provides useful content placement method, like centering the content, using CSS layouts like CSS flexbox and CSS grid. When clicking on the top right “CSS” text, a modal pops up that shows the CSS code. I used a custom hook called useOpen to handle the “open” state of the modal. When the modal component renders, it subscribes a “click” event to the document.body element, and the event handler that gets executed is the onClose function that updates the “open” state to false, which closes the modal. This allows users to click anywhere on the screen to close the modal, but this also means clicking on the modal itself will close it, preventing users from copying the CSS. So, the modal’s root element listens to a “click” event that calls event.stopPropagation, which prevents the click event from bubbling to the document.body. ",
       },
     ],
     tags: [
