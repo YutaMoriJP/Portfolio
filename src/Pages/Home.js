@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy } from "react";
 import Helmet from "react-helmet";
 import StyledHome from "../StyledComponent/StyledHome";
 import { Title as HomeTitle, More } from "../StyledComponent/StyledHome";
@@ -7,6 +7,8 @@ import IconButton from "@material-ui/core/IconButton";
 import Project from "./Project";
 import Text, { NormalText } from "../Components/Animation/Text";
 import { Zoom } from "react-awesome-reveal";
+
+const Notice = lazy(() => import("../Components/Notice/Notice"));
 
 const RemovedLater = () => {
   const [auth, setAuth] = React.useState(false);
@@ -27,7 +29,11 @@ const RemovedLater = () => {
           <p>emphasize yourself being trilingual</p>
           <p>talk more about your work experience</p>
           <p>talk to bjorn to pass resume and get reference letter</p>
-          <p>covid notice that you have not left canada</p>
+          <p>??? vanila JS project?</p>
+          <p>
+            add JS details that Kent mentioned like Promises, destructuring etc.
+            and then link to Edabit?
+          </p>
         </>
       )}
     </>
@@ -64,6 +70,7 @@ export const Home = () => {
         </More>
       </StyledHome>
       <Project />
+      <Notice />
     </>
   );
 };
