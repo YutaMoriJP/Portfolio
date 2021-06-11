@@ -26,9 +26,9 @@ const About = () => {
           marketer, I ran my own website business for 4 years, and generated
           more than $3000 in profit. So, I was able smoothly transition from a
           publisher to a performance marketer. As a performance marketer, I
-          specialized on search ads like Google Ads and Bing ads for all types
+          specialized in search ads like Google Ads and Bing ads for all types
           of clients like Dropbox, TikTok, and Roblox. I have also experience in
-          other types of ads like display, push, native, and pop ads. As a
+          other types of ads like display, push, contextual, native, and pop ads. As a
           performance marketer, I also had many opportunities to build landing
           pages for my clients promoting their products, as well as contributed
           to all of our WordPress blogs. I already had experience in HTML, CSS,

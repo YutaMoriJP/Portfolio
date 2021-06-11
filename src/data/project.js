@@ -112,6 +112,31 @@ const projects = [
       { tag: "Netlify", id: uuidv4() },
     ],
   },
+
+  {
+    name: "Useful CSS Layouts",
+    img: usefulCSS,
+    id: uuidv4(),
+    url: "https://csb-7slsg.netlify.app/",
+    description:
+      "A website that provides useful CSS layouts, like cernting the content or a card layout, using CSS Flexbox and CSS Grid.",
+    details: [
+      {
+        title: "Useful CSS Layouts",
+        content:
+          "This project provides useful content placement method, like centering the content, using CSS layouts like CSS flexbox and CSS grid. When clicking on the top right “CSS” text, a modal pops up that shows the CSS code. I used a custom hook called useOpen to handle the “open” state of the modal. When the modal component renders, it subscribes a “click” event to the document.body element, and the event handler that gets executed is the onClose function that updates the “open” state to false, which closes the modal. This allows users to click anywhere on the screen to close the modal, but this also means clicking on the modal itself will close it, preventing users from copying the CSS. So, the modal’s root element listens to a “click” event that calls event.stopPropagation, which prevents the click event from bubbling to the document.body. ",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "HTML5", id: uuidv4() },
+      { tag: "CSS3", id: uuidv4() },
+      { tag: "CSS Grid", id: uuidv4() },
+      { tag: "CSS Flexbox", id: uuidv4() },
+      { tag: "Styled-Components", id: uuidv4() },
+    ],
+  },
   {
     name: "Bubble Sort Algorithm Visualized",
     img: bubble,
@@ -157,30 +182,6 @@ const projects = [
       { tag: "CSS Grid", id: uuidv4() },
       { tag: "Parcel", id: uuidv4() },
       { tag: "Netlify", id: uuidv4() },
-    ],
-  },
-  {
-    name: "Useful CSS Layouts",
-    img: usefulCSS,
-    id: uuidv4(),
-    url: "https://csb-7slsg.netlify.app/",
-    description:
-      "A website that provides useful CSS layouts, like cernting the content or a card layout, using CSS Flexbox and CSS Grid.",
-    details: [
-      {
-        title: "Useful CSS Layouts",
-        content:
-          "This project provides useful content placement method, like centering the content, using CSS layouts like CSS flexbox and CSS grid. When clicking on the top right “CSS” text, a modal pops up that shows the CSS code. I used a custom hook called useOpen to handle the “open” state of the modal. When the modal component renders, it subscribes a “click” event to the document.body element, and the event handler that gets executed is the onClose function that updates the “open” state to false, which closes the modal. This allows users to click anywhere on the screen to close the modal, but this also means clicking on the modal itself will close it, preventing users from copying the CSS. So, the modal’s root element listens to a “click” event that calls event.stopPropagation, which prevents the click event from bubbling to the document.body. ",
-      },
-    ],
-    tags: [
-      { tag: "JavaScript", id: uuidv4() },
-      { tag: "React JS", id: uuidv4() },
-      { tag: "HTML5", id: uuidv4() },
-      { tag: "CSS3", id: uuidv4() },
-      { tag: "CSS Grid", id: uuidv4() },
-      { tag: "CSS Flexbox", id: uuidv4() },
-      { tag: "Styled-Components", id: uuidv4() },
     ],
   },
 

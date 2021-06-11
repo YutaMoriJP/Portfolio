@@ -22,6 +22,7 @@ const RemovedLater = () => {
       <input type="text" id="pass" value={val} onChange={handleChange} />
       {val === "0214" && (
         <>
+          <p>get own .com domain</p>
           <p>emphasize yourself being trilingual</p>
           <p>talk more about your work experience</p>
           <p>talk to bjorn to pass resume and get reference letter</p>
