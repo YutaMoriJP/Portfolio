@@ -11,20 +11,16 @@ import { Zoom } from "react-awesome-reveal";
 const Notice = lazy(() => import("../Components/Notice/Notice"));
 
 const RemovedLater = () => {
-  const [auth, setAuth] = React.useState(false);
   const [val, setVal] = React.useState("");
   const handleChange = e => {
     const pass = e.target.value;
     setVal(pass);
-    if (pass === "0214") {
-      setAuth(true);
-    }
   };
   return (
     <>
       <label htmlFor="pass">password</label>
       <input type="text" id="pass" value={val} onChange={handleChange} />
-      {auth && (
+      {val === "0214" && (
         <>
           <p>emphasize yourself being trilingual</p>
           <p>talk more about your work experience</p>

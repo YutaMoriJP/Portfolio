@@ -24,7 +24,7 @@ const projects = [
       {
         title: "CRUD API Description:",
         content:
-          "So far, this is the only Full Stack app in my portfolio. I used Express.js for the server to handle incoming requests from the frontend of my app, and store the API data in MongoDB. This is a simple CRUD API that allows users to build a “User Profile” with data like “Name, Username, and Age”. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they created, as well as simply send a GET request to retrieve all the user profiles that are stored in the database (maximum 3). For the frontend, I used React JS and deployed it with Netlify, while the backend was deployed with Heroku.",
+          "So far, this is the only Full Stack app in my portfolio. I used Express.js as the server to handle incoming requests from the frontend of my app, and data for the API is stored in. This is a simple CRUD API that allows users to build a “User Profile” with data like `Name`, `Username`, and `Age`. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they created, as well as simply send a GET request to retrieve all the user profiles that are stored in the database (maximum 3), or fetch specific users by ID. For the frontend, I used React JS and deployed it with Netlify, while the backend was deployed with Heroku.",
       },
     ],
     tags: [
@@ -160,15 +160,15 @@ const projects = [
     ],
   },
   {
-    name: "Useful CSS Placements",
+    name: "Useful CSS Layouts",
     img: usefulCSS,
     id: uuidv4(),
     url: "https://csb-7slsg.netlify.app/",
     description:
-      "A website that provides useful CSS placements, like cernting the content, using CSS Flexbox and CSS Grid.",
+      "A website that provides useful CSS layouts, like cernting the content or a card layout, using CSS Flexbox and CSS Grid.",
     details: [
       {
-        title: "Useful CSS Placements",
+        title: "Useful CSS Layouts",
         content:
           "This project provides useful content placement method, like centering the content, using CSS layouts like CSS flexbox and CSS grid. When clicking on the top right “CSS” text, a modal pops up that shows the CSS code. I used a custom hook called useOpen to handle the “open” state of the modal. When the modal component renders, it subscribes a “click” event to the document.body element, and the event handler that gets executed is the onClose function that updates the “open” state to false, which closes the modal. This allows users to click anywhere on the screen to close the modal, but this also means clicking on the modal itself will close it, preventing users from copying the CSS. So, the modal’s root element listens to a “click” event that calls event.stopPropagation, which prevents the click event from bubbling to the document.body. ",
       },

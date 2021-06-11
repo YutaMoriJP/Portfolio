@@ -9,31 +9,39 @@ const About = () => {
   return (
     <Container maxWidth="md">
       <Paper style={{ padding: 20, margin: 15 }}>
-        <h1>Thank you for my visting my about page :)</h1>
+        <h1>About Page</h1>
         <Divider />
         <p>
-          Hi I am Yuta. I am a Japanese who grew up in Germany, and spent the
-          last 8 years finishing my highschool and university in Canada. I have
-          earned a major in Philosophy and minor in Business from the University
-          of Victoria.
+          Thank you for visting my about page to learn more about me! My name is
+          Yuta, and I am a Japanese who grew up in Germany. I am a trilingual
+          and fluent in Japanese, German, and English. I have spent the last 8
+          years in Canada, finishing my highschool and university. I have earned
+          a major in Philosophy and minor in Business from the University of
+          Victoria.
         </p>
 
         <p>
           After my graduation, I have worked a year as a Performance Marketing
-          Specialist at Global Wide Media. I specialized on search ads like
-          Google Ads and Bing ads for clients like Dropbox and Roblox. As a
-          performance marketer, I had many opportunities to build landing pages
-          for my clients promoting their products. I already had experience in
-          HTML, CSS, and JavaScript before my work as a performance marketer,
-          and the additional experience of building landing pages for my clients
-          gave me the dream of becoming a front end web developer.
+          Specialist at Global Wide Media. Before working as a performance
+          marketer, I ran my own website business for 4 years, and generated
+          more than $3000 in profit. So, I was able smoothly transition from a
+          publisher to a performance marketer. As a performance marketer, I
+          specialized on search ads like Google Ads and Bing ads for all types
+          of clients like Dropbox, TikTok, and Roblox. I have also experience in
+          other types of ads like display, push, native, and pop ads. As a
+          performance marketer, I also had many opportunities to build landing
+          pages for my clients promoting their products, as well as contributed
+          to all of our WordPress blogs. I already had experience in HTML, CSS,
+          and JavaScript before my work as a performance marketer, and the
+          additional experience of building landing pages for my clients gave me
+          the dream of becoming a front end web developer.
         </p>
 
         <p>
           I spent the past year intensively developing my knowledge and skills
           in JavaScript, becoming proficient in libraries like React. To display
-          my skills in React and JavaScript in general, I have built a diverse
-          amount of projects like a{" "}
+          my skills in JavaScript and CSS, as well as libraries, I have built a
+          diverse amount of projects like a{" "}
           <Link
             href="https://xenodochial-mcclintock-d84f7d.netlify.app/"
             target="_blank"
@@ -47,7 +55,15 @@ const About = () => {
             target="_blank"
             rel="noreferrer"
           >
-            CRUD API from scratch.
+            CRUD API from scratch
+          </Link>
+          , and also CSS specific projects like a{" "}
+          <Link
+            href="https://csb-7slsg.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            website that provides useful CSS layouts.
           </Link>
         </p>
 
