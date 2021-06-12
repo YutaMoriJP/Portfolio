@@ -13,7 +13,7 @@ const Wrapped = styled.article`
   width: 100%;
   display: flex;
   z-index: 100;
-
+  left: 0;
   p {
     margin: 0;
     padding: 3px;

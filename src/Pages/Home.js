@@ -28,9 +28,13 @@ const RemovedLater = () => {
           <p>talk to bjorn to pass resume and get reference letter</p>
           <p>??? vanila JS project?</p>
           <p>
-            add JS details that Kent mentioned like Promises, destructuring etc.
+            add JS details that Kent mentioned like Promises,regex,  destructuring etc.
             and then link to Edabit?
-          </p>
+
+            Show Condesandbox with the TEST
+          </p>          
+          <p>PROOFREAD!</p>
+
         </>
       )}
     </>
