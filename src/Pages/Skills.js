@@ -1,12 +1,7 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import Paper from "@material-ui/core/Paper";
-import Divider from "@material-ui/core/Divider";
-import Link from "../StyledComponent/Link";
-import StyledLink from "../StyledComponent/StyledLink";
-import Helmet from "react-helmet";
- 
- import styled from "styled-components";
+import Helmet from "react-helmet"; 
+import styled from "styled-components";
 import { v4 as uuidv4 } from "uuid";
 //    skills: {containerBg:'#f8f9fa', itemBG: "#212529" }
 
