@@ -10,8 +10,11 @@ const StyledLink = styled(Link)`
     padding: 0 10px;
     ${props =>
       props.nopadding &&
-      css`
-        padding: 0;
+      css` 
+      padding: 0;
+      font-family: arial;
+      color: ${props => props.theme.link.color};
+      text-decoration: underline;
       `}
   }
 `;

@@ -7,6 +7,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Project from "./Project";
 import Text, { NormalText } from "../Components/Animation/Text";
 import { Zoom } from "react-awesome-reveal";
+import StyledLink from "../StyledComponent/StyledLink";
 
 const Notice = lazy(() => import("../Components/Notice/Notice"));
 
@@ -54,7 +55,7 @@ export const Home = () => {
             Hi, I am Yuta, a front end web developer from Japan.
           </Text>
           <NormalText variant="h6" delay={200} color="pink">
-            See my projects below, or learn more about me here.
+            See my projects below, <StyledLink nopadding to='./skills'>skills</StyledLink>, or learn more about me <StyledLink nopadding to='./about'>here.</StyledLink>
           </NormalText>
         </HomeTitle>
         <More>
