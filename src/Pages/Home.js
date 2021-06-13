@@ -23,17 +23,31 @@ const RemovedLater = () => {
       <input type="text" id="pass" value={val} onChange={handleChange} />
       {val === "0214" && (
         <>
-          <p>get own .com domain</p>
-          <p>emphasize yourself being trilingual</p>
-          <p>talk more about your work experience</p>
-          <p>talk to bjorn to pass resume and get reference letter</p>
-          <p>??? vanila JS project?</p>
-          <p>
+          <p style={{ fontSize: 14, color: "red" }}>get own .com domain</p>
+          <p style={{ fontSize: 14, color: "red" }}>
+            find way to publish your own module on npm?
+          </p>
+          <p style={{ fontSize: 14, color: "red" }}>
+            get old resume and use the indeed templte and get reference letters,
+            there is a folder
+          </p>
+          <p style={{ fontSize: 14, color: "red" }}>contact jp visa place</p>
+          <p style={{ fontSize: 14, color: "red" }}>
+            emphasize yourself being trilingual
+          </p>
+          <p style={{ fontSize: 14, color: "red" }}>
+            talk more about your work experience - keyword research
+          </p>
+          <p style={{ fontSize: 14, color: "red" }}>
+            talk to bjorn to pass resume and get reference letter
+          </p>
+          <p style={{ fontSize: 14, color: "red" }}>??? vanila JS project?</p>
+          <p style={{ fontSize: 14, color: "red" }}>
             add JS details that Kent mentioned like Promises,regex,
             destructuring etc. and then link to Edabit? Show Condesandbox with
             the TEST
           </p>
-          <p>PROOFREAD!</p>
+          <p style={{ fontSize: 14, color: "red" }}>PROOFREAD!</p>
         </>
       )}
     </>
@@ -54,7 +68,7 @@ export const Home = () => {
           </Text>
           <NormalText variant="h6" delay={200} color="pink">
             See my{" "}
-            <StyledLink nopadding to="./project">
+            <StyledLink nopadding={1} to="./project">
               projects
             </StyledLink>
             ,{" "}

@@ -16,15 +16,14 @@ const tools = [
   },
   {
     header: "GitHub",
-    language:
-      "I store most of my projects on Github, and deploy my projects to Netlify by pushing commits to GitHub.",
+    language: "I store most of my projects on Github.",
     experience: "2 years",
     id: uuidv4(),
   },
   {
     header: "Parcel",
     language:
-      "Before Create-React-App, I used Parcel to build my React apps, and still occasionally use for projects like `CSS Grid Blog Layout`.",
+      "Before Create-React-App, I used Parcel to build my React apps, and still occasionally use it for projects like `CSS Grid Blog Layout`.",
     experience: "2 years",
     id: uuidv4(),
   },
@@ -38,7 +37,7 @@ const tools = [
   {
     header: "ESLint",
     language:
-      "Mostly use React ESLint plugins, but also other plugins if the need arises.",
+      "Mostly use React ESLint plugins, but also other ESLint plugins if the need arises.",
     experience: "2 years",
     id: uuidv4(),
   },
@@ -52,6 +51,20 @@ const tools = [
   {
     header: "Netlify",
     language: "All of my projects are deployed to Netlify with GitHub.",
+    experience: "2 years",
+    id: uuidv4(),
+  },
+  {
+    header: "Digital Ocean",
+    language:
+      "While all my projects are deployed to Netlify, in my work as a performance marketer, all the landing pages I have developed were deployed with Digital Ocean.",
+    experience: "1 year",
+    id: uuidv4(),
+  },
+  {
+    header: "Cloudflare",
+    language:
+      "Used for my website business as well as in my work as a performance marketer, mainly for SSL and redirection.",
     experience: "2 years",
     id: uuidv4(),
   },
@@ -92,7 +105,8 @@ const tools = [
   },
   {
     header: "Google Analytics",
-    language:"Used it for my website business to analyze user behavior, and drive up engagement, and target the best traffic sources.",
+    language:
+      "Used it for my website business to analyze user behavior, and drive up engagement, and target the best traffic sources.",
     experience: "4 years",
     id: uuidv4(),
   },
@@ -134,37 +148,43 @@ const languages = [
   },
   {
     header: "UI Library",
-    language: " React JS - Class Components & Function Components",
+    language:
+      "React JS: I love React and have spent a lot of time in the last years learning it. Please see my projects to see my React apps.",
     experience: "2 years",
     id: uuidv4(),
   },
   {
     header: "Testing",
-    language: "Jest and React Testing Library",
+    language:
+      "Jest and React Testing Library: I test my apps by following the principle of keeping the 2 users - developers & app users in mind.",
     experience: "2 years",
     id: uuidv4(),
   },
   {
     header: "UI Framework",
-    language: " Material UI and React Bootstrap",
+    language:
+      "Material UI and React Bootstrap: Currently, I prefer using Material UI over React Bootstrap.",
     experience: "2 years",
     id: uuidv4(),
   },
   {
     header: "CSS in JS",
-    language: "styled-components and emotion",
+    language:
+      "styled-components and emotion: I fully embrace CSS in JS, and I prefer styled-components over emotion right now.",
     experience: "2 years",
     id: uuidv4(),
   },
   {
     header: "Routing",
-    language: "React Router",
+    language:
+      "React Router: all the routing in my React apps are done with React Router. For general routing, I'm comfortable with express.js's router middleware and also with the Browser's History API.",
     experience: "1 year",
     id: uuidv4(),
   },
   {
     header: "Static Site Generator",
-    language: "Gatsby",
+    language:
+      "Gatsby: I have some experience with Gatsby, but if I were to start my own blog, I would try doing it with Next.js.",
     experience: "6 months",
     id: uuidv4(),
   },
