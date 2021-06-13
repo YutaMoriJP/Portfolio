@@ -12,7 +12,6 @@ const MainApp = () => {
     </ContextProvider>
   );
 };
-
 ReactDOM.render(
   <React.StrictMode>
     <MainApp />

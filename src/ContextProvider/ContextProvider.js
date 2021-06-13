@@ -1,4 +1,31 @@
-import React, { useState, useContext, createContext } from "react";
+import React from "react";
+import useLocalStorage, { getStorage } from "../useHooks/useLocalStorage";
+
+const ThemeContext = React.createContext();
+export const useThemeContext = () => React.useContext(ThemeContext);
+
+const ThemeContextProvider = ({ children }) => {
+  console.log("<ThemeContextProvider/> called");
+  const [theme, setTheme] = React.useState(() => {
+    console.log("context state is initialized");
+    const storedTheme = getStorage("ymThemeContext");
+    return storedTheme === null ? "dark" : storedTheme;
+  });
+  const { clear: clearStorage } = useLocalStorage("ymThemeContext", theme);
+  const clear = React.useCallback(() => clearStorage(), []);
+  const value = React.useMemo(() => {
+    console.log("useMemo called");
+    return [theme, setTheme, clear];
+  }, [theme, clear]);
+  console.log("<ThemeContextProvider/> renders");
+  return (
+    <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
+  );
+};
+
+export default ThemeContextProvider;
+
+/*
 
 const GlobalContext = createContext();
 
@@ -12,5 +39,5 @@ const ContextProvider = ({ children }) => {
     </GlobalContext.Provider>
   );
 };
-
 export default ContextProvider;
+*/

@@ -11,21 +11,30 @@ export const styledTheme = {
       webkit: "-webkit-linear-gradient(to right, #fff0f6 0%, #d6336c 100%)",
       moz: "-moz-linear-gradient(to right, #fff0f6 0%, #d6336c 100%)",
       linear: "linear-gradient(to right, #fff0f6 0%, #d6336c 100%)",
-    },    
-    skills: {containerBg:'#e9ecef', itemBG: "#212529", titleColor: "black", itemColor: "white" }
- 
+    },
+    skills: {
+      containerBg: "#e9ecef",
+      itemBG: "#212529",
+      titleColor: "black",
+      itemColor: "white",
+    },
   },
   light: {
-    background: "#dee2e6",
+    background: "#f2f6ff",
     link: { color: "#1D428A", textDecoration: 0, fontWeight: 900 },
     color: "#111827",
     black: "#212529",
     buttonLink: "#e9ecef",
-    titleColor: "#1D428A",   
-    skills: {containerBg:'#212529', itemBG: "#f8f9fa", titleColor: "white" , itemColor: "black"}
+    titleColor: "#1D428A",
+    skills: {
+      containerBg: "#212529",
+      itemBG: "#f8f9fa",
+      titleColor: "white",
+      itemColor: "black",
+    },
   },
-};
- 
+}; // background: "#dee2e6",
+
 /*
 light title gradient
   titleGradient: {

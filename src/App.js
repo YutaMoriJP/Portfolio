@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 //ThemeProviders from styledComponent & materialUI
 import ThemeProviders from "./GlobalStyle/ThemeProviders";
-//Global Styled from styled component
+//Global Styled from styled component - html {...} body {...}
 import StyledGlobal from "./GlobalStyle/StyledGlobal";
 //CSS Reset
 import CssBaseLine from "@material-ui/core/CssBaseline";
@@ -15,7 +15,10 @@ import Layout from "./Components/Layout/Layout";
 import Loading from "./Components/Loading/Loading";
 
 //custom context hook
-import { useGlobalContext } from "./ContextProvider/ContextProvider";
+
+//import { useGlobalContext } from "./ContextProvider/ContextProvider";
+import { useThemeContext } from "./ContextProvider/ContextProvider";
+
 //useStyle function using makeStyle
 import useStyle from "./GlobalStyle/useStyle";
 
@@ -26,18 +29,18 @@ const CodeExamples = lazy(() => import("./Pages/CodeExamples"));
 const PlayGround = lazy(() => import("./Pages/PlayGround"));
 const ErrorPage = lazy(() => import("./Pages/404"));
 const About = lazy(() => import("./Pages/About"));
-const Skills = lazy(() => import('./Pages/Skills'))
+const Skills = lazy(() => import("./Pages/Skills"));
 
 const App = () => {
-  const { isDark } = useGlobalContext();
+  const [theme] = useThemeContext();
   const classes = useStyle();
   return (
     <Container className={classes.container} maxWidth="xl">
-      <ThemeProviders isDark={isDark}>
+      <ThemeProviders isDark={theme === "dark"}>
         <CssBaseLine />
         <StyledGlobal />
         <Router>
-          <Layout isDark={isDark}>
+          <Layout isDark={theme === "dark"}>
             <Suspense fallback={<Loading />}>
               <Switch>
                 <Route exact path="/">
