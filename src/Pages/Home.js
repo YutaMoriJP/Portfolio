@@ -29,13 +29,11 @@ const RemovedLater = () => {
           <p>talk to bjorn to pass resume and get reference letter</p>
           <p>??? vanila JS project?</p>
           <p>
-            add JS details that Kent mentioned like Promises,regex,  destructuring etc.
-            and then link to Edabit?
-
-            Show Condesandbox with the TEST
-          </p>          
+            add JS details that Kent mentioned like Promises,regex,
+            destructuring etc. and then link to Edabit? Show Condesandbox with
+            the TEST
+          </p>
           <p>PROOFREAD!</p>
-
         </>
       )}
     </>
@@ -55,7 +53,18 @@ export const Home = () => {
             Hi, I am Yuta, a front end web developer from Japan.
           </Text>
           <NormalText variant="h6" delay={200} color="pink">
-            See my projects below, <StyledLink nopadding to='./skills'>skills</StyledLink>, or learn more about me <StyledLink nopadding to='./about'>here.</StyledLink>
+            See my{" "}
+            <StyledLink nopadding to="./project">
+              projects
+            </StyledLink>
+            ,{" "}
+            <StyledLink nopadding to="./skills">
+              skills
+            </StyledLink>
+            , or learn more about me{" "}
+            <StyledLink nopadding to="./about">
+              here.
+            </StyledLink>
           </NormalText>
         </HomeTitle>
         <More>

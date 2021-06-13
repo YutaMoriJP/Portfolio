@@ -12,6 +12,7 @@ const ThemeContextProvider = ({ children }) => {
     return storedTheme === null ? "dark" : storedTheme;
   });
   const { clear: clearStorage } = useLocalStorage("ymThemeContext", theme);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const clear = React.useCallback(() => clearStorage(), []);
   const value = React.useMemo(() => {
     console.log("useMemo called");
