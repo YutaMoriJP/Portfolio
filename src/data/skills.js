@@ -135,7 +135,7 @@ const languages = [
   {
     header: "CSS3",
     language:
-      "Box Model, Responsive design, Media Queries, Grid Layout, Flexbox, Position etc.",
+      "Box Model, Responsive design, Media Queries, Pseudo-Class/Element, Grid Layout, Flexbox, Position etc.",
     experience: "4 years",
     id: uuidv4(),
   },
@@ -144,6 +144,13 @@ const languages = [
     language:
       "Template Literals, Shorthand Property Names, Arrow Functions, Destructuring. Parameter Defaults, Rest/Spread, ESModules, Ternaries, Array Methods, Object Methods, IIFE, RegEx, Nullish Coalescing Operator, Optional Chaining, Promises, async/await etc.",
     experience: "3 years",
+    id: uuidv4(),
+  },
+  {
+    header: "Node.js",
+    language:
+      "Still in the process of learning and mastering Node.js, but I have some understanding of it and Node frameworks like Express.js.",
+    experience: "1 year",
     id: uuidv4(),
   },
   {
@@ -156,7 +163,7 @@ const languages = [
   {
     header: "Testing",
     language:
-      "Jest and React Testing Library: I test my apps by following the principle of keeping the 2 users - developers & app users in mind.",
+      "Jest and React Testing Library: I use Jest as my testing framework, and use React Testing Library when testing my React Components.",
     experience: "2 years",
     id: uuidv4(),
   },
@@ -170,7 +177,7 @@ const languages = [
   {
     header: "CSS in JS",
     language:
-      "styled-components and emotion: I fully embrace CSS in JS, and I prefer styled-components over emotion right now.",
+      "styled-components and emotion: I love and fully embrace CSS in JS, and currently prefer styled-components over emotion.",
     experience: "2 years",
     id: uuidv4(),
   },
@@ -184,14 +191,14 @@ const languages = [
   {
     header: "Static Site Generator",
     language:
-      "Gatsby: I have some experience with Gatsby, but if I were to start my own blog, I would try doing it with Next.js.",
+      "Gatsby: I have some experience with Gatsby and the required GraphQL understanding.",
     experience: "6 months",
     id: uuidv4(),
   },
   {
     header: "Currently Learning",
     language:
-      "Typescipt, Node.js, and Next.js. Planned things to learn Vue.js and Electron.",
+      "Typescipt, Node.js, and Next.js. Planned things to learn Electron and Python.",
     id: uuidv4(),
   },
 ];

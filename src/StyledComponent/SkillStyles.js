@@ -14,8 +14,11 @@ const SkillsContainer = styled.article`
   background: ${props => props.theme.skills.containerBg};
   display: flex;
   flex-direction: column;
-  gap: 10px;
   width: 350px;
+  gap: 10px;
+  @supports not (gap: 10px) {
+    margin: 10px 0;
+  }
 `;
 
 const Lists = styled.article`
