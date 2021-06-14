@@ -16,6 +16,8 @@ const SkillsContainer = styled.article`
   flex-direction: column;
   width: 350px;
   gap: 10px;
+  row-gap: 10px;
+  height: fit-content;
   @supports not (gap: 10px) {
     margin: 10px 0;
   }
