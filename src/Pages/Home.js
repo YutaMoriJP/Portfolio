@@ -23,10 +23,14 @@ const RemovedLater = () => {
       <input type="text" id="pass" value={val} onChange={handleChange} />
       {val === "0214" && (
         <>
-          <p style={{ fontSize: 14, color: "red" }}>finish footer page </p>
+          <p style={{ fontSize: 14, color: "red" }}>
+            VISA contact, Epic React or not?, Blog post + Dan's blog, Google
+            CSS, Resume,
+          </p>
           <p style={{ fontSize: 14, color: "red" }}>
             revise skills, about, project descrp etc.{" "}
           </p>
+          <hr />
           <p style={{ fontSize: 14, color: "red" }}>get own .com domain</p>
           <p style={{ fontSize: 14, color: "red" }}>
             find way to publish your own module on npm?
