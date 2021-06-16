@@ -135,7 +135,7 @@ const languages = [
   {
     header: "CSS3",
     language:
-      "Box Model, Responsive design, Media Queries, Pseudo-Class/Element, Grid Layout, Flexbox, Position etc.",
+      "Box Model, Responsive design, Media Queries, Pseudo-Class/Element, Grid Layout, Flexbox, Position, CSS Variables etc.",
     experience: "4 years",
     id: uuidv4(),
   },

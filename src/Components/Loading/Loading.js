@@ -16,7 +16,7 @@ export default function Loading() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} style={{ height: "100vh" }}>
       <CircularProgress />
     </div>
   );

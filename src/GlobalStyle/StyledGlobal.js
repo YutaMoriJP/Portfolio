@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 const StyledGlobal = createGlobalStyle`
-    html {
-        font-size: 14px;
-    }
+  html {
+        font-size: 14px; 
+    } 
     body {
         background-color: ${props => props.theme.background};
         color: ${props => props.theme.color};

@@ -18,8 +18,8 @@ const SkillsContainer = styled.article`
   gap: 10px;
   row-gap: 10px;
   height: fit-content;
-  @supports not (gap: 10px) {
-    margin: 10px 0;
+  @supports not (column-gap: 20px) {
+    margin: 10px;
   }
 `;
 

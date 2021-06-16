@@ -18,6 +18,8 @@ export const styledTheme = {
       titleColor: "black",
       itemColor: "white",
     },
+    footerBg: "#0b0029",
+    footerColor: "#f8f9fa",
   },
   light: {
     background: "#f2f6ff",
@@ -32,6 +34,8 @@ export const styledTheme = {
       titleColor: "white",
       itemColor: "black",
     },
+    footerBg: "#e5dbff",
+    footerColor: "black",
   },
 }; // background: "#dee2e6",
 

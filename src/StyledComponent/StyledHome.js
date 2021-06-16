@@ -37,7 +37,7 @@ export const More = styled.article`
 `;
 
 export const Project = styled.article`
-  height: 100vh;
+  //height: 100vh;
   @media screen and (min-width: 400px) and (max-width: 960px) {
     margin: 30px;
   }

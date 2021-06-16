@@ -29,18 +29,19 @@ const About = () => {
             After my graduation, I have worked a year as a Performance Marketing
             Specialist at Global Wide Media. Before working as a performance
             marketer, I ran my own website business for 4 years, and generated
-            more than $3000 in profit. So, I was able smoothly transition from a
-            publisher to a performance marketer. As a performance marketer, I
-            specialized in search ads like Google Ads and Bing ads for clients
-            like Dropbox, TikTok, Roblox, and more! I have also experience in
-            other types of ads like display, push, contextual, native, and pop
-            ads. As a performance marketer, I also had many opportunities to
-            build landing pages for my clients promoting their products, as well
-            as contributed to all of our WordPress blogs. I already had
-            experience in HTML, CSS, and JavaScript before my work as a
-            performance marketer, and the additional experience of building
-            landing pages for my clients gave me the dream of becoming a front
-            end web developer.
+            more than $3000 in profit and made it among the top 80,000 most
+            visited websites according to Alexa.com. So, I was able smoothly
+            transition from a publisher to a performance marketer. As a
+            performance marketer, I specialized in search ads like Google Ads
+            and Bing ads for clients like Dropbox, TikTok, Roblox, and more! I
+            have also experience in other types of ads like display, push,
+            contextual, native, and pop ads. As a performance marketer, I also
+            had many opportunities to build landing pages for my clients
+            promoting their products, as well as contributed to all of our
+            WordPress blogs. I already had experience in HTML, CSS, and
+            JavaScript before my work as a performance marketer, and the
+            additional experience of building landing pages for my clients gave
+            me the dream of becoming a front end web developer.
           </p>
 
           <p>

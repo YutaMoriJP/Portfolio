@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
+import { LinksWrapper } from "../Components/Layout/Footer/FooterStyled";
 
 const StyledLink = styled(Link)`
   && {
@@ -10,12 +11,19 @@ const StyledLink = styled(Link)`
     padding: 0 10px;
     ${props =>
       props.nopadding &&
-      css` 
-      padding: 0;
-      font-family: arial;
-      color: ${props => props.theme.link.color};
-      text-decoration: underline;
+      css`
+        padding: 0;
+        font-family: arial;
+        color: ${props => props.theme.link.color};
+        text-decoration: underline;
       `}
+
+    ${LinksWrapper} & {
+      font-family: "arial";
+      padding: 0;
+      text-decoration: underline;
+      color: ${props => props.theme.link.color};
+    }
   }
 `;
 

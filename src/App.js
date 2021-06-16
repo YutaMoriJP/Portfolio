@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 //Loading component
 import Loading from "./Components/Loading/Loading";
+import ScrollToTop from "./Components/Scroll/index";
 
 //custom context hook
 
@@ -41,6 +42,7 @@ const App = () => {
         <StyledGlobal />
         <Router>
           <Layout isDark={theme === "dark"}>
+            <ScrollToTop />
             <Suspense fallback={<Loading />}>
               <Switch>
                 <Route exact path="/">
