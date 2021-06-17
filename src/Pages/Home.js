@@ -63,6 +63,14 @@ const RemovedLater = () => {
 };
 
 export const Home = () => {
+  const handleHashClick = () => {
+    if ("scrollIntoView" in document.getElementById("project")) {
+      console.log("scrollIntoView is supported!");
+      document.getElementById("project").scrollIntoView();
+    } else {
+      window.location.hash = "project";
+    }
+  };
   return (
     <>
       <Helmet>
@@ -93,13 +101,14 @@ export const Home = () => {
           <Zoom delay={300} triggerOnce>
             <h1>See Projects</h1>
           </Zoom>
-          <a href="#project" aria-label="Move down to Project page">
-            <Zoom effect="bounce" triggerOnce delay={200}>
-              <IconButton aria-label="Move down to Project page">
-                <ExpandMoreIcon />
-              </IconButton>
-            </Zoom>
-          </a>
+          <Zoom effect="bounce" triggerOnce delay={200}>
+            <IconButton
+              aria-label="Move down to Project page"
+              onClick={handleHashClick}
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </Zoom>
         </More>
       </StyledHome>
       <Project />
@@ -107,5 +116,13 @@ export const Home = () => {
     </>
   );
 };
-
+/*
+<a href="#project" aria-label="Move down to Project page" onClick={handleHashClick}>
+            <Zoom effect="bounce" triggerOnce delay={200}>
+              <IconButton aria-label="Move down to Project page">
+                <ExpandMoreIcon />
+              </IconButton>
+            </Zoom>
+          </a>
+*/
 export default Home;
