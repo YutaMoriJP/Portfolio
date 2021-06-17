@@ -66,7 +66,7 @@ export const Home = () => {
   const handleHashClick = () => {
     if ("scrollIntoView" in document.getElementById("project")) {
       console.log("scrollIntoView is supported!");
-      document.getElementById("project").scrollIntoView();
+      document.getElementById("project").scrollIntoView({ behavior: "smooth" });
     } else {
       window.location.hash = "project";
     }
