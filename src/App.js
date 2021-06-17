@@ -36,6 +36,50 @@ const App = () => {
   const [theme] = useThemeContext();
   const classes = useStyle();
   return (
+    <>
+      <ThemeProviders isDark={theme === "dark"}>
+        <CssBaseLine />
+        <StyledGlobal />
+        <Router>
+          <Layout isDark={theme === "dark"}>
+            <ScrollToTop />
+            <Suspense fallback={<Loading />}>
+              <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route path="/code-examples">
+                  <CodeExamples />
+                </Route>
+                <Route path="/playground">
+                  <PlayGround />
+                </Route>
+                <Route path="/project">
+                  <Project />
+                </Route>
+                <Route path="/about">
+                  <About />
+                </Route>
+                <Route path="/skills">
+                  <Skills />
+                </Route>
+                <Route>
+                  <ErrorPage />
+                </Route>
+              </Switch>
+            </Suspense>
+          </Layout>
+        </Router>
+      </ThemeProviders>
+    </>
+  );
+};
+/*
+
+const App = () => {
+  const [theme] = useThemeContext();
+  const classes = useStyle();
+  return (
     <Container className={classes.container} maxWidth="xl">
       <ThemeProviders isDark={theme === "dark"}>
         <CssBaseLine />
@@ -75,4 +119,5 @@ const App = () => {
   );
 };
 
+*/
 export default App;

@@ -12,7 +12,7 @@ const About = () => {
       <Helmet>
         <title>About</title>
       </Helmet>
-      <Container maxWidth="md">
+      <Container maxWidth="md" style={{ minHeight: "100vh" }}>
         <Paper style={{ padding: 20, margin: 15 }}>
           <h1>ABOUT PAGE</h1>
           <Divider />

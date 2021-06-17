@@ -10,6 +10,7 @@ import timer from "../Images/timer.png";
 import delay from "../Images/delay.png";
 import bubble from "../Images/bubble.png";
 import blogGrid from "../Images/blogGrid.png";
+
 import usefulCSS from "../Images/css.png";
 
 const projects = [

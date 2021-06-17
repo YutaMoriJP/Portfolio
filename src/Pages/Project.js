@@ -30,11 +30,11 @@ const Project = () => {
           <Zoom triggerOnce>
             <ProjectStyled id="project">
               <h1>PROJECTS</h1>　
-              <Filter
+              {/* <Filter
                 setFilterBy={setFilterBy}
                 options={options}
                 position="right"
-              />
+              /> */}
               <Grid container spacing={5} justify="center">
                 {filterFunc(projects).map(project => (
                   <Card
@@ -53,11 +53,11 @@ const Project = () => {
         ) : (
           <ProjectStyled id="project">
             <h1>PROJECTS</h1>　
-            <Filter
-              setFilterBy={setFilterBy}
-              options={options}
-              position="right"
-            />
+            {/* <Filter
+                setFilterBy={setFilterBy}
+                options={options}
+                position="right"
+              /> */}
             <Grid container spacing={5} justify="center">
               {filterFunc(projects).map(project => (
                 <Card

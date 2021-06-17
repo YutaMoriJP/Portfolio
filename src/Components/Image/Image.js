@@ -12,6 +12,8 @@ const Image = ({
   alt = "not found image",
   width,
   height,
-}) => <ImageStyled src={src} alt={alt} width={width} height={height} />;
+}) => {
+  return <ImageStyled src={src} alt={alt} width={width} height={height} />;
+};
 
 export default Image;
