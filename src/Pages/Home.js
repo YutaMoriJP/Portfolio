@@ -23,7 +23,7 @@ const RemovedLater = () => {
       <input type="text" id="pass" value={val} onChange={handleChange} />
       {val === "0214" && (
         <>
-          <h1 style={{ fontSize: 14, color: "red", fontSize: 30 }}>
+          <h1 style={{ fontSize: 30, color: "red" }}>
             polish portfolio, revise writing etc. and start with resume + VISA
             stuff
           </h1>

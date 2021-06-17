@@ -12,14 +12,14 @@ import { useLocation } from "react-router-dom";
 
 const Project = () => {
   const { pathname } = useLocation();
-  /* 
+
   const [filterBy, setFilterBy] = useState("all");
   const filterFunc = datas =>
     datas.filter(
       data =>
         filterBy === "all" || data.tags.some(({ tag }) => tag === filterBy)
     );
- */
+
   return (
     <>
       {pathname === "/project" && (
