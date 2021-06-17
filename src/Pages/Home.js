@@ -23,9 +23,13 @@ const RemovedLater = () => {
       <input type="text" id="pass" value={val} onChange={handleChange} />
       {val === "0214" && (
         <>
+          <h1 style={{ fontSize: 14, color: "red", fontSize: 30 }}>
+            polish portfolio, revise writing etc. and start with resume + VISA
+            stuff
+          </h1>
+          <hr />
           <p style={{ fontSize: 14, color: "red" }}>
-            VISA contact, Epic React or not?, Blog post + Dan's blog, Google
-            CSS, Resume,
+            VISA contact, Epic React or not?, Blog post + Dan's blog, Google CSS
           </p>
           <p style={{ fontSize: 14, color: "red" }}>
             revise skills, about, project descrp etc.{" "}

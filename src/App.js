@@ -6,7 +6,8 @@ import StyledGlobal from "./GlobalStyle/StyledGlobal";
 //CSS Reset
 import CssBaseLine from "@material-ui/core/CssBaseline";
 //Container from material UI
-import Container from "@material-ui/core/Container";
+//import Container from "@material-ui/core/Container";
+
 //React router
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //Layout component
@@ -21,7 +22,7 @@ import ScrollToTop from "./Components/Scroll/index";
 import { useThemeContext } from "./ContextProvider/ContextProvider";
 
 //useStyle function using makeStyle
-import useStyle from "./GlobalStyle/useStyle";
+//import useStyle from "./GlobalStyle/useStyle";
 
 //const CodeExamples = loadable(() => import("./Pages/CodeExamples"));
 const Home = lazy(() => import("./Pages/Home"));
@@ -34,7 +35,7 @@ const Skills = lazy(() => import("./Pages/Skills"));
 
 const App = () => {
   const [theme] = useThemeContext();
-  const classes = useStyle();
+  //const classes = useStyle();
   return (
     <>
       <ThemeProviders isDark={theme === "dark"}>
