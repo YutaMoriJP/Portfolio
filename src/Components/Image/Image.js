@@ -17,10 +17,6 @@ const Image = ({
   const handleError = event => {
     event.target.src = placeholder;
   };
-  const handleSuccess = event => {
-    console.log(event);
-    event.target.src = placeholder;
-  };
   return (
     <ImageStyled
       src={src}
@@ -28,25 +24,7 @@ const Image = ({
       width={width}
       height={height}
       onError={handleError}
-      onSuccess={handleSuccess}
     />
   );
 };
-/*
-
-const ImageStyled = styled.img`
-  width: ${props => props.width || "300px"};
-  height: ${props => props.height || "200px"};
-`;
-
-const Image = ({
-  src = placeholder,
-  alt = "not found image",
-  width,
-  height,
-}) => {
-  return <ImageStyled src={src} alt={alt} width={width} height={height} />;
-};
-
-*/
 export default Image;
