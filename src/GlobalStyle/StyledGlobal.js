@@ -8,6 +8,7 @@ const StyledGlobal = createGlobalStyle`
         background-color: ${props => props.theme.background};
         color: ${props => props.theme.color};
         text-align: center;
+        margin: 0; //fixes weird dimension bug on mobile?
     }
     h1, h2, h3 {
         font-family: 'Montserrat', sans-serif;        
