@@ -21,6 +21,7 @@ const Wrapped = styled.article`
   }
 
   button {
+    z-index: 100;
     align-self: center;
     padding: 2px;
     margin: 0 10px;

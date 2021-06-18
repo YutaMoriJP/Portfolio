@@ -4,6 +4,7 @@ import Footer from "./Footer/index";
 import Container from "@material-ui/core/Container";
 import useStyle from "../../GlobalStyle/useStyle";
 import Notice from "../Notice/Notice";
+import Scroll from "../Scroll/Scroll";
 
 const Layout = ({ children }) => {
   const classes = useStyle();
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
       </Container>
       <Footer />
       <Notice />
+      <Scroll />
     </>
   );
 };
