@@ -142,7 +142,7 @@ const languages = [
   {
     header: "JavaScript (ES6)",
     language:
-      "Template Literals, Shorthand Property Names, Arrow Functions, Destructuring. Parameter Defaults, Rest/Spread, ESModules, Ternaries, Array Methods, Object Methods, IIFE, RegEx, Nullish Coalescing Operator, Optional Chaining, Promises, async/await etc.",
+      "Template Literals, Shorthand Property Names, Arrow Functions, JavaScript Classes, Functinaly Programming, Destructuring. Parameter Defaults, Rest/Spread, ESModules, Ternaries, Array Methods, Object Methods, IIFE, RegEx, Nullish Coalescing Operator, Optional Chaining, Promises, async/await etc.",
     experience: "3 years",
     id: uuidv4(),
   },

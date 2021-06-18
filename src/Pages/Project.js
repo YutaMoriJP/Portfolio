@@ -38,7 +38,7 @@ const Project = () => {
                 options={options}
                 position="right"
               /> */}
-              <Grid container spacing={5} justify="center">
+              <Grid container spacing={3} justify="center">
                 {filterFunc(projects).map(project => (
                   <Card
                     header={project.name}

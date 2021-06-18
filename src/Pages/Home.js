@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React from "react";
 import Helmet from "react-helmet";
 import StyledHome from "../StyledComponent/StyledHome";
 import { Title as HomeTitle, More } from "../StyledComponent/StyledHome";
@@ -8,8 +8,6 @@ import Project from "./Project";
 import Text, { NormalText } from "../Components/Animation/Text";
 import { Zoom } from "react-awesome-reveal";
 import StyledLink from "../StyledComponent/StyledLink";
-
-const Notice = lazy(() => import("../Components/Notice/Notice"));
 
 const RemovedLater = () => {
   const [val, setVal] = React.useState("");
@@ -116,17 +114,7 @@ export const Home = () => {
         </More>
       </StyledHome>
       <Project />
-      <Notice />
     </>
   );
 };
-/*
-<a href="#project" aria-label="Move down to Project page" onClick={handleHashClick}>
-            <Zoom effect="bounce" triggerOnce delay={200}>
-              <IconButton aria-label="Move down to Project page">
-                <ExpandMoreIcon />
-              </IconButton>
-            </Zoom>
-          </a>
-*/
 export default Home;

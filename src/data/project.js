@@ -25,7 +25,7 @@ const projects = [
       {
         title: "CRUD API Description:",
         content:
-          "So far, this is the only Full Stack app in my portfolio. I used Express.js as the server to handle incoming requests from the frontend of my app, and data for the API is stored in. This is a simple CRUD API that allows users to build a “User Profile” with data like `Name`, `Username`, and `Age`. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they created, as well as simply send a GET request to retrieve all the user profiles that are stored in the database (maximum 3), or fetch specific users by ID. For the frontend, I used React JS and deployed it with Netlify, while the backend was deployed with Heroku.",
+          "So far, this is the only Full Stack app in my portfolio. I used Express.js as my server to handle incoming requests from the frontend of my app, and MongoDB for the database to store the API data. This is a simple CRUD API that allows users to build a “User Profile” with data like `Name`, `Username`, and `Age`. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they created, as well as simply send a GET request to retrieve all the user profiles that are stored in the database (maximum 3), or fetch specific users by ID. The created user profile is deleted from the database after 10 minutes. For the frontend, I used React JS and deployed it to Netlify, while the backend was deployed to Heroku.",
       },
     ],
     tags: [

@@ -9,6 +9,15 @@ const Footer = () => {
   return (
     <Wrapper>
       <Left>
+        <p>
+          This site was built with{" "}
+          <TextLink
+            href="https://create-react-app.dev/docs/getting-started/"
+            target="_blank"
+          >
+            Create-React-App.
+          </TextLink>
+        </p>
         <p>&#169;2021 All Rights Reserved.</p>
       </Left>
       <Right>

@@ -23,8 +23,9 @@ const Footer = styled.footer`
 
 export const Left = styled.article`
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   font-size: 0.6rem;
   > * {
     margin: 0;

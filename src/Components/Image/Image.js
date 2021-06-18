@@ -7,18 +7,24 @@ const ImageStyled = styled(LazyLoadImage)`
   width: ${props => props.width || "300px"};
   height: ${props => props.height || "200px"};
 `;
-
 const Image = ({
   src = placeholder,
-  alt = "not found image",
+  alt = "image not found",
   width,
   height,
 }) => {
+  const ref = React.useRef();
   const handleError = event => {
     event.target.src = placeholder;
   };
+  React.useLayoutEffect(() => {
+    if (!ref.current.src) {
+      ref.current.src = placeholder;
+    }
+  }, []);
   return (
     <ImageStyled
+      ref={ref}
       src={src}
       alt={alt}
       width={width}
