@@ -14,10 +14,7 @@ const Footer = styled.footer`
     margin: 10px;
   }
   @media (max-width: 600px) {
-    padding: 20px;
-  }
-  @media (max-width: 400px) {
-    padding: 10px;
+    padding: 30px;
   }
 `;
 
