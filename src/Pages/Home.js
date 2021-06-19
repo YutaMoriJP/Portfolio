@@ -16,9 +16,17 @@ const RemovedLater = () => {
     setVal(pass);
   };
   return (
-    <>
-      <label htmlFor="pass">password</label>
-      <input type="text" id="pass" value={val} onChange={handleChange} />
+    <article style={{ border: "2px solid black", width: 150, margin: "auto" }}>
+      <label htmlFor="pass" style={{ fontSize: 10 }}>
+        password
+      </label>
+      <input
+        type="text"
+        id="pass"
+        value={val}
+        onChange={handleChange}
+        style={{ width: 80 }}
+      />
       {val === "0214" && (
         <>
           <h1 style={{ fontSize: 30, color: "red" }}>
@@ -64,7 +72,7 @@ const RemovedLater = () => {
           <p style={{ fontSize: 14, color: "red" }}>PROOFREAD!</p>
         </>
       )}
-    </>
+    </article>
   );
 };
 
