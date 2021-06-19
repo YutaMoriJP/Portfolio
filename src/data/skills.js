@@ -4,7 +4,7 @@ const tools = [
   {
     header: "VS Code",
     language:
-      "I use VS Code for almost all my projects, with helpful extensions aiding my developer process.",
+      "I use VS Code for all of my projects, with helpful extensions aiding my development experience.",
     experience: "4 years",
     id: uuidv4(),
   },
@@ -37,7 +37,7 @@ const tools = [
   {
     header: "ESLint",
     language:
-      "Mostly use React ESLint plugins, but also other ESLint plugins if the need arises.",
+      "Mostly use the React ESLint plugins, but also use other ESLint plugins if the need arises.",
     experience: "2 years",
     id: uuidv4(),
   },
@@ -71,21 +71,20 @@ const tools = [
   {
     header: "CodePen",
     language:
-      "Not using it much anymore, but it was a great tool when I was learning and testing HTML and CSS.",
+      "Not using it much anymore, but still occasionally use it when I need to test some HTML and CSS.",
     experience: "4 years",
     id: uuidv4(),
   },
   {
     header: "CodeSandbox",
     language:
-      "Completely switched over to CodeSandbox from CodePen, and used it for some of my projects. I also write a lot of my Re-Usable components in CodeSandbox.",
+      "I use CodeSandbox to test React components, as well as for vanilla JavaScript, and CSS testing.",
     experience: "1 year",
     id: uuidv4(),
   },
   {
     header: "Create React App",
-    language:
-      "All of my React projects use Create React App, like my portfolio.",
+    language: "All of my React projects use Create React App.",
     experience: "2 years",
     id: uuidv4(),
   },
@@ -135,7 +134,7 @@ const languages = [
   {
     header: "CSS3",
     language:
-      "Box Model, Responsive design, Media Queries, Pseudo-Class/Element, Grid Layout, Flexbox, Position, CSS Variables etc.",
+      "Box Model, Responsive design, Media Queries, Pseudo-Class/Element, Grid Layout, Flexbox, Position, CSS Variables, CSS Functions etc.",
     experience: "4 years",
     id: uuidv4(),
   },
@@ -149,7 +148,7 @@ const languages = [
   {
     header: "Node.js",
     language:
-      "Still in the process of learning and mastering Node.js, but I have some understanding of it and Node frameworks like Express.js.",
+      "Still in the process of learning and mastering Node.js, but I have good understanding of it, and Node frameworks like Express.js.",
     experience: "1 year",
     id: uuidv4(),
   },
@@ -182,9 +181,16 @@ const languages = [
     id: uuidv4(),
   },
   {
+    header: "Sass",
+    language:
+      "I used to use Sass, but a CSS in JS library like styled-components has replaced it in my projects.",
+    experience: "3 years",
+    id: uuidv4(),
+  },
+  {
     header: "Routing",
     language:
-      "React Router: all the routing in my React apps are done with React Router. For general routing, I'm comfortable with express.js's router middleware and also with the Browser's History API.",
+      "React Router: all the routing in my React apps are done with React Router. For general routing, I'm comfortable with express.js's router middleware, and also with the Browser's History API.",
     experience: "1 year",
     id: uuidv4(),
   },
@@ -198,7 +204,7 @@ const languages = [
   {
     header: "Currently Learning",
     language:
-      "Typescipt, Node.js, and Next.js. Planned things to learn Electron and Python.",
+      "Typescipt, Node.js, and Next.js. Planned things to learn Electron, Python, and Vue.js",
     id: uuidv4(),
   },
 ];

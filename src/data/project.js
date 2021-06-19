@@ -25,7 +25,7 @@ const projects = [
       {
         title: "CRUD API Description:",
         content:
-          "So far, this is the only Full Stack app in my portfolio. I used Express.js as my server to handle incoming requests from the frontend of my app, and MongoDB for the database to store the API data. This is a simple CRUD API that allows users to build a “User Profile” with data like `Name`, `Username`, and `Age`. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they created, as well as simply send a GET request to retrieve all the user profiles that are stored in the database (maximum 3), or fetch specific users by ID. The created user profile is deleted from the database after 10 minutes. For the frontend, I used React JS and deployed it to Netlify, while the backend was deployed to Heroku.",
+          "So far, this is the only Full Stack app in my portfolio. I used Express.js for the server side to handle incoming requests from the frontend of my app, and I used MongoDB for the database to store the API data. This is a simple CRUD API that allows users to build a “User Profile” with data like `Name`, `Username`, and `Age`. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they have created, as well as send a GET request to retrieve all the user profiles that are stored in the database (maximum 3), or fetch specific users by ID. The created user profile is deleted from the database after 10 minutes. For the frontend, I used React JS, and used the built in fetch API to send a request to the server. The front end is deployed to Netlify, while the back end is deployed to Heroku.",
       },
     ],
     tags: [
@@ -53,7 +53,7 @@ const projects = [
       {
         title: "Flex Playground App:",
         content:
-          "This app is designed for users wanting to learn the CSS layout model flexbox. This playground tries to incorporate almost all of the features of flexbox. Users can choose how many flex items they want to play around with, and apply the alignment on the flex container. Also, test the flex-grow, flex-shrink, and flex-basis properties on the flex item. To choose the flex item that needs to apply the flex property, they can pick from the “Select Flex item” selector.",
+          "This app is designed for users wanting to learn the CSS layout model flexbox. The playground tries to incorporate almost all of the features of flexbox. Users can choose how many flex items they want to play around with, and apply the alignment on the flex container. Also, test the flex-grow, flex-shrink, and flex-basis properties on the flex item. To choose the flex item that needs to apply the flex property, they can pick from the “Select Flex item” selector.",
       },
     ],
     tags: [
@@ -70,12 +70,12 @@ const projects = [
     id: uuidv4(),
     url: "https://quizzical-lovelace-17ea0b.netlify.app/",
     description:
-      "An app designed to help users to help their shopping experience by allowing them to list what they need to buy.",
+      "An app designed to help users to help with their shopping experience by allowing them to list what they need to buy.",
     details: [
       {
         title: "Shopping Helper App:",
         content:
-          "This app is designed for users to help with their shopping experience. To start, users type in the store name or any title of their choosing and a box with options gets rendered to the screen. Inside the box, they can type in the shopping item they wish to buy as well as the needed count of the item. So, that the data does not get lost after the user leaves or refreshes the page, I use LocalForage, which is a storing library for JavaScript.",
+          "This app is designed for users to help with their shopping experience. To start, users type in the store name or any title of their choosing, and a box with options gets rendered to the screen. Inside the box, they can type in the shopping item they wish to buy as well as the needed count of the item. So that the data they have submitted does not get lost after the user leaves or refreshes the page, I use LocalForage, which is a storing library for JavaScript.",
       },
     ],
     tags: [
@@ -93,7 +93,7 @@ const projects = [
     id: uuidv4(),
     url: "https://xenodochial-mcclintock-d84f7d.netlify.app/",
     description:
-      "A project utilizing the NYT API to read condensed articles. The user can either type in a keyword or simply click on the suggested tag like 'news' and make a request that way.",
+      "A project utilizing the NYT API to read condensed articles. The user can either type in a keyword or simply click on the suggested tag like 'news' and make a HTTP request that way.",
     details: [
       {
         title: "NYT API Description:",
@@ -125,7 +125,7 @@ const projects = [
       {
         title: "Useful CSS Layouts",
         content:
-          "This project provides useful content placement method, like centering the content, using CSS layouts like CSS flexbox and CSS grid. When clicking on the top right “CSS” text, a modal pops up that shows the CSS code. I used a custom hook called useOpen to handle the “open” state of the modal. When the modal component renders, it subscribes a “click” event to the document.body element, and the event handler that gets executed is the onClose function that updates the “open” state to false, which closes the modal. This allows users to click anywhere on the screen to close the modal, but this also means clicking on the modal itself will close it, preventing users from copying the CSS. So, the modal’s root element listens to a “click” event that calls event.stopPropagation, which prevents the click event from bubbling to the document.body. ",
+          "This project provides useful content placement method, like centering the content, using CSS layouts like CSS flexbox and CSS grid. When clicking on the top right “CSS” text, a modal pops up that shows the CSS code. I used a custom hook called useOpen to handle the “open” state of the modal. When the modal component renders, it subscribes a “click” event to the document.body element, and the event handler that gets executed is the onClose function that updates the “open” state to false, which closes the modal. This allows users to click anywhere on the screen to close the modal, but this also means clicking on the modal itself will close it, preventing users from copying the CSS. So, the modal’s parent element listens to a “click” event that calls event.stopPropagation, which prevents the click event from bubbling to the document.body.  So, clicking anywhere inside the modal will not close the modal.",
       },
     ],
     tags: [
@@ -169,12 +169,12 @@ const projects = [
     id: uuidv4(),
     url: "https://optimistic-yalow-468b7e.netlify.app/",
     description:
-      "A website that that uses CSS Grid to achieve a blog like layout.",
+      "A website that that uses CSS Grid to achieve a responsive blog like layout.",
     details: [
       {
         title: "Grid Layout - Blog",
         content:
-          "This project tries to simulate a simple blog like layout with CSS Grid. The header's grid area covers the full 10 column grid cells. The sidebar only spans couple cells while the main section's grid area covers the remaining grid cells. The footer has the same treatment as the header. To make the layout responsive, I used media queries and changes to the grid-row property, to push the sidebar below the main section, so that the sidebar is placed right below the main content. The other change in the mobile viewport is that the sidebar and main section's grid area now covers the entire column, like the header and footer area do. The reasoning for that change is the limited view port of mobile devices.",
+          "This project tries to simulate a simple blog like layout with CSS Grid. The header's grid area covers the full 10 column grid cells. The sidebar only spans couple cells while the main section's grid area covers the remaining grid cells. The footer has the same treatment as the header. To make the layout responsive, I used media queries that makes changes to the grid-row property, which pushes the sidebar below the main section. This places the sidebar right below the main section of the blog layout. The other change in the mobile viewport is that the sidebar and main section's grid area now covers the entire column, like the header and footer area do. So, all sections become block level elements. The reasoning for that change is the limited view port of mobile devices.",
       },
     ],
     tags: [
@@ -192,7 +192,7 @@ const projects = [
     id: uuidv4(),
     url: "https://amazing-hoover-fd23f2.netlify.app/",
     description:
-      "A React <Delay/> component that allows users to delay the data from rendering.",
+      "A React <Delay/> component that allows users to delay the state from updating",
     details: [
       {
         title: "<Delay/> Component:",
@@ -224,7 +224,7 @@ const projects = [
       {
         title: "Todo App:",
         content:
-          "This Note-Taking-App is not connected to a back-end, nor does it use browser storage options like window.localStorage, so once the user leaves the page, the submitted notes will be lost. As far as features are concerned, users must fill the “Title” and “Description” part, and they can then submit the note. Once the note is rendered to the screen, users can either “Remove” or “Check it” to show the completion of the note. There are also a couple configuration options like changing the background color of the submitted note as well as a sorting option, where the new submissions either appear at the top or bottom.",
+          "This Note-Taking-App is not connected to a back-end, nor does it use browser storage options like window.localStorage, so once the user leaves the page, the submitted notes will be lost. As far as features are concerned, users must fill the “Title” and “Description” part, and then they can submit the note. Once the note is rendered to the screen, users can either “Remove” or “Check it” to show the completion of the task. There are also a couple configuration options like changing the background color of the submitted note as well as a sorting option, where the new submissions either appear at the top or at the bottom of the page.",
       },
     ],
     tags: [
@@ -243,12 +243,12 @@ const projects = [
     id: uuidv4(),
     url: "https://goofy-lamport-69eea7.netlify.app/",
     description:
-      "Shiritori is a Japanese word game in which the starting player picks a word of their choosing and the competing player must pick a word that begins with the ending character from the preceding player. A Player loses when a word that ends with 'N' is chosen or 30 seconds have passed.",
+      "Shiritori is a Japanese word game in which the starting player picks a word of their choosing, and the competing player must pick a word that begins with the ending character from the preceding player. A Player loses when a word that ends with 'N' is chosen or 30 seconds have passed.",
     details: [
       {
         title: "Shiritori Game:",
         content:
-          "Shiritori is a traditional Japanese word game that I often used to play with my family, as most kids in Japan do. As it’s strictly a word playing game, the exact rules cannot be replicated with the English language, meaning the rules are my interpretation, so that it makes sense in English. To put it simply, a user can lose the game if they choose a word that ends with the letter “n” or if they run out of time (30 seconds). The hard part in this project was to find a free way to verify that the chosen word is actually a valid word and not some gibberish. To solve this problem, I found an API called “owlbot-js” that does a good enough job to make the game functional.",
+          "Shiritori is a traditional Japanese word game that I often used to play with my family, as most kids in Japan do. As it’s strictly a word playing game, the exact rules cannot be replicated with the English language. This means that the rules are my interpretation, so that it makes sense in English. To put it simply, a user can lose the game if they choose a word that ends with the letter “n” or if they run out of time (30 seconds). The hard part in this project was to find a free way to verify that the chosen word is actually a valid word and not some gibberish. To solve this problem, I found an API called “owlbot-js” that does a good enough job to make the game functional.",
       },
     ],
     tags: [
@@ -268,7 +268,7 @@ const projects = [
     id: uuidv4(),
     url: "https://unruffled-wright-087758.netlify.app/",
     description:
-      "A simple Tic Tac Toe game. 2 players can play the game where one player is represented with 'X' and the other is represented with 'O'. There are a possible 8 winning combination and once that winning combination is met by player O or X, the game is finished.",
+      "A simple Tic Tac Toe game. 2 players can play the game where one player is represented with 'X' and the other is represented with 'O'.",
     details: [
       {
         title: "Tic-Tac-Toe Game:",
@@ -291,12 +291,13 @@ const projects = [
     img: timer,
     id: uuidv4(),
     url: "https://keen-northcutt-0a7688.netlify.app/",
-    description: "A Timer App built with React.",
+    description:
+      "A Timer App built with React. It uses the build in setInterval API, so the time can be slightly off.",
     details: [
       {
         title: "Timer App:",
         content:
-          "A basic timer app built with React JS. For the implementation, I use the built in window.setInterval API inside the React.useEffect hook to run that effect and decrement the time every one second. As seconds, minutes, or hours cannot be less than 0, I defined an Error component that alerts the user when such violation occurs.",
+          "A basic timer app built with React JS. For the implementation, I use the built in window.setInterval API inside the React.useEffect hook to run that effect and decrement the time every one second. Due to the implementation of the native setInterval API, the seconds are not 100% accurate, but they do a good enough job. As seconds, minutes, or hours cannot be less than 0, I defined an Error component that alerts the user when such violation occurs.",
       },
     ],
     tags: [

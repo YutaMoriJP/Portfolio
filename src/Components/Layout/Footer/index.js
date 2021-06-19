@@ -14,6 +14,7 @@ const Footer = () => {
           <TextLink
             href="https://create-react-app.dev/docs/getting-started/"
             target="_blank"
+            rel="noreferrer"
           >
             Create-React-App.
           </TextLink>
@@ -25,6 +26,20 @@ const Footer = () => {
           <p>Links</p>
           <Link to="/about">About me</Link>
           <TextLink href="#">Contact me</TextLink>
+          <TextLink
+            href="https://edabit.com/user/PGCDJpQMN8Sjn9Gm6"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Edabit - 30,000XP
+          </TextLink>
+          <TextLink
+            href="https://github.com/YutaMoriJP"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </TextLink>
         </LinksWrapper>
       </Right>
     </Wrapper>
