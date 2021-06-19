@@ -47,7 +47,7 @@ const Card = ({ header, img, description, tags, url, details }) => {
   const handleOpen = () => setOpen(true);
   return (
     <>
-      <Grid item xs={11} sm={6} md={4} xl={4}>
+      <Grid item xs={12} sm={6} md={4} xl={4}>
         <PaperStyled elevation={10}>
           <Text variant="h5" header="true">
             {header}
