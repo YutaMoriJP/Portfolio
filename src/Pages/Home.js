@@ -23,8 +23,12 @@ const RemovedLater = () => {
         <>
           <h1 style={{ fontSize: 30, color: "red" }}>
             polish portfolio, revise writing etc. and start with resume + VISA
-            stuff
+            stuff, and think about including more links like github, edabit?
+            maybe in footer. And continue reading through Google CSS stuff +
+            Kent, and make decision about Epic React. Maybe talk about
+            appranked.com in more detailed job description
           </h1>
+
           <hr />
           <p style={{ fontSize: 14, color: "red" }}>
             VISA contact, Epic React or not?, Blog post + Dan's blog, Google CSS

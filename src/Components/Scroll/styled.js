@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 const Icon = styled.article`
   width: 40px;
   height: 40px;
-  background: var(--icon-primary-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -19,7 +18,7 @@ const Icon = styled.article`
   svg {
     width: 100%;
     height: 60%;
-    color: var(--icon-primary-text-color);
+    color: var(--icon-primary-color);
   }
   ${props =>
     props.right &&

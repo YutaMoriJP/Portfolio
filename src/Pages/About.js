@@ -18,11 +18,11 @@ const About = () => {
           <Divider />
           <p>
             Thank you for visting my about page to learn more about me! My name
-            is Yuta, and I am a Japanese who grew up in Germany. I am trilingual
-            and fluent in Japanese, German, and English. I have spent the last 8
-            years in Canada, finishing my highschool and university degree. I
-            have earned a major in Philosophy and minor in Business from the
-            University of Victoria.
+            is Yuta, and I am a Japanese who grew up in Germany. I am
+            trilingual, fluent in Japanese, German, and English. I have spent
+            the last 8 years in Canada, finishing my highschool and university
+            degree. I have earned a major in Philosophy and minor in Business
+            from the University of Victoria.
           </p>
 
           <p>

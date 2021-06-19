@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 const StyledGlobal = createGlobalStyle`
+  :root {
+    --icon-primary-color: ${props => props.theme.color}
+  }
   html {
         font-size: 14px; 
     } 

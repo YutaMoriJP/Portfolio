@@ -4,7 +4,6 @@ import { FaArrowCircleUp, FaArrowCircleDown } from "react-icons/fa";
 
 const Scroll = ({ behavior = "smooth", block = "start" }) => {
   const handleClick = () => document.body.scrollIntoView({ block, behavior });
-  console.log("scroll rendered");
   return (
     <>
       <Wrapper
