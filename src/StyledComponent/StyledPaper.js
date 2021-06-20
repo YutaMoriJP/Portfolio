@@ -2,6 +2,7 @@ import Paper from "@material-ui/core/Paper";
 import styled from "styled-components";
 
 const PaperStyled = styled(Paper)`
+  position: relative;
   width: 100%;
   h1,
   h2,

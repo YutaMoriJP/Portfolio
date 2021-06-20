@@ -9,6 +9,8 @@ import StyledButton from "../../StyledComponent/StyledButton";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
 import Dialog from "../Dialog/Dialog";
+import Right from "../../StyledComponent/PositiongRight";
+import TextLink from "../../StyledComponent/Link";
 
 const Text = styled(Typography)`
   padding: 5px 10px;
@@ -42,13 +44,21 @@ const ButtonContainer = styled.article`
   justify-content: flex-start;
 `;
 
-const Card = ({ header, img, description, tags, url, details }) => {
+const Card = ({ header, img, description, tags, url, details, extra }) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
+  console.log(extra);
   return (
     <>
       <Grid item xs={12} sm={6} md={4} xl={4}>
         <PaperStyled elevation={10}>
+          {extra && (
+            <Right>
+              <TextLink href={extra.url} target="_blank" rel="noreferrer">
+                {extra.text}
+              </TextLink>
+            </Right>
+          )}
           <Text variant="h5" header="true">
             {header}
           </Text>

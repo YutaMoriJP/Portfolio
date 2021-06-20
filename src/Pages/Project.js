@@ -41,6 +41,7 @@ const Project = () => {
               <Grid container spacing={2} justify="center">
                 {filterFunc(projects).map(project => (
                   <Card
+                    {...project}
                     header={project.name}
                     details={project.details}
                     img={project.img}

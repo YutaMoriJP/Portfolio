@@ -5,13 +5,14 @@ import shiritori from "../Images/shiritori.png";
 import crudapi from "../Images/crudapi.png";
 import shopping from "../Images/shopping.png";
 import flex from "../Images/flex.png";
-import { v4 as uuidv4 } from "uuid";
 import timer from "../Images/timer.png";
 import delay from "../Images/delay.png";
 import bubble from "../Images/bubble.png";
 import blogGrid from "../Images/blogGrid.png";
-
+import scroll from "../Images/scroll.png";
 import usefulCSS from "../Images/css.png";
+
+import { v4 as uuidv4 } from "uuid";
 
 const projects = [
   {
@@ -65,29 +66,6 @@ const projects = [
     ],
   },
   {
-    name: "Shopping Helper App",
-    img: shopping,
-    id: uuidv4(),
-    url: "https://quizzical-lovelace-17ea0b.netlify.app/",
-    description:
-      "An app designed to help users to help with their shopping experience by allowing them to list what they need to buy.",
-    details: [
-      {
-        title: "Shopping Helper App:",
-        content:
-          "This app is designed for users to help with their shopping experience. To start, users type in the store name or any title of their choosing, and a box with options gets rendered to the screen. Inside the box, they can type in the shopping item they wish to buy as well as the needed count of the item. So that the data they have submitted does not get lost after the user leaves or refreshes the page, I use LocalForage, which is a storing library for JavaScript.",
-      },
-    ],
-    tags: [
-      { tag: "JavaScript", id: uuidv4() },
-      { tag: "React JS", id: uuidv4() },
-      { tag: "Localforage", id: uuidv4() },
-      { tag: "Fetch API", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
-      { tag: "Netlify", id: uuidv4() },
-    ],
-  },
-  {
     name: "NYT API",
     img: nytt,
     id: uuidv4(),
@@ -113,7 +91,29 @@ const projects = [
       { tag: "Netlify", id: uuidv4() },
     ],
   },
-
+  {
+    name: "Shopping Helper App",
+    img: shopping,
+    id: uuidv4(),
+    url: "https://quizzical-lovelace-17ea0b.netlify.app/",
+    description:
+      "An app designed to help users to help with their shopping experience by allowing them to list what they need to buy.",
+    details: [
+      {
+        title: "Shopping Helper App:",
+        content:
+          "This app is designed for users to help with their shopping experience. To start, users type in the store name or any title of their choosing, and a box with options gets rendered to the screen. Inside the box, they can type in the shopping item they wish to buy as well as the needed count of the item. So that the data they have submitted does not get lost after the user leaves or refreshes the page, I use LocalForage, which is a storing library for JavaScript.",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Localforage", id: uuidv4() },
+      { tag: "Fetch API", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+      { tag: "Netlify", id: uuidv4() },
+    ],
+  },
   {
     name: "Useful CSS Layouts",
     img: usefulCSS,
@@ -136,6 +136,35 @@ const projects = [
       { tag: "CSS Grid", id: uuidv4() },
       { tag: "CSS Flexbox", id: uuidv4() },
       { tag: "Styled-Components", id: uuidv4() },
+    ],
+  },
+
+  {
+    name: "<Scroll />",
+    img: scroll,
+    id: uuidv4(),
+    url: "https://modest-ptolemy-30f1ac.netlify.app/",
+    description:
+      "A re-usable React Scrollbar App that can be added anywhere to a React app. The component accepts 2 props, block and behavior",
+    details: [
+      {
+        title: "<Scroll />: a React component",
+        content:
+          "A re-usable React Scrollbar Component that can be added anywhere to a React app - <Scroll block=”end” behavior=”smooth”/>. The component accepts 2 props, block and behavior. The block prop controls whether the user is moved to the top or the bottom of the page. If the block prop is 'end', then it moves to the bottom, and if it’s 'start', then the user is moved to the top of the page. The behavior prop controls the scrolling behavior. The default value is “smooth”. Slightly irrelevant to the scrollbar app, I also use CSS Variables to implement the theme of the app, inspired by a blog post from Kent C. Dodds. It also uses a custom hook called useLocalStorage that stores the theme setting in localStorage. If you click on the 'Vanilla JS' link at the top right side of this card UI, you can see the same scrolling API implemented with Vanilla JavaScript. The whole UI is build purely with the DOM API.",
+      },
+    ],
+    extra: {
+      url: "https://codesandbox.io/s/scrollupscrolldown-dom-api-ndto4?file=/src/index.js:116-130",
+      text: "Vanilla JS",
+    },
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "styled-components", id: uuidv4() },
+      { tag: "CSS Variables", id: uuidv4() },
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "Web API scrollIntoView", id: uuidv4() },
+      { tag: "window.localStorage", id: uuidv4() },
     ],
   },
   {
