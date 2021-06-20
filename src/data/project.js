@@ -143,7 +143,7 @@ const projects = [
     name: "<Scroll />",
     img: scroll,
     id: uuidv4(),
-    url: "https://modest-ptolemy-30f1ac.netlify.app/",
+    url: "https://dreamy-kilby-abb0d7.netlify.app/",
     description:
       "A re-usable React Scrollbar App that can be added anywhere to a React app. The component accepts 2 props, block and behavior",
     details: [

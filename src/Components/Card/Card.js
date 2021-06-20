@@ -47,7 +47,6 @@ const ButtonContainer = styled.article`
 const Card = ({ header, img, description, tags, url, details, extra }) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
-  console.log(extra);
   return (
     <>
       <Grid item xs={12} sm={6} md={4} xl={4}>
