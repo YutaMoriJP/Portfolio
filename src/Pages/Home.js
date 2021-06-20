@@ -34,7 +34,8 @@ const RemovedLater = () => {
             stuff, and think about including more links like github, edabit?
             maybe in footer. And continue reading through Google CSS stuff +
             Kent, and make decision about Epic React. Maybe talk about
-            appranked.com in more detailed job description
+            appranked.com in more detailed job description. ADD REACT COMPONENTS
+            LIKE MODAL TO PROJECTS AS WELL AS THE VANILLA JS OF SCROLL
           </h1>
 
           <hr />
@@ -79,7 +80,7 @@ const RemovedLater = () => {
 export const Home = () => {
   const handleHashClick = () => {
     if ("scrollIntoView" in document.getElementById("project")) {
-      console.log("scrollIntoView is supported!");
+      //console.log("scrollIntoView is supported!");
       document.getElementById("project").scrollIntoView({ behavior: "smooth" });
     } else {
       window.location.hash = "project";

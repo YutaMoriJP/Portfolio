@@ -10,14 +10,14 @@ export const getStorage = keyName => {
   try {
     return JSON.parse(localStorage.getItem(keyName));
   } catch (error) {
-    console.log("getStorage returns this");
+    // console.log("getStorage returns this");
     return localStorage.getItem(keyName);
   }
 };
 
 const useLocalStorage = (keyName, state) => {
   useEffect(() => {
-    console.log("useLocalStorage useEffect called");
+    //console.log("useLocalStorage useEffect called");
     setStorage(keyName, state);
   }, [keyName, state]);
   return {

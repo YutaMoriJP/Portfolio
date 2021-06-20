@@ -5,9 +5,9 @@ const ThemeContext = React.createContext();
 export const useThemeContext = () => React.useContext(ThemeContext);
 
 const ThemeContextProvider = ({ children }) => {
-  console.log("<ThemeContextProvider/> called");
+  //console.log("<ThemeContextProvider/> called");
   const [theme, setTheme] = React.useState(() => {
-    console.log("context state is initialized");
+    //console.log("context state is initialized");
     const storedTheme = getStorage("ymThemeContext");
     return storedTheme === null ? "dark" : storedTheme;
   });
@@ -15,10 +15,10 @@ const ThemeContextProvider = ({ children }) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const clear = React.useCallback(() => clearStorage(), []);
   const value = React.useMemo(() => {
-    console.log("useMemo called");
+    //console.log("useMemo called");
     return [theme, setTheme, clear];
   }, [theme, clear]);
-  console.log("<ThemeContextProvider/> renders");
+  //console.log("<ThemeContextProvider/> renders");
   return (
     <ThemeContext.Provider value={value}>{children}</ThemeContext.Provider>
   );

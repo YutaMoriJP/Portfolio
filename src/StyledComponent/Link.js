@@ -3,9 +3,11 @@ import { LinksWrapper } from "../Components/Layout/Footer/FooterStyled";
 
 const Link = styled.a`
   color: ${props => props.theme.link.color};
-  text-decoration: underline;
+  text-decoration: 0;
   font-weight: 900;
-
+  :hover {
+    text-decoration: underline;
+  }
   ${LinksWrapper} & {
   }
 `;
