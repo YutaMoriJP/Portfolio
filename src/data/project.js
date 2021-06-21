@@ -11,6 +11,7 @@ import bubble from "../Images/bubble.png";
 import blogGrid from "../Images/blogGrid.png";
 import scroll from "../Images/scroll.png";
 import usefulCSS from "../Images/css.png";
+import clipboard from "../Images/clipboard.png";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -138,7 +139,31 @@ const projects = [
       { tag: "Styled-Components", id: uuidv4() },
     ],
   },
-
+  {
+    name: "useClipboard.js",
+    img: clipboard,
+    id: uuidv4(),
+    url: "https://csb-r4x89.netlify.app/",
+    description:
+      "A custom React hook that copies the value passed to the hook to the clipboard.",
+    details: [
+      {
+        title: "useClipboard.js",
+        content:
+          "A custom React hook that allows users to pass an object with the property toBeCopied that should point at a string value that should be copied to the clipboard. This hook will access the built in Clipboard API (window.navigator.clipboard), and copy the string value to the user’s clipboard. The hook returns an object with 4 properties – idle, resolved, rejected, and error. Idle, resolved, and rejected are status variables. If idle is truthy, then no action is taken, if resolved is truthy then the string was copied to the clipboard successfully, and if rejected is truthy then the copying action has failed. The error object contains a message property that explains what exactly went wrong, like permission issues. The user also has an option to pass a onOpen prop, that will be invoked regardless of the result of the asynchronous operation (copying to the clipboard). This can be used to open up a message with information like “copied” or “not copied",
+      },
+    ],
+    extra: {
+      url: "https://codesandbox.io/s/useclipboardjs-r4x89?file=/src/App.js",
+      text: "Codesandbox",
+    },
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Styled-Components", id: uuidv4() },
+      { tag: "Clipboard API", id: uuidv4() },
+    ],
+  },
   {
     name: "<Scroll />",
     img: scroll,

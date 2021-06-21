@@ -30,6 +30,8 @@ const RemovedLater = () => {
       {val === "0214" && (
         <>
           <h1 style={{ fontSize: 30, color: "red" }}>
+            Start rough draft of new resume, using indeed examples, as well as
+            the skills you have written on portfolio - shoul be consistent!
             polish portfolio, revise writing etc. and start with resume + VISA
             stuff, and think about including more links like github, edabit?
             maybe in footer. And continue reading through Google CSS stuff +
