@@ -12,6 +12,7 @@ import blogGrid from "../Images/blogGrid.png";
 import scroll from "../Images/scroll.png";
 import usefulCSS from "../Images/css.png";
 import clipboard from "../Images/clipboard.png";
+import hooks from "../Images/hooks.png";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -64,6 +65,25 @@ const projects = [
       { tag: "localStorage", id: uuidv4() },
       { tag: "Styled Component", id: uuidv4() },
       { tag: "Netlify", id: uuidv4() },
+    ],
+  },
+  {
+    name: "Custom React Hooks",
+    img: hooks,
+    id: uuidv4(),
+    url: "https://csb-4mvzf.netlify.app/",
+    description: "This project contains a collection of custom React Hooks.",
+    details: [
+      {
+        title: "Custom React Hooks",
+        content:
+          "This project is a collection of useful custom React hooks that I have developed to either reduce boilerplate code or simplifies Web API usage, like window.localstorage by simply passing the key and value as arguments to the useLocalStorage hook. It includes a demo as well as a the CodeSandbox link.",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
     ],
   },
   {

@@ -39,23 +39,18 @@ const RemovedLater = () => {
             appranked.com in more detailed job description. ADD REACT COMPONENTS
             LIKE MODAL TO PROJECTS AS WELL AS THE VANILLA JS OF SCROLL
           </h1>
-
+          <p style={{ fontSize: 14, color: "red" }}>clean up github account</p>
           <hr />
           <p style={{ fontSize: 14, color: "red" }}>
             VISA contact, Epic React or not?, Blog post + Dan's blog, Google CSS
           </p>
-          <p style={{ fontSize: 14, color: "red" }}>
-            revise skills, about, project descrp etc.{" "}
-          </p>
+
           <hr />
           <p style={{ fontSize: 14, color: "red" }}>get own .com domain</p>
           <p style={{ fontSize: 14, color: "red" }}>
             find way to publish your own module on npm?
           </p>
-          <p style={{ fontSize: 14, color: "red" }}>
-            get old resume and use the indeed templte and get reference letters,
-            there is a folder
-          </p>
+
           <p style={{ fontSize: 14, color: "red" }}>contact jp visa place</p>
           <p style={{ fontSize: 14, color: "red" }}>
             emphasize yourself being trilingual
