@@ -7,6 +7,7 @@ const ImageStyled = styled(LazyLoadImage)`
   width: ${props => props.width || "300px"};
   height: ${props => props.height || "200px"};
 `;
+
 const Image = ({
   src = placeholder,
   alt = "image not found",
@@ -15,10 +16,12 @@ const Image = ({
 }) => {
   const ref = React.useRef();
   const handleError = event => {
+    console.log("error occured");
     event.target.src = placeholder;
   };
   React.useLayoutEffect(() => {
     if (!ref.current.src) {
+      console.log("image fetch failed");
       ref.current.src = placeholder;
     }
   }, []);
