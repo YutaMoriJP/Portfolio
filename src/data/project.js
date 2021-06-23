@@ -13,6 +13,7 @@ import scroll from "../Images/scroll.png";
 import usefulCSS from "../Images/css.png";
 import clipboard from "../Images/clipboard.png";
 import hooks from "../Images/hooks.png";
+import components from "../Images/components.png";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -78,6 +79,26 @@ const projects = [
         title: "Custom React Hooks",
         content:
           "This project is a collection of useful custom React hooks that I have developed to either reduce boilerplate code or simplifies Web API usage, like window.localstorage by simply passing the key and value as arguments to the useLocalStorage hook. It includes a demo as well as a the CodeSandbox link.",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+    ],
+  },
+  {
+    name: "React Components",
+    img: components,
+    id: uuidv4(),
+    url: "https://csb-0meyc.netlify.app/",
+    description:
+      "This project contains a collection of re-usable React Components.",
+    details: [
+      {
+        title: "React Components",
+        content:
+          "This project is a collection of useful re-usable React components that I have developed to achieve common needs like notifying an user with a message when something went wrong, simple Modal component, and more!",
       },
     ],
     tags: [
