@@ -47,28 +47,6 @@ const projects = [
     ],
   },
   {
-    name: "Flex Playground",
-    img: flex,
-    id: uuidv4(),
-    url: "https://csb-3nczf.netlify.app/",
-    description:
-      "An app that helps users learn about the Flex Layout by playing with a visual tool.",
-    details: [
-      {
-        title: "Flex Playground App:",
-        content:
-          "This app is designed for users wanting to learn the CSS layout model flexbox. The playground tries to incorporate almost all of the features of flexbox. Users can choose how many flex items they want to play around with, and apply the alignment on the flex container. Also, test the flex-grow, flex-shrink, and flex-basis properties on the flex item. To choose the flex item that needs to apply the flex property, they can pick from the “Select Flex item” selector.",
-      },
-    ],
-    tags: [
-      { tag: "JavaScript", id: uuidv4() },
-      { tag: "React JS", id: uuidv4() },
-      { tag: "localStorage", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
-      { tag: "Netlify", id: uuidv4() },
-    ],
-  },
-  {
     name: "React Components",
     img: components,
     id: uuidv4(),
@@ -79,7 +57,7 @@ const projects = [
       {
         title: "React Components",
         content:
-          "This project is a collection of useful re-usable React components that I have developed to achieve common needs like notifying an user with a message when something went wrong, simple Modal component, and more!",
+          "This project is a collection of re-usable React components that I have developed to achieve common needs like notifying the user with a message when something went wrong or notify them about a successful action, simple Modal component, and more!",
       },
     ],
     tags: [
@@ -107,7 +85,28 @@ const projects = [
       { tag: "Styled Component", id: uuidv4() },
     ],
   },
-
+  {
+    name: "Flex Playground",
+    img: flex,
+    id: uuidv4(),
+    url: "https://csb-3nczf.netlify.app/",
+    description:
+      "An app that helps users learn about the Flex Layout by playing with a visual tool.",
+    details: [
+      {
+        title: "Flex Playground App:",
+        content:
+          "This app is designed for users wanting to learn the CSS layout model flexbox. The playground tries to incorporate almost all of the features of flexbox. Users can choose how many flex items they want to play around with, and apply the alignment on the flex container. Also, test the flex-grow, flex-shrink, and flex-basis properties on the flex item. To choose the flex item that needs to apply the flex property, they can pick from the “Select Flex item” selector.",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "localStorage", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+      { tag: "Netlify", id: uuidv4() },
+    ],
+  },
   {
     name: "NYT API",
     img: nytt,
