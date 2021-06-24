@@ -5,6 +5,7 @@ import Divider from "@material-ui/core/Divider";
 import Link from "../StyledComponent/Link";
 import StyledLink from "../StyledComponent/StyledLink";
 import Helmet from "react-helmet";
+import Text from "../StyledComponent/Text";
 
 const About = () => {
   return (
@@ -16,16 +17,16 @@ const About = () => {
         <Paper style={{ padding: 15, margin: "15px 5px" }}>
           <h1>ABOUT PAGE</h1>
           <Divider />
-          <p>
+          <Text>
             Thank you for visiting my about page to learn more about me. My name
             is Yuta, and I am from Japan, but I grew up in Germany. I am
             trilingual, fluent in Japanese, German, and English. I have spent
             the last 8 years in Canada, completing my high school and university
             degree. I have earned a major in Philosophy and minor in Business
             from the University of Victoria.
-          </p>
+          </Text>
 
-          <p>
+          <Text>
             After my graduation, I have worked a year as a Performance Marketing
             Specialist at Global Wide Media. Before working as a performance
             marketer, I ran my own website business for 4 years, and generated
@@ -44,9 +45,9 @@ const About = () => {
             and the additional experience of building landing pages in my work
             as a performance marketer gave me the dream of becoming a front end
             web developer.
-          </p>
+          </Text>
 
-          <p>
+          <Text>
             I spent the past year intensively developing my knowledge and skills
             in JavaScript, becoming proficient in libraries like React. To
             display my skills in JavaScript and CSS, as well as JavaScript
@@ -74,9 +75,9 @@ const About = () => {
             >
               website that provides useful CSS layouts.
             </Link>
-          </p>
+          </Text>
 
-          <p>
+          <Text>
             Currently, I am learning TypeScript and Next.js, and I plan to start
             learning Vue.js in the future. If you have time, please browse
             through my{" "}
@@ -90,7 +91,7 @@ const About = () => {
             </StyledLink>
             . It would be awesome if you could take a chance on me :) I hope to
             hear from you soon.
-          </p>
+          </Text>
         </Paper>
       </Container>
     </>

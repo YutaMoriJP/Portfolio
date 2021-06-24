@@ -16,6 +16,7 @@ const Text = styled(Typography)`
   padding: 5px 10px;
   margin: 0;
   text-align: left;
+  line-height: 28px;
   font-weight: ${props => props.bold && 900};
   color: ${props => props.title && props.theme.titleColor};
   ${props =>

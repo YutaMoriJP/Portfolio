@@ -22,7 +22,7 @@ const projects = [
     name: "CRUD API",
     img: crudapi,
     id: uuidv4(),
-    url: "https://dazzling-wright-f8bd93.netlify.app/",
+    url: "https://awesome-jackson-61658c.netlify.app/",
     description:
       "A CRUD API built with Node.js, Express, MongoDB, and Mongoose for the back end and React for the front end. The CRUD API allows users to create a user profile with 3 attributes, Name, Username, and Age.",
     details: [
@@ -69,25 +69,6 @@ const projects = [
     ],
   },
   {
-    name: "Custom React Hooks",
-    img: hooks,
-    id: uuidv4(),
-    url: "https://csb-4mvzf.netlify.app/",
-    description: "This project contains a collection of custom React Hooks.",
-    details: [
-      {
-        title: "Custom React Hooks",
-        content:
-          "This project is a collection of useful custom React hooks that I have developed to either reduce boilerplate code or simplifies Web API usage, like window.localstorage by simply passing the key and value as arguments to the useLocalStorage hook. It includes a demo as well as a the CodeSandbox link.",
-      },
-    ],
-    tags: [
-      { tag: "JavaScript", id: uuidv4() },
-      { tag: "React JS", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
-    ],
-  },
-  {
     name: "React Components",
     img: components,
     id: uuidv4(),
@@ -107,6 +88,26 @@ const projects = [
       { tag: "Styled Component", id: uuidv4() },
     ],
   },
+  {
+    name: "Custom React Hooks",
+    img: hooks,
+    id: uuidv4(),
+    url: "https://csb-4mvzf.netlify.app/",
+    description: "This project contains a collection of custom React Hooks.",
+    details: [
+      {
+        title: "Custom React Hooks",
+        content:
+          "This project is a collection of useful custom React hooks that I have developed to either reduce boilerplate code or simplifies Web API usage, like window.localstorage by simply passing the key and value as arguments to the useLocalStorage hook. It includes a demo as well as a the CodeSandbox link.",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+    ],
+  },
+
   {
     name: "NYT API",
     img: nytt,
@@ -209,7 +210,7 @@ const projects = [
     name: "<Scroll />",
     img: scroll,
     id: uuidv4(),
-    url: "https://dreamy-kilby-abb0d7.netlify.app/",
+    url: "https://csb-fqu3i.netlify.app/",
     description:
       "A re-usable React Scrollbar App that can be added anywhere to a React app. The component accepts 2 props, block and behavior",
     details: [
@@ -285,7 +286,7 @@ const projects = [
     name: "<Delay/>",
     img: delay,
     id: uuidv4(),
-    url: "https://amazing-hoover-fd23f2.netlify.app/",
+    url: "https://csb-1do8l.netlify.app/",
     description:
       "A React <Delay/> component that allows users to delay the state from updating",
     details: [
