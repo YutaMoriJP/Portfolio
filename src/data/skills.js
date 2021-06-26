@@ -1,5 +1,98 @@
 import { v4 as uuidv4 } from "uuid";
 
+const languages = [
+  {
+    header: "HTML5",
+    language: "HTML5: semantic HTML, Accessibility, etc.",
+    experience: "4 years",
+    id: uuidv4(),
+  },
+  {
+    header: "CSS3",
+    language:
+      "Box Model, Responsive design, Media Queries, Pseudo-Class/Element, Grid Layout, Flexbox, Position, CSS Variables, CSS Functions etc.",
+    experience: "4 years",
+    id: uuidv4(),
+  },
+  {
+    //add edabit here, like in the project card?
+    header: "JavaScript (ES6)",
+    language:
+      "Template Literals, Shorthand Property Names, Arrow Functions, JavaScript Classes, Functinaly Programming, Destructuring. Parameter Defaults, Rest/Spread, ESModules, Ternaries, Array Methods, Object Methods, IIFE, RegEx, Nullish Coalescing Operator, Optional Chaining, Promises, async/await etc.",
+    experience: "3 years",
+    id: uuidv4(),
+  },
+  {
+    header: "React",
+    language:
+      "Strong understanding and lots of experience in both Function and Class Components. Please see my projects to see my React apps.",
+    experience: "2 years",
+    id: uuidv4(),
+  },
+  {
+    header: "TypeScript",
+    language:
+      "Currently learning TypeScript, and I have a general understanding of it. Intending to master it this year.",
+    experience: "6 months",
+    id: uuidv4(),
+  },
+  {
+    header: "Node.js",
+    language:
+      "Still in the process of learning and mastering Node.js, but I have good understanding of it, and Node frameworks like Express.js.",
+    experience: "1 year",
+    id: uuidv4(),
+  },
+  {
+    header: "Testing",
+    language:
+      "Jest and React Testing Library: I use Jest as my testing framework, and use React Testing Library when testing my React Components.",
+    experience: "2 years",
+    id: uuidv4(),
+  },
+  {
+    header: "CSS Framework",
+    language:
+      "Material UI and React Bootstrap: Currently, I prefer using Material UI over React Bootstrap.",
+    experience: "2 years",
+    id: uuidv4(),
+  },
+  {
+    header: "CSS in JS",
+    language:
+      "styled-components and emotion: I love and fully embrace CSS in JS, and currently prefer styled-components over emotion.",
+    experience: "2 years",
+    id: uuidv4(),
+  },
+  {
+    header: "Sass",
+    language:
+      "I have experience in Sass, and will be able to use it in projects if needed.",
+    experience: "3 years",
+    id: uuidv4(),
+  },
+  {
+    header: "Routing",
+    language:
+      "React Router: all the routing in my React apps are done with React Router. For general routing, I'm comfortable with express.js's router middleware.",
+    experience: "1 year",
+    id: uuidv4(),
+  },
+  {
+    header: "Static Site Generator",
+    language:
+      "Gatsby: I have some experience with Gatsby and the required GraphQL understanding.",
+    experience: "6 months",
+    id: uuidv4(),
+  },
+  {
+    header: "Currently Learning",
+    language:
+      "Typescipt, Node.js, and Next.js. Planned things to learn Electron, Python, and Vue.js",
+    id: uuidv4(),
+  },
+];
+
 const tools = [
   {
     header: "VS Code",
@@ -120,91 +213,6 @@ const tools = [
     language:
       "Comfortable in using Mac OS's Preview application. Started using it when I ran my website business.",
     experience: "5 years",
-    id: uuidv4(),
-  },
-];
-
-const languages = [
-  {
-    header: "HTML5",
-    language: "HTML5: semantic HTML, Accessibility, etc.",
-    experience: "4 years",
-    id: uuidv4(),
-  },
-  {
-    header: "CSS3",
-    language:
-      "Box Model, Responsive design, Media Queries, Pseudo-Class/Element, Grid Layout, Flexbox, Position, CSS Variables, CSS Functions etc.",
-    experience: "4 years",
-    id: uuidv4(),
-  },
-  {
-    header: "JavaScript (ES6)",
-    language:
-      "Template Literals, Shorthand Property Names, Arrow Functions, JavaScript Classes, Functinaly Programming, Destructuring. Parameter Defaults, Rest/Spread, ESModules, Ternaries, Array Methods, Object Methods, IIFE, RegEx, Nullish Coalescing Operator, Optional Chaining, Promises, async/await etc.",
-    experience: "3 years",
-    id: uuidv4(),
-  },
-  {
-    header: "Node.js",
-    language:
-      "Still in the process of learning and mastering Node.js, but I have good understanding of it, and Node frameworks like Express.js.",
-    experience: "1 year",
-    id: uuidv4(),
-  },
-  {
-    header: "UI Library",
-    language:
-      "React JS: I love React and have spent a lot of time in the last years learning it. Please see my projects to see my React apps.",
-    experience: "2 years",
-    id: uuidv4(),
-  },
-  {
-    header: "Testing",
-    language:
-      "Jest and React Testing Library: I use Jest as my testing framework, and use React Testing Library when testing my React Components.",
-    experience: "2 years",
-    id: uuidv4(),
-  },
-  {
-    header: "UI Framework",
-    language:
-      "Material UI and React Bootstrap: Currently, I prefer using Material UI over React Bootstrap.",
-    experience: "2 years",
-    id: uuidv4(),
-  },
-  {
-    header: "CSS in JS",
-    language:
-      "styled-components and emotion: I love and fully embrace CSS in JS, and currently prefer styled-components over emotion.",
-    experience: "2 years",
-    id: uuidv4(),
-  },
-  {
-    header: "Sass",
-    language:
-      "I used to use Sass, but a CSS in JS library like styled-components has replaced it in my projects.",
-    experience: "3 years",
-    id: uuidv4(),
-  },
-  {
-    header: "Routing",
-    language:
-      "React Router: all the routing in my React apps are done with React Router. For general routing, I'm comfortable with express.js's router middleware, and also with the Browser's History API.",
-    experience: "1 year",
-    id: uuidv4(),
-  },
-  {
-    header: "Static Site Generator",
-    language:
-      "Gatsby: I have some experience with Gatsby and the required GraphQL understanding.",
-    experience: "6 months",
-    id: uuidv4(),
-  },
-  {
-    header: "Currently Learning",
-    language:
-      "Typescipt, Node.js, and Next.js. Planned things to learn Electron, Python, and Vue.js",
     id: uuidv4(),
   },
 ];
