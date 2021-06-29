@@ -25,7 +25,9 @@ const Footer = () => {
         <LinksWrapper>
           <p>Links</p>
           <Link to="/about">About me</Link>
-          <TextLink href="#">Contact me</TextLink>
+          <TextLink href="mailto:yuta.mori.licht@gmail.com">
+            Contact me
+          </TextLink>
           <TextLink
             href="https://edabit.com/user/PGCDJpQMN8Sjn9Gm6"
             target="_blank"

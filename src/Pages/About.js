@@ -4,6 +4,8 @@ import Paper from "@material-ui/core/Paper";
 import Divider from "@material-ui/core/Divider";
 import Link from "../StyledComponent/Link";
 import StyledLink from "../StyledComponent/StyledLink";
+import TextLink from "../StyledComponent/Link";
+
 import Helmet from "react-helmet";
 import Text from "../StyledComponent/Text";
 
@@ -69,7 +71,7 @@ const About = () => {
             </Link>
             ,
             <Link
-              href="https://csb-0meyc.netlify.app/"
+              href="https://react-components-reusable.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -77,7 +79,7 @@ const About = () => {
             </Link>
             ,
             <Link
-              href=" https://csb-4mvzf.netlify.app/"
+              href="https://custom-react-hooks.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
@@ -107,6 +109,14 @@ const About = () => {
             </StyledLink>
             . It would be awesome if you could take a chance on me :) I hope to
             hear from you soon.
+          </Text>
+
+          <Text>
+            If you are interested to learn more about me, please{" "}
+            <TextLink href="mailto:yuta.mori.licht@gmail.com">
+              email me
+            </TextLink>
+            .
           </Text>
         </Paper>
       </Container>

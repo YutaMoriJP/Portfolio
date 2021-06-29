@@ -50,7 +50,7 @@ const projects = [
     name: "React Components",
     img: components,
     id: uuidv4(),
-    url: "https://csb-0meyc.netlify.app/",
+    url: "https://react-components-reusable.netlify.app/",
     description:
       "This project contains a collection of re-usable React Components.",
     details: [
@@ -70,7 +70,7 @@ const projects = [
     name: "Custom React Hooks",
     img: hooks,
     id: uuidv4(),
-    url: "https://csb-4mvzf.netlify.app/",
+    url: "https://custom-react-hooks.netlify.app/",
     description: "This project contains a collection of custom React Hooks.",
     details: [
       {

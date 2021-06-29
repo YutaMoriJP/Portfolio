@@ -35,9 +35,9 @@ const RemovedLater = () => {
             polish portfolio, revise writing etc. and start with resume + VISA
             stuff, and think about including more links like github, edabit?
             maybe in footer. And continue reading through Google CSS stuff +
-            Kent, and make decision about Epic React. Maybe talk about
-            appranked.com in more detailed job description. ADD REACT COMPONENTS
-            LIKE MODAL TO PROJECTS AS WELL AS THE VANILLA JS OF SCROLL
+            Kent, and make decision about Epic React - pay or not. Maybe talk
+            about appranked.com in more detailed job description. Clean up
+            github.com
           </h1>
           <p style={{ fontSize: 14, color: "red" }}>clean up github account</p>
           <hr />
