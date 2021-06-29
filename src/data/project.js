@@ -133,29 +133,7 @@ const projects = [
       { tag: "Netlify", id: uuidv4() },
     ],
   },
-  {
-    name: "Shopping Helper App",
-    img: shopping,
-    id: uuidv4(),
-    url: "https://quizzical-lovelace-17ea0b.netlify.app/",
-    description:
-      "An app designed to help users to help with their shopping experience by allowing them to list what they need to buy.",
-    details: [
-      {
-        title: "Shopping Helper App:",
-        content:
-          "This app is designed for users to help with their shopping experience. To start, users type in the store name or any title of their choosing, and a box with options gets rendered to the screen. Inside the box, they can type in the shopping item they wish to buy as well as the needed count of the item. So that the data they have submitted does not get lost after the user leaves or refreshes the page, I use LocalForage, which is a storing library for JavaScript.",
-      },
-    ],
-    tags: [
-      { tag: "JavaScript", id: uuidv4() },
-      { tag: "React JS", id: uuidv4() },
-      { tag: "Localforage", id: uuidv4() },
-      { tag: "Fetch API", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
-      { tag: "Netlify", id: uuidv4() },
-    ],
-  },
+
   {
     name: "Useful CSS Layouts",
     img: usefulCSS,
@@ -178,6 +156,29 @@ const projects = [
       { tag: "CSS Grid", id: uuidv4() },
       { tag: "CSS Flexbox", id: uuidv4() },
       { tag: "Styled-Components", id: uuidv4() },
+    ],
+  },
+  {
+    name: "Shopping Helper App",
+    img: shopping,
+    id: uuidv4(),
+    url: "https://quizzical-lovelace-17ea0b.netlify.app/",
+    description:
+      "An app designed to help users to help with their shopping experience by allowing them to list what they need to buy.",
+    details: [
+      {
+        title: "Shopping Helper App:",
+        content:
+          "This app is designed for users to help with their shopping experience. To start, users type in the store name or any title of their choosing, and a box with options gets rendered to the screen. Inside the box, they can type in the shopping item they wish to buy as well as the needed count of the item. So that the data they have submitted does not get lost after the user leaves or refreshes the page, I use LocalForage, which is a storing library for JavaScript.",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Localforage", id: uuidv4() },
+      { tag: "Fetch API", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+      { tag: "Netlify", id: uuidv4() },
     ],
   },
   {

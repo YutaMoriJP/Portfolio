@@ -25,6 +25,7 @@ const SkillsContainer = styled.article`
 
 const Lists = styled.article`
   border-radius: 5px;
+  border: 2px solid black;
   background: ${props => props.theme.skills.itemBG};
   padding: 10px;
   text-align: left;
@@ -54,7 +55,9 @@ const Lists = styled.article`
   p:nth-child(4) {
     padding-left: 35px;
   }
-  margin: 0 10px;
+  @media screen and (max-width: 500px) {
+    margin: 10px 0;
+  }
 `;
 
 const Canvas = styled.article`
