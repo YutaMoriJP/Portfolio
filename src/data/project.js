@@ -22,7 +22,7 @@ const projects = [
     name: "CRUD API",
     img: crudapi,
     id: uuidv4(),
-    url: "https://awesome-jackson-61658c.netlify.app/",
+    url: "https://user-profile-crud-api.netlify.app/",
     description:
       "A CRUD API built with Node.js, Express, MongoDB, and Mongoose for the back end and React for the front end. The CRUD API allows users to create a user profile with 3 attributes, Name, Username, and Age.",
     details: [

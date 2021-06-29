@@ -63,7 +63,7 @@ const About = () => {
             </Link>
             , using the NYT API, as well as built a simple{" "}
             <Link
-              href="https://dazzling-wright-f8bd93.netlify.app/"
+              href="https://user-profile-crud-api.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
