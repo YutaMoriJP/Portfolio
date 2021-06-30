@@ -24,16 +24,8 @@ const Footer = () => {
       <Right>
         <LinksWrapper>
           <p>Links</p>
-          <Link to="/about">About me</Link>
           <TextLink href="mailto:yuta.mori.licht@gmail.com">
             Contact me
-          </TextLink>
-          <TextLink
-            href="https://edabit.com/user/PGCDJpQMN8Sjn9Gm6"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Edabit - 30,000XP
           </TextLink>
           <TextLink
             href="https://github.com/YutaMoriJP"
@@ -41,6 +33,14 @@ const Footer = () => {
             rel="noreferrer"
           >
             Github
+          </TextLink>
+          <Link to="/about">About me</Link>
+          <TextLink
+            href="https://edabit.com/user/PGCDJpQMN8Sjn9Gm6"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Edabit - 30,000XP
           </TextLink>
         </LinksWrapper>
       </Right>

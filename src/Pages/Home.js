@@ -9,6 +9,7 @@ import Text, { NormalText } from "../Components/Animation/Text";
 import { Zoom } from "react-awesome-reveal";
 import StyledLink from "../StyledComponent/StyledLink";
 
+// eslint-disable-next-line no-unused-vars
 const RemovedLater = () => {
   const [val, setVal] = React.useState("");
   const handleChange = e => {
@@ -90,7 +91,6 @@ export const Home = () => {
       </Helmet>
       <StyledHome>
         <HomeTitle variant="h4">
-          <RemovedLater />
           <Text variant="h5">
             Hi, I am Yuta, a front end web developer from Japan.
           </Text>
