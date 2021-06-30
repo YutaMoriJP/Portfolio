@@ -34,19 +34,18 @@ const About = () => {
             marketer, I ran my own website business for 4 years, and generated
             more than $3000 in profit, and developed the website to one of the
             top 90,000th most visited websites world wide according to
-            Alexa.com. So, I was able to smoothly transition from a publisher to
-            a performance marketer. As a performance marketer, I specialized in
-            search ads like Google Ads and Bing ads for clients like Dropbox,
-            TikTok, Roblox, and more. I have also experience in other types of
-            ads like display, push, contextual, native, and pop ads. As a
-            performance marketer, I also had many opportunities to build landing
-            pages for my clients promoting their products, as well as
-            contributed to all of our WordPress blogs. The landing pages
-            initiative helped me to maintain my average conversion rate around
-            10%. I already had experience in HTML, CSS, and JavaScript before my
-            work as a performance marketer, and the additional experience of
-            building landing pages in my work as a performance marketer gave me
-            the dream of becoming a front end web developer.
+            Alexa.com. As a performance marketer, I specialized in search ads
+            like Google Ads and Bing ads for clients like Dropbox, TikTok,
+            Roblox, and more. I have also experience in other types of ads like
+            display, push, contextual, native, and pop ads. As a performance
+            marketer, I also had many opportunities to build landing pages for
+            my clients promoting their products, as well as contributed to all
+            of our WordPress blogs. The landing pages initiative helped me to
+            maintain my average conversion rate around 10%. I already had
+            experience in HTML, CSS, and JavaScript before my work as a
+            performance marketer, and the additional experience of building
+            landing pages in my work as a performance marketer gave me the dream
+            of becoming a front end web developer.
           </Text>
 
           <Text>
