@@ -16,12 +16,10 @@ const Image = ({
 }) => {
   const ref = React.useRef();
   const handleError = event => {
-    console.log("error occured");
     event.target.src = placeholder;
   };
   React.useLayoutEffect(() => {
     if (!ref.current.src) {
-      console.log("image fetch failed");
       ref.current.src = placeholder;
     }
   }, []);

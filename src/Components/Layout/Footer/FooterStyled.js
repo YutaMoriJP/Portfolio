@@ -13,6 +13,11 @@ const Footer = styled.footer`
   @supports not (column-gap: 20px) {
     margin: 10px;
   }
+  @media screen and (max-width: 450px) {
+    > * {
+      margin: 5px;
+    }
+  }
   @media (max-width: 600px) {
     padding: 30px;
   }

@@ -7,7 +7,7 @@ import Link from "../../../StyledComponent/StyledLink";
 
 const Footer = () => {
   return (
-    <Wrapper>
+    <Wrapper id="footer">
       <Left>
         <p>
           This site was built with{" "}
