@@ -14,6 +14,7 @@ const StyledLink = styled.p`
     ${props =>
       props.nopadding &&
       css`
+        margin: 0;
         padding: 0;
         font-family: arial;
         color: ${props => props.theme.link.color};

@@ -14,7 +14,9 @@ import StyledLink from "../../StyledComponent/StyledLink";
 import HighlightIcon from "@material-ui/icons/Highlight";
 import PaletteIcon from "@material-ui/icons/Palette";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
-import BuildIcon from '@material-ui/icons/Build';
+import MailIcon from "@material-ui/icons/Mail";
+import BuildIcon from "@material-ui/icons/Build";
+
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -34,7 +36,8 @@ const navText = {
   "/code-examples": "Code Examples",
   "/playground": "Playground",
   "/about": "About me",
-  "/skills": "Skills"
+  "/skills": "Skills",
+  "/contact": "Contact Me",
 };
 
 const NavIcon = {
@@ -42,11 +45,13 @@ const NavIcon = {
   "/project": <HighlightIcon />,
   "/code-examples": <PaletteIcon />,
   "/about": <AccountBoxIcon />,
-  "/skills": <BuildIcon />
+  "/skills": <BuildIcon />,
+  "/contact": <MailIcon />,
 };
 
 export default function Drawer({ open, onOpen, onClose }) {
   const classes = useStyles();
+
   const list = anchor => (
     <div
       className={clsx(classes.list, {
@@ -62,14 +67,16 @@ export default function Drawer({ open, onOpen, onClose }) {
       </article>
       <Divider />
       <List>
-        {["/", "/project",  "/skills", "/about"].map((text, index) => (
-          <StyledLink to={text} key={text} nopadding="true">
-            <ListItem button>
-              <ListItemIcon>{NavIcon[text]}</ListItemIcon>
-              <ListItemText>{navText[text]}</ListItemText>
-            </ListItem>
-          </StyledLink>
-        ))}
+        {["/", "/project", "/skills", "/about", "/contact"].map(
+          (text, index) => (
+            <StyledLink to={text} key={text} nopadding="true">
+              <ListItem button>
+                <ListItemIcon>{NavIcon[text]}</ListItemIcon>
+                <ListItemText>{navText[text]}</ListItemText>
+              </ListItem>
+            </StyledLink>
+          )
+        )}
       </List>
     </div>
   );

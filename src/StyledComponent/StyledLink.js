@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 import { LinksWrapper } from "../Components/Layout/Footer/FooterStyled";
+import { Wrapper as ContactWrapper } from "../Pages/Contact";
 
 const StyledLink = styled(Link)`
   && {
@@ -12,6 +13,7 @@ const StyledLink = styled(Link)`
     :hover {
       text-decoration: underline;
     }
+
     ${props =>
       props.nopadding &&
       css`
@@ -27,6 +29,10 @@ const StyledLink = styled(Link)`
       :hover {
         text-decoration: underline;
       }
+    }
+    ${ContactWrapper} & {
+      color: ${props => props.theme.link.color};
+      font-family: arial;
     }
   }
 `;

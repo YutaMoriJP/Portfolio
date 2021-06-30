@@ -32,6 +32,7 @@ const PlayGround = lazy(() => import("./Pages/PlayGround"));
 const ErrorPage = lazy(() => import("./Pages/404"));
 const About = lazy(() => import("./Pages/About"));
 const Skills = lazy(() => import("./Pages/Skills"));
+const Contact = lazy(() => import("./Pages/Contact"));
 
 const App = () => {
   const [theme] = useThemeContext();
@@ -63,6 +64,9 @@ const App = () => {
                 </Route>
                 <Route path="/skills">
                   <Skills />
+                </Route>
+                <Route path="/contact">
+                  <Contact />
                 </Route>
                 <Route>
                   <ErrorPage />
