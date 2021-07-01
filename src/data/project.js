@@ -182,6 +182,30 @@ const projects = [
     ],
   },
   {
+    name: "TODO APP",
+    img: todoo,
+    id: uuidv4(),
+    url: "https://wonderful-euclid-5863c6.netlify.app/",
+    description:
+      "A todo app that allows users to create a todo list and either mark the post as completed or remove it. The app allows for setting changes like note background and sort order.",
+    details: [
+      {
+        title: "Todo App:",
+        content:
+          "This Note-Taking-App is not connected to a back-end, nor does it use browser storage options like window.localStorage, so once the user leaves the page, the submitted notes will be lost. As far as features are concerned, users must fill the “Title” and “Description” part, and then they can submit the note. Once the note is rendered to the screen, users can either “Remove” or “Check it” to show the completion of the task. There are also a couple configuration options like changing the background color of the submitted note as well as a sorting option, where the new submissions either appear at the top or at the bottom of the page.",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "HTML5", id: uuidv4() },
+      { tag: "CSS3", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+      { tag: "Material UI", id: uuidv4() },
+      { tag: "Netlify", id: uuidv4() },
+    ],
+  },
+  {
     name: "useClipboard.js",
     img: clipboard,
     id: uuidv4(),
@@ -309,30 +333,7 @@ const projects = [
       { tag: "localStorage", id: uuidv4() },
     ],
   },
-  {
-    name: "TODO APP",
-    img: todoo,
-    id: uuidv4(),
-    url: "https://wonderful-euclid-5863c6.netlify.app/",
-    description:
-      "A todo app that allows users to create a todo list and either mark the post as completed or remove it. The app allows for setting changes like note background and sort order.",
-    details: [
-      {
-        title: "Todo App:",
-        content:
-          "This Note-Taking-App is not connected to a back-end, nor does it use browser storage options like window.localStorage, so once the user leaves the page, the submitted notes will be lost. As far as features are concerned, users must fill the “Title” and “Description” part, and then they can submit the note. Once the note is rendered to the screen, users can either “Remove” or “Check it” to show the completion of the task. There are also a couple configuration options like changing the background color of the submitted note as well as a sorting option, where the new submissions either appear at the top or at the bottom of the page.",
-      },
-    ],
-    tags: [
-      { tag: "JavaScript", id: uuidv4() },
-      { tag: "HTML5", id: uuidv4() },
-      { tag: "CSS3", id: uuidv4() },
-      { tag: "React JS", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
-      { tag: "Material UI", id: uuidv4() },
-      { tag: "Netlify", id: uuidv4() },
-    ],
-  },
+
   {
     name: "Shiritori Game",
     img: shiritori,
