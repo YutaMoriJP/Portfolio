@@ -28,7 +28,9 @@ const Navbar = () => {
             <StyledLink to="/project">Project</StyledLink>
             <StyledLink to="/skills">Skills</StyledLink>
             <StyledLink to="/about">About me</StyledLink>
-            <Link onClick={handleScrollDown}>Contact me</Link>
+            <StyledLink to="/contact">Contact me</StyledLink>
+
+            {/*            <Link onClick={handleScrollDown}>Contact me</Link>*/}
           </>
         )}
         {!matches && (

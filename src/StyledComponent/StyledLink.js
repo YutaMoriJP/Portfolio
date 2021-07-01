@@ -6,7 +6,7 @@ import { Wrapper as ContactWrapper } from "../Pages/Contact";
 const StyledLink = styled(Link)`
   && {
     font-family: ${props => (props.normalFont ? "arial" : "Montserrat")};
-    text-decoration: 0;
+    text-decoration: none;
     font-weight: bold;
     color: ${props => props.theme.color};
     padding: 0 10px;
