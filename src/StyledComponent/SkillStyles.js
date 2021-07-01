@@ -17,9 +17,14 @@ const SkillsContainer = styled.article`
   width: 350px;
   gap: 10px;
   row-gap: 10px;
+  column-gap: 10px;
+  margin: 5px;
   height: fit-content;
   @supports not (column-gap: 20px) {
     margin: 10px;
+  }
+  > * {
+    margin: 5px;
   }
 `;
 
@@ -56,7 +61,7 @@ const Lists = styled.article`
     padding-left: 35px;
   }
   @media screen and (max-width: 500px) {
-    margin: 10px 0;
+    margin: 2px 0;
   }
 `;
 
