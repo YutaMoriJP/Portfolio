@@ -21,7 +21,7 @@ const About = () => {
           <Divider />
           <Text>
             Thank you for visiting my about page to learn more about me. My name
-            is Yuta, I was born in Japan, but I grew up in Germany. Fluent in
+            is Yuta, I was born in Japan, and I grew up in Germany. I am fluent in
             Japanese, German, and English. I have lived the last 8 years in
             Canada, completing my high school and university degree. I have
             earned a major in Philosophy and minor in Business from the
