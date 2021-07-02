@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 const StyledLink = styled.p`
   && {
     font-family: ${props => (props.normalFont ? "arial" : "Montserrat")};
-    text-decoration: none;
     font-weight: bold;
     color: ${props => props.theme.color};
     padding: 0 10px;

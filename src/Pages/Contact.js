@@ -4,6 +4,7 @@ import TextLink from "../StyledComponent/Link";
 import Link from "../StyledComponent/StyledLink";
 import Text from "../StyledComponent/Text";
 import styled from "styled-components";
+
 export const Wrapper = styled.article`
   width: 220px;
   height: 220px;
