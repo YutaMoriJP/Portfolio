@@ -206,6 +206,31 @@ const projects = [
     ],
   },
   {
+    name: "Shiritori Game",
+    img: shiritori,
+    id: uuidv4(),
+    url: "https://goofy-lamport-69eea7.netlify.app/",
+    description:
+      "Shiritori is a Japanese word game in which the starting player picks a word of their choosing, and the competing player must pick a word that begins with the ending character from the preceding player. A Player loses when a word that ends with 'N' is chosen or 30 seconds have passed.",
+    details: [
+      {
+        title: "Shiritori Game:",
+        content:
+          "Shiritori is a traditional Japanese word game that I often used to play with my family, as most kids in Japan do. As it’s strictly a word playing game, the exact rules cannot be replicated with the English language. This means that the rules are my interpretation, so that it makes sense in English. To put it simply, a user can lose the game if they choose a word that ends with the letter “n” or if they run out of time (30 seconds). The hard part in this project was to find a free way to verify that the chosen word is actually a valid word and not some gibberish. To solve this problem, I found an API called “owlbot-js” that does a good enough job to make the game functional.",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "HTML5", id: uuidv4() },
+      { tag: "CSS3", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "owlbot-js", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
+      { tag: "Material UI", id: uuidv4() },
+      { tag: "Netlify", id: uuidv4() },
+    ],
+  },
+  {
     name: "useClipboard.js",
     img: clipboard,
     id: uuidv4(),
@@ -331,32 +356,6 @@ const projects = [
       { tag: "Netlify", id: uuidv4() },
 
       { tag: "localStorage", id: uuidv4() },
-    ],
-  },
-
-  {
-    name: "Shiritori Game",
-    img: shiritori,
-    id: uuidv4(),
-    url: "https://goofy-lamport-69eea7.netlify.app/",
-    description:
-      "Shiritori is a Japanese word game in which the starting player picks a word of their choosing, and the competing player must pick a word that begins with the ending character from the preceding player. A Player loses when a word that ends with 'N' is chosen or 30 seconds have passed.",
-    details: [
-      {
-        title: "Shiritori Game:",
-        content:
-          "Shiritori is a traditional Japanese word game that I often used to play with my family, as most kids in Japan do. As it’s strictly a word playing game, the exact rules cannot be replicated with the English language. This means that the rules are my interpretation, so that it makes sense in English. To put it simply, a user can lose the game if they choose a word that ends with the letter “n” or if they run out of time (30 seconds). The hard part in this project was to find a free way to verify that the chosen word is actually a valid word and not some gibberish. To solve this problem, I found an API called “owlbot-js” that does a good enough job to make the game functional.",
-      },
-    ],
-    tags: [
-      { tag: "JavaScript", id: uuidv4() },
-      { tag: "HTML5", id: uuidv4() },
-      { tag: "CSS3", id: uuidv4() },
-      { tag: "React JS", id: uuidv4() },
-      { tag: "owlbot-js", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
-      { tag: "Material UI", id: uuidv4() },
-      { tag: "Netlify", id: uuidv4() },
     ],
   },
   {
