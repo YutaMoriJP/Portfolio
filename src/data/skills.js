@@ -10,7 +10,7 @@ const languages = [
   {
     header: "CSS3",
     language:
-      "Box Model, Responsive design, Media Queries, Pseudo-Class/Element, Grid Layout, Flexbox, Position, CSS Variables, CSS Functions etc.",
+      "Box Model, Responsive design, Media Queries, Pseudo-Class/Element, CSS Combinators, Grid Layout, Flexbox, Position, CSS Variables, CSS Functions etc.",
     experience: "4 years",
     id: uuidv4(),
   },

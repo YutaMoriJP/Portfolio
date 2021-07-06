@@ -19,16 +19,16 @@ const About = () => {
         <Paper style={{ padding: 15, margin: "15px 5px" }}>
           <h1>ABOUT PAGE</h1>
           <Divider />
-          <Text>
+          <Text indent={1}>
             Thank you for visiting my about page to learn more about me. My name
-            is Yuta, I was born in Japan, and I grew up in Germany. I am fluent in
-            Japanese, German, and English. I have lived the last 8 years in
+            is Yuta, I was born in Japan, and I grew up in Germany. I am fluent
+            in Japanese, German, and English. I have lived the last 8 years in
             Canada, completing my high school and university degree. I have
             earned a major in Philosophy and minor in Business from the
             University of Victoria.
           </Text>
 
-          <Text>
+          <Text indent={1}>
             After my graduation, I have worked a year as a Performance Marketing
             Specialist at Global Wide Media. Before working as a performance
             marketer, I ran my own website business for 4 years, and generated
@@ -48,7 +48,7 @@ const About = () => {
             of becoming a front end web developer.
           </Text>
 
-          <Text>
+          <Text indent={1}>
             I spent the past year intensively developing my knowledge and skills
             in JavaScript, becoming proficient in libraries like React. To
             display my skills in JavaScript and CSS, as well as JavaScript
@@ -94,7 +94,7 @@ const About = () => {
             </Link>
           </Text>
 
-          <Text>
+          <Text indent={1}>
             Currently, I am learning TypeScript and Next.js, and I plan to start
             learning Vue.js in the future. If you have time, please browse
             through my{" "}
