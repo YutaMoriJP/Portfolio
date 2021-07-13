@@ -7,6 +7,6 @@ export default styled.p`
   ${props =>
     props.indent &&
     css`
-      text-indent: 10%;
+      text-indent: 6%;
     `}
 `;

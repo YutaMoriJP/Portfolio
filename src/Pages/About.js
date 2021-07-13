@@ -22,30 +22,31 @@ const About = () => {
           <Text indent={1}>
             Thank you for visiting my about page to learn more about me. My name
             is Yuta, I was born in Japan, and I grew up in Germany. I am fluent
-            in Japanese, German, and English. I have lived the last 10 years in
-            Canada, completing my high school and university degree. I have
-            earned a major in Philosophy and minor in Business from the
+            in Japanese, German, and English. When I was 15, I left my home and
+            my family and moved to Canada to study. And I have now been 11 years
+            in Canada, completing my high school and university degree. I have
+            earned a major in Philosophy and a minor in Business from the
             University of Victoria.
           </Text>
 
           <Text indent={1}>
             After my graduation, I have worked a year as a Performance Marketing
             Specialist at Global Wide Media. Before working as a performance
-            marketer, I ran my own website business for 4 years, and generated
+            marketer, I ran my own website business for 4-years, and generated
             more than $3000 in profit, and developed the website to one of the
-            top 90,000th most visited websites world wide according to
+            top 90,000th most visited websites worldwide, according to
             Alexa.com. As a performance marketer, I specialized in search ads
             like Google Ads and Bing ads for clients like Dropbox, TikTok,
-            Roblox, and more. I have also experience in other types of ads like
-            display, push, contextual, native, and pop ads. As a performance
-            marketer, I also had many opportunities to build landing pages for
-            my clients promoting their products, as well as contributed to all
-            of our WordPress blogs. The landing pages initiative helped me to
-            maintain my average conversion rate around 10%. I already had
-            experience in HTML, CSS, and JavaScript before my work as a
+            Roblox, and more. Also, I have experience in other types of
+            advertisements like display, push, contextual, native, and pop ads.
+            As a performance marketer, I had many opportunities to build landing
+            pages for my clients, promoting their products. Also, contributing
+            to all of our WordPress blogs. The landing pages initiative helped
+            me to maintain my average conversion rate of around 10%. I already
+            had experience in HTML, CSS, and JavaScript before my work as a
             performance marketer, and the additional experience of building
-            landing pages in my work as a performance marketer gave me the dream
-            of becoming a front end web developer.
+            landing pages in my job as a performance marketer gave me the dream
+            of becoming a front-end web developer.
           </Text>
 
           <Text indent={1}>
