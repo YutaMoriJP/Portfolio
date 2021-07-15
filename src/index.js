@@ -2,6 +2,8 @@
 import "core-js/es/map";
 import "core-js/es/set";
 import "raf/polyfill";
+//global font
+import "./fonts.css";
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -17,6 +19,7 @@ const MainApp = () => {
     </ContextProvider>
   );
 };
+
 ReactDOM.render(
   <React.StrictMode>
     <MainApp />

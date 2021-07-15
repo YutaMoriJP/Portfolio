@@ -1,7 +1,21 @@
 import { createGlobalStyle } from "styled-components";
+import Montserrat from "../fonts/montserrat-v15-latin-regular.woff";
+import Montserrat2 from "../fonts/montserrat-v15-latin-regular.woff2";
+import MontserratEot from "../fonts/montserrat-v15-latin-regular.eot";
 
 const StyledGlobal = createGlobalStyle`
-  :root {
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(${MontserratEot}); /* IE9 Compat Modes */
+  src: local('Montserrat'),
+        url(${Montserrat}) format('woff2'), /* Super Modern Browsers */
+       url(${Montserrat2}) format('woff'), /* Modern Browsers */ 
+}
+
+:root {
     --icon-primary-color: ${props => props.theme.color}
   }
   html {
