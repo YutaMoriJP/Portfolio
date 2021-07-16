@@ -34,13 +34,20 @@ const Footer = () => {
           >
             Github
           </TextLink>
+          <TextLink
+            href="https://codesandbox.io/dashboard/drafts?workspace=e06bca6f-0c92-46e5-8f07-a3b58aa66c9c"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CodeSandbox
+          </TextLink>
           <Link to="/about">About me</Link>
           <TextLink
             href="https://edabit.com/user/PGCDJpQMN8Sjn9Gm6"
             target="_blank"
             rel="noreferrer"
           >
-            Edabit - 30,000XP
+            Edabit - 30,000+XP
           </TextLink>
         </LinksWrapper>
       </Right>
