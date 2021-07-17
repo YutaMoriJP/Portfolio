@@ -4,6 +4,7 @@ import TextLink from "../StyledComponent/Link";
 import Link from "../StyledComponent/StyledLink";
 import Text from "../StyledComponent/Text";
 import styled from "styled-components";
+import Helmet from "react-helmet";
 
 export const Wrapper = styled.article`
   width: 220px;
@@ -22,27 +23,32 @@ export const Wrapper = styled.article`
 
 const Contact = () => {
   return (
-    <Center>
-      <Wrapper>
-        <Text>See my Links below:</Text>
-        <TextLink href="mailto:yuta.mori.licht@gmail.com">Email me</TextLink>
-        <TextLink
-          href="https://github.com/YutaMoriJP"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github
-        </TextLink>
-        <Link to="/about">About me</Link>
-        <TextLink
-          href="https://edabit.com/user/PGCDJpQMN8Sjn9Gm6"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Edabit - 30,000XP
-        </TextLink>
-      </Wrapper>
-    </Center>
+    <>
+      <Helmet>
+        <title>Contact</title>
+      </Helmet>
+      <Center>
+        <Wrapper>
+          <Text>See my Links below:</Text>
+          <TextLink href="mailto:yuta.mori.licht@gmail.com">Email me</TextLink>
+          <TextLink
+            href="https://github.com/YutaMoriJP"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </TextLink>
+          <Link to="/about">About me</Link>
+          <TextLink
+            href="https://edabit.com/user/PGCDJpQMN8Sjn9Gm6"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Edabit - 30,000XP
+          </TextLink>
+        </Wrapper>
+      </Center>
+    </>
   );
 };
 
