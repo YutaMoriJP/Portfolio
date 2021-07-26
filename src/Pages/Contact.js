@@ -51,7 +51,7 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Edabit - 30,000XP
+            Edabit - 30,000+XP
           </TextLink>
         </Wrapper>
       </Center>
