@@ -114,6 +114,13 @@ const tools = [
     id: uuidv4(),
   },
   {
+    header: "Webpack",
+    language:
+      "I'm comfortable with configuring webpack if I need it for any of my projects.",
+    experience: "1 year",
+    id: uuidv4(),
+  },
+  {
     header: "Parcel",
     language:
       "Before Create-React-App, I used Parcel to build my React apps, and still occasionally use it for projects like `CSS Grid Blog Layout`.",
