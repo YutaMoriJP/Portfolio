@@ -26,7 +26,7 @@ const languages = [
     header: "React",
     language:
       "Strong understanding and lots of experience in both Function and Class Components. Please see my projects to see my React apps.",
-    experience: "2 years",
+    experience: "3 years",
     id: uuidv4(),
   },
   {
