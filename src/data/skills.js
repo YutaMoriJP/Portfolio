@@ -115,8 +115,7 @@ const tools = [
   },
   {
     header: "Webpack",
-    language:
-      "I'm comfortable with using and configuring webpack if I need it for any of my projects.",
+    language: "I'm comfortable with using and configuring webpack.",
     experience: "1 year",
     id: uuidv4(),
   },
