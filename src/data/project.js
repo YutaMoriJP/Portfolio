@@ -89,7 +89,7 @@ const projects = [
     name: "Flex Playground",
     img: flex,
     id: uuidv4(),
-    url: "https://csb-3nczf.netlify.app/",
+    url: "https://flexbox-playground-react.netlify.app/",
     description:
       "An app that helps users learn about the Flex Layout by playing with a visual tool.",
     details: [
