@@ -14,6 +14,7 @@ import usefulCSS from "../Images/css.png";
 import clipboard from "../Images/clipboard.png";
 import hooks from "../Images/hooks.png";
 import components from "../Images/components.png";
+import downloadfile from "../Images/downloadfile.png";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -105,6 +106,29 @@ const projects = [
       { tag: "localStorage", id: uuidv4() },
       { tag: "Styled Component", id: uuidv4() },
       { tag: "Netlify", id: uuidv4() },
+    ],
+  },
+  {
+    name: "Download Generated/Served File",
+    img: downloadfile,
+    id: uuidv4(),
+    url: "https://download-file-react.netlify.app/",
+    description:
+      "This React app allows users to fill in the input fields like first name, last name, and file name. Clicking the button will generate a download link to the created text file.",
+    details: [
+      {
+        title: "Download Generated/Served File:",
+        content:
+          "This React app allows users to fill in the input fields like first name, last name, and file name. Clicking the button will generate a download link to the created text file. The content is in JSON format. The important component accepts a URL prop that can either be a blob object or the location of the resource. If it's a resource URL, it will fetch the resource and call Response.blob() and allow the user to download the requested resource. The Fetch button below the form sends an HTTP GET request to the jsonplaceholder API and generates a download link to the fetched content. ",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Blob API", id: uuidv4() },
+      { tag: "URL API", id: uuidv4() },
+      { tag: "JsonPlaceHolder API", id: uuidv4() },
+      { tag: "Styled Component", id: uuidv4() },
     ],
   },
   {
