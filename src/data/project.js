@@ -109,7 +109,7 @@ const projects = [
     ],
   },
   {
-    name: "Download Generated/Served File",
+    name: "Download Generated File",
     img: downloadfile,
     id: uuidv4(),
     url: "https://download-file-react.netlify.app/",
