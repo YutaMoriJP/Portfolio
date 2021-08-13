@@ -10,7 +10,7 @@ const Resume = () => {
   return (
     <>
       <Helmet>
-        <title>Contact</title>
+        <title>Resume</title>
       </Helmet>
       <Center>
         <Wrapper>
