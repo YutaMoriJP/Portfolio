@@ -33,6 +33,7 @@ const ErrorPage = lazy(() => import("./Pages/404"));
 const About = lazy(() => import("./Pages/About"));
 const Skills = lazy(() => import("./Pages/Skills"));
 const Contact = lazy(() => import("./Pages/Contact"));
+const Resume = lazy(() => import("./Pages/Resume"));
 
 const App = () => {
   const [theme] = useThemeContext();
@@ -67,6 +68,9 @@ const App = () => {
                 </Route>
                 <Route path="/contact">
                   <Contact />
+                </Route>
+                <Route path="/resume">
+                  <Resume />
                 </Route>
                 <Route>
                   <ErrorPage />
