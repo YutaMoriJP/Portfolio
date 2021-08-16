@@ -23,11 +23,21 @@ const Navbar = () => {
       <Toolbar variant="dense">
         {matches && (
           <>
-            <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/project">Project</StyledLink>
-            <StyledLink to="/skills">Skills</StyledLink>
-            <StyledLink to="/about">About me</StyledLink>
-            <StyledLink to="/contact">Contact me</StyledLink>
+            <StyledLink to="/" tabindex={1}>
+              Home
+            </StyledLink>
+            <StyledLink to="/project" tabindex={2}>
+              Project
+            </StyledLink>
+            <StyledLink to="/skills" tabindex={3}>
+              Skills
+            </StyledLink>
+            <StyledLink to="/about" tabindex={4}>
+              About me
+            </StyledLink>
+            <StyledLink to="/contact" tabindex={5}>
+              Contact me
+            </StyledLink>
 
             {/*            <Link onClick={handleScrollDown}>Contact me</Link>*/}
           </>

@@ -69,7 +69,12 @@ export default function Drawer({ open, onOpen, onClose }) {
       <List>
         {["/", "/project", "/skills", "/about", "/contact"].map(
           (text, index) => (
-            <StyledLink to={text} key={text} nopadding="true">
+            <StyledLink
+              to={text}
+              key={text}
+              nopadding="true"
+              tabindex={index + 1}
+            >
               <ListItem button>
                 <ListItemIcon>{NavIcon[text]}</ListItemIcon>
                 <ListItemText>{navText[text]}</ListItemText>

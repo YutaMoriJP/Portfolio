@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer/index";
 import Container from "@material-ui/core/Container";
 import useStyle from "../../GlobalStyle/useStyle";
-import Notice from "../Notice/Notice";
+//import Notice from "../Notice/Notice";
 import Scroll from "../Scroll/Scroll";
 
 const Layout = ({ children }) => {
@@ -15,7 +15,6 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </Container>
       <Footer />
-      <Notice />
       <Scroll />
     </>
   );
