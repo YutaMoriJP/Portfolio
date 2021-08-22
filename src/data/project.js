@@ -9,12 +9,12 @@ import timer from "../Images/timer.png";
 import delay from "../Images/delay.png";
 import bubble from "../Images/bubble.png";
 import blogGrid from "../Images/blogGrid.png";
-import scroll from "../Images/scroll.png";
 import usefulCSS from "../Images/css.png";
 import clipboard from "../Images/clipboard.png";
 import hooks from "../Images/hooks.png";
 import components from "../Images/components.png";
 import downloadfile from "../Images/downloadfile.png";
+import canvas from "../Images/canvas.png";
 
 import { v4 as uuidv4 } from "uuid";
 
@@ -157,7 +157,6 @@ const projects = [
       { tag: "Netlify", id: uuidv4() },
     ],
   },
-
   {
     name: "Useful CSS Layouts",
     img: usefulCSS,
@@ -179,6 +178,27 @@ const projects = [
       { tag: "CSS3", id: uuidv4() },
       { tag: "CSS Grid", id: uuidv4() },
       { tag: "CSS Flexbox", id: uuidv4() },
+      { tag: "Styled-Components", id: uuidv4() },
+    ],
+  },
+  {
+    name: "Drawing App",
+    img: canvas,
+    id: uuidv4(),
+    url: "https://drawing-app-react.netlify.app/",
+    description: "A drawing app built with React and the Canvas API.",
+    details: [
+      {
+        title: "Drawing Ap",
+        content:
+          "The drawing app allows users to draw freely on the dark background and download the content as an image. The 'CLEAR' button clears the canvas and allows users to re-start from a blank state.",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Canvas API", id: uuidv4() },
+      { tag: "CSS3", id: uuidv4() },
       { tag: "Styled-Components", id: uuidv4() },
     ],
   },
@@ -279,34 +299,7 @@ const projects = [
       { tag: "Clipboard API", id: uuidv4() },
     ],
   },
-  {
-    name: "<Scroll />",
-    img: scroll,
-    id: uuidv4(),
-    url: "https://csb-fqu3i.netlify.app/",
-    description:
-      "A re-usable React Scrollbar App that can be added anywhere to a React app. The component accepts 2 props, block and behavior",
-    details: [
-      {
-        title: "<Scroll />: a React component",
-        content:
-          "A re-usable React Scrollbar Component that can be added anywhere to a React app - <Scroll block=”end” behavior=”smooth”/>. The component accepts 2 props, block and behavior. The block prop controls whether the user is moved to the top or the bottom of the page. If the block prop is 'end', then it moves to the bottom, and if it’s 'start', then the user is moved to the top of the page. The behavior prop controls the scrolling behavior. The default value is “smooth”. Slightly irrelevant to the scrollbar app, I also use CSS Variables to implement the theme of the app, inspired by a blog post from Kent C. Dodds. It also uses a custom hook called useLocalStorage that stores the theme setting in localStorage. If you click on the 'Vanilla JS' link at the top right side of this card UI, you can see the same scrolling API implemented with Vanilla JavaScript. The whole UI is build purely with the DOM API.",
-      },
-    ],
-    extra: {
-      url: "https://codesandbox.io/s/scrollupscrolldown-dom-api-ndto4?file=/src/index.js:116-130",
-      text: "Vanilla JS",
-    },
-    tags: [
-      { tag: "JavaScript", id: uuidv4() },
-      { tag: "React JS", id: uuidv4() },
-      { tag: "styled-components", id: uuidv4() },
-      { tag: "CSS Variables", id: uuidv4() },
-      { tag: "JavaScript", id: uuidv4() },
-      { tag: "Web API scrollIntoView", id: uuidv4() },
-      { tag: "window.localStorage", id: uuidv4() },
-    ],
-  },
+
   {
     name: "Bubble Sort Algorithm Visualized",
     img: bubble,
