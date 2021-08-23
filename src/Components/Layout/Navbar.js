@@ -9,6 +9,11 @@ import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import Drawer from "./Drawer";
 import Container from "@material-ui/core/Container";
+import styled from "styled-components";
+
+const NavBar = styled(AppBar)`
+  background: ${props => props.theme.navColor};
+`;
 
 const Navbar = () => {
   const classes = useStyle();
@@ -17,12 +22,17 @@ const Navbar = () => {
   const onClose = () => setOpen(false);
   const matches = useMediaQuery("(min-width:900px)");
   return (
-    <AppBar position="static" className={classes.appbar} elevation={10}>
+    <NavBar position="static" className={classes.appbar} elevation={10}>
       <Toolbar variant="dense">
         {matches && (
           <Container
             maxWidth="xl"
-            style={{ display: "flex", justifyContent: "flex-start" }}
+            style={{
+              display: "flex",
+              justifyContent: "flex-start",
+              width: "80%",
+              maxWidth: "1200px",
+            }}
           >
             <StyledLink to="/" tabindex={1}>
               Home
@@ -52,7 +62,7 @@ const Navbar = () => {
         <ThemeButton />
       </Toolbar>
       <Drawer open={open} onOpen={onOpen} onClose={onClose} />
-    </AppBar>
+    </NavBar>
   );
 };
 

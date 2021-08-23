@@ -6,7 +6,7 @@ const useStyle = makeStyles({
   },
   appbar: {
     padding: 0,
-    background: "transparent",
+    background: "#330a7a",
   },
   themeButton: {
     marginLeft: "auto",

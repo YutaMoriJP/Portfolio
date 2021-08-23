@@ -5,6 +5,7 @@ export const styledTheme = {
     black: "#212529",
     circle: "#212529",
     buttonLink: "#212529",
+    navColor: "#330a7a",
     link: { color: "#e5dbff", textDecoration: 0, fontWeight: 900 },
     titleColor: "#e5dbff",
     titleGradient: {
@@ -29,6 +30,7 @@ export const styledTheme = {
     circle: "#e9ecef",
     black: "#212529",
     buttonLink: "#e9ecef",
+    navColor: "#bac8ff",
     titleColor: "#1D428A",
     skills: {
       containerBg: "#212529",
