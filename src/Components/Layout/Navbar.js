@@ -30,7 +30,8 @@ const Navbar = () => {
             style={{
               display: "flex",
               justifyContent: "flex-start",
-              width: "80%",
+              alignItems: "center",
+              width: "100%",
               maxWidth: "1200px",
               margin: "auto",
             }}
@@ -50,6 +51,7 @@ const Navbar = () => {
             <StyledLink to="/contact" tabindex={5}>
               Contact me
             </StyledLink>
+            <ThemeButton />
           </Container>
         )}
         {!matches && (
@@ -60,7 +62,7 @@ const Navbar = () => {
             <MenuIcon />
           </IconButton>
         )}
-        <ThemeButton />
+        {!matches && <ThemeButton />}
       </Toolbar>
       <Drawer open={open} onOpen={onOpen} onClose={onClose} />
     </NavBar>
