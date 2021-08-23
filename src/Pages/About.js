@@ -15,7 +15,15 @@ const About = () => {
       <Helmet>
         <title>About</title>
       </Helmet>
-      <Container maxWidth="md" style={{ minHeight: "100vh" }}>
+      <Container
+        maxWidth="md"
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Paper style={{ padding: 15, margin: "15px 5px" }}>
           <h1>ABOUT PAGE</h1>
           <Divider />
