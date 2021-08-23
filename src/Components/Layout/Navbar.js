@@ -32,6 +32,7 @@ const Navbar = () => {
               justifyContent: "flex-start",
               width: "80%",
               maxWidth: "1200px",
+              margin: "auto",
             }}
           >
             <StyledLink to="/" tabindex={1}>
