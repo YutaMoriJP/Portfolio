@@ -4,12 +4,11 @@ import Toolbar from "@material-ui/core/Toolbar";
 import useStyle from "../../GlobalStyle/useStyle";
 import ThemeButton from "../Button/ThemeButton";
 import StyledLink from "../../StyledComponent/StyledLink";
-//import Link from "../../StyledComponent/ContactLink";
-
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import Drawer from "./Drawer";
+import Container from "@material-ui/core/Container";
 
 const Navbar = () => {
   const classes = useStyle();
@@ -17,12 +16,14 @@ const Navbar = () => {
   const onOpen = () => setOpen(true);
   const onClose = () => setOpen(false);
   const matches = useMediaQuery("(min-width:900px)");
-  // const handleScrollDown = () => document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
   return (
     <AppBar position="static" className={classes.appbar} elevation={10}>
       <Toolbar variant="dense">
         {matches && (
-          <>
+          <Container
+            maxWidth="xl"
+            style={{ display: "flex", justifyContent: "flex-start" }}
+          >
             <StyledLink to="/" tabindex={1}>
               Home
             </StyledLink>
@@ -38,9 +39,7 @@ const Navbar = () => {
             <StyledLink to="/contact" tabindex={5}>
               Contact me
             </StyledLink>
-
-            {/*            <Link onClick={handleScrollDown}>Contact me</Link>*/}
-          </>
+          </Container>
         )}
         {!matches && (
           <IconButton

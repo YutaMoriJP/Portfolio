@@ -7,8 +7,9 @@ import styled from "styled-components";
 import Helmet from "react-helmet";
 
 export const Wrapper = styled.article`
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
+  padding: 10px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;

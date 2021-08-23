@@ -15,7 +15,6 @@ import hooks from "../Images/hooks.png";
 import components from "../Images/components.png";
 import downloadfile from "../Images/downloadfile.png";
 import canvas from "../Images/canvas.png";
-
 import { v4 as uuidv4 } from "uuid";
 
 const projects = [
