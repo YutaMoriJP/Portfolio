@@ -21,33 +21,17 @@ import { v4 as uuidv4 } from "uuid";
 const projects = [
   {
     name: "Forum Website",
-    img: forum,
+    img: crudapi,
     id: uuidv4(),
     url: "https://next-forum.netlify.app/",
     description:
-      "A forum website built with NextJS, ExpressJS, MongoDB, and Serverless Functions. Users can create posts and comment on them.",
+      "A CRUD API built with Node.js, Express.js, MongoDB, and Mongoose for the back-end and React for the front-end. The CRUD API allows users to create a user profile with 3 attributes, Name, Username, and Age.",
     details: [
       {
-        title: "Forum Website",
+        title: "CRUD API Description:",
         content:
-          "This forum website is a fullstack appliaction built with the MERN Stack, and uses a serverless architecture with Netlify. Users can create an account with Netlify Identity, create posts and comment on them.",
+          "So far, this is the only Full Stack app in my portfolio. I used Express.js for the server side to handle incoming requests from the front-end of my app, and I used MongoDB for the database to store the API data. This is a simple CRUD API that allows users to build a “User Profile” with data like `Name`, `Username`, and `Age`. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they have created, as well as send a GET request to retrieve all the user profiles that are stored in the database (maximum 3), or fetch specific users by ID. The created user profile is deleted from the database after 10 minutes. For the frontend, I used React JS, and used the built in fetch API to send a request to the server. The front end is deployed to Netlify, while the back end is deployed to Heroku.",
       },
-    ],
-    extra: {
-      url: "https://github.com/YutaMoriJP/next-forum",
-      text: "Work In Progress",
-    },
-    tags: [
-      { tag: "Next JS", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
-      { tag: "Fetch API", id: uuidv4() },
-      { tag: "Node.js", id: uuidv4() },
-      { tag: "Express.js", id: uuidv4() },
-      { tag: "MongoDB", id: uuidv4() },
-      { tag: "Mongoose", id: uuidv4() },
-      { tag: "Netlify", id: uuidv4() },
-    ],
-  },
   {
     name: "CRUD API",
     img: crudapi,
@@ -59,7 +43,7 @@ const projects = [
       {
         title: "CRUD API Description:",
         content:
-          "I used Express.js for the server side to handle incoming requests from the front-end of my app, and I used MongoDB for the database to store the API data. This is a simple CRUD API that allows users to build a “User Profile” with data like `Name`, `Username`, and `Age`. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they have created, as well as send a GET request to retrieve all the user profiles that are stored in the database (maximum 3), or fetch specific users by ID. The created user profile is deleted from the database after 10 minutes. For the frontend, I used React JS, and used the built in fetch API to send a request to the server. The front end is deployed to Netlify, while the back end is deployed to Heroku.",
+          "So far, this is the only Full Stack app in my portfolio. I used Express.js for the server side to handle incoming requests from the front-end of my app, and I used MongoDB for the database to store the API data. This is a simple CRUD API that allows users to build a “User Profile” with data like `Name`, `Username`, and `Age`. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they have created, as well as send a GET request to retrieve all the user profiles that are stored in the database (maximum 3), or fetch specific users by ID. The created user profile is deleted from the database after 10 minutes. For the frontend, I used React JS, and used the built in fetch API to send a request to the server. The front end is deployed to Netlify, while the back end is deployed to Heroku.",
       },
     ],
     tags: [

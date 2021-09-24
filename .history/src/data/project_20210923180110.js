@@ -25,7 +25,7 @@ const projects = [
     id: uuidv4(),
     url: "https://next-forum.netlify.app/",
     description:
-      "A forum website built with NextJS, ExpressJS, MongoDB, and Serverless Functions. Users can create posts and comment on them.",
+      "A forum website built with NextJS, ExpressJS, MongoDB, and Serverless Functions.",
     details: [
       {
         title: "Forum Website",
@@ -33,10 +33,6 @@ const projects = [
           "This forum website is a fullstack appliaction built with the MERN Stack, and uses a serverless architecture with Netlify. Users can create an account with Netlify Identity, create posts and comment on them.",
       },
     ],
-    extra: {
-      url: "https://github.com/YutaMoriJP/next-forum",
-      text: "Work In Progress",
-    },
     tags: [
       { tag: "Next JS", id: uuidv4() },
       { tag: "Styled Component", id: uuidv4() },

@@ -25,27 +25,17 @@ const projects = [
     id: uuidv4(),
     url: "https://next-forum.netlify.app/",
     description:
-      "A forum website built with NextJS, ExpressJS, MongoDB, and Serverless Functions. Users can create posts and comment on them.",
+      "A forum website built with NextJS, ExpressJS, MongoDB, and Serverless Functions.",
+    extra: {
+      url: "https://codesandbox.io/s/useclipboardjs-r4x89?file=/src/App.js",
+      text: "Not done yet.",
+    },
     details: [
       {
         title: "Forum Website",
         content:
           "This forum website is a fullstack appliaction built with the MERN Stack, and uses a serverless architecture with Netlify. Users can create an account with Netlify Identity, create posts and comment on them.",
       },
-    ],
-    extra: {
-      url: "https://github.com/YutaMoriJP/next-forum",
-      text: "Work In Progress",
-    },
-    tags: [
-      { tag: "Next JS", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
-      { tag: "Fetch API", id: uuidv4() },
-      { tag: "Node.js", id: uuidv4() },
-      { tag: "Express.js", id: uuidv4() },
-      { tag: "MongoDB", id: uuidv4() },
-      { tag: "Mongoose", id: uuidv4() },
-      { tag: "Netlify", id: uuidv4() },
     ],
   },
   {
