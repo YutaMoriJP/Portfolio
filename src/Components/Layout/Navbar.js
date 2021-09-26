@@ -36,19 +36,19 @@ const Navbar = () => {
               margin: "auto",
             }}
           >
-            <StyledLink to="/" tabindex={1}>
+            <StyledLink to="/" tabIndex={1}>
               Home
             </StyledLink>
-            <StyledLink to="/project" tabindex={2}>
+            <StyledLink to="/project" tabIndex={2}>
               Project
             </StyledLink>
-            <StyledLink to="/skills" tabindex={3}>
+            <StyledLink to="/skills" tabIndex={3}>
               Skills
             </StyledLink>
-            <StyledLink to="/about" tabindex={4}>
+            <StyledLink to="/about" tabIndex={4}>
               About me
             </StyledLink>
-            <StyledLink to="/contact" tabindex={5}>
+            <StyledLink to="/contact" tabIndex={5}>
               Contact me
             </StyledLink>
             <ThemeButton />

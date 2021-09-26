@@ -73,7 +73,7 @@ export default function Drawer({ open, onOpen, onClose }) {
               to={text}
               key={text}
               nopadding="true"
-              tabindex={index + 1}
+              tabIndex={index + 1}
             >
               <ListItem button>
                 <ListItemIcon>{NavIcon[text]}</ListItemIcon>
