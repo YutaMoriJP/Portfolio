@@ -54,7 +54,14 @@ const Card = ({ header, img, description, tags, url, details, extra }) => {
         <PaperStyled elevation={10}>
           {extra && (
             <Right>
-              <TextLink href={extra.url} target="_blank" rel="noreferrer">
+              <TextLink
+                href={
+                  extra.url ? extra?.url : "#" + extra.text.replace(/\s/g, "_")
+                }
+                target={extra.url ? "_blank" : "_self"}
+                rel="noreferrer"
+                id={extra.text.replace(/\s/g, "_")}
+              >
                 {extra.text}
               </TextLink>
             </Right>

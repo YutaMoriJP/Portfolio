@@ -16,6 +16,7 @@ import components from "../Images/components.png";
 import downloadfile from "../Images/downloadfile.png";
 import canvas from "../Images/canvas.png";
 import forum from "../Images/forum-min.png";
+import contentful from "../Images/contentful.png";
 import { v4 as uuidv4 } from "uuid";
 
 const projects = [
@@ -138,6 +139,27 @@ const projects = [
     ],
   },
   {
+    name: "Contentful Blog",
+    img: contentful,
+    id: uuidv4(),
+    url: "https://nextjs-contentful.netlify.app/",
+    description: "A blog website created with NextJS and Contentful.",
+    details: [
+      {
+        title: "Contentful Blog",
+        content:
+          "This blog was created with NextJS and uses Contentful as the data source. Navigate to the blog page to see some dummy blog content.",
+      },
+    ],
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "Next JS", id: uuidv4() },
+      { tag: "Contentful", id: uuidv4() },
+      { tag: "CSS Modules", id: uuidv4() },
+      { tag: "Framer-Motion", id: uuidv4() },
+    ],
+  },
+  {
     name: "Download Generated File",
     img: downloadfile,
     id: uuidv4(),
@@ -223,6 +245,10 @@ const projects = [
           "The drawing app allows users to draw freely on the dark background and download the content as an image. The 'CLEAR' button clears the canvas and allows users to re-start from a blank state.",
       },
     ],
+    extra: {
+      url: "",
+      text: "Desktop Only",
+    },
     tags: [
       { tag: "JavaScript", id: uuidv4() },
       { tag: "React JS", id: uuidv4() },
