@@ -17,6 +17,7 @@ import downloadfile from "../Images/downloadfile.png";
 import canvas from "../Images/canvas.png";
 import forum from "../Images/forum-min.png";
 import contentful from "../Images/contentful.png";
+import fusesearch from "../Images/fusesearch.png";
 import { v4 as uuidv4 } from "uuid";
 
 const projects = [
@@ -254,6 +255,27 @@ const projects = [
       { tag: "React JS", id: uuidv4() },
       { tag: "Canvas API", id: uuidv4() },
       { tag: "CSS3", id: uuidv4() },
+      { tag: "Styled-Components", id: uuidv4() },
+    ],
+  },
+  {
+    name: "Search User",
+    img: fusesearch,
+    id: uuidv4(),
+    url: "https://search-fusejs-reacts.netlify.com/",
+    description: "A web app that searches a given user from the dummyapi API.",
+    details: [
+      {
+        title: "Search User",
+        content:
+          "This web app uses the fuse.js library to implement quick searching from a given data, and the matching user will be rendered to the screen. A simple and fun project.",
+      },
+    ],
+
+    tags: [
+      { tag: "JavaScript", id: uuidv4() },
+      { tag: "React JS", id: uuidv4() },
+      { tag: "Fuse.js", id: uuidv4() },
       { tag: "Styled-Components", id: uuidv4() },
     ],
   },
