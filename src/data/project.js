@@ -32,7 +32,7 @@ const projects = [
       {
         title: "Forum Website",
         content:
-          "This forum website is a fullstack appliaction built with the MERN Stack, and uses a serverless architecture with Netlify. Users can create an account with Netlify Identity, create posts and comment on them.",
+          "This forum website is a full-stack application built with the MERN Stack and uses a serverless architecture with Netlify. Users can create an account with Netlify Identity, create posts and comment on them.",
       },
     ],
     extra: {
@@ -61,7 +61,7 @@ const projects = [
       {
         title: "CRUD API Description:",
         content:
-          "I used Express.js for the server side to handle incoming requests from the front-end of my app, and I used MongoDB for the database to store the API data. This is a simple CRUD API that allows users to build a “User Profile” with data like `Name`, `Username`, and `Age`. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they have created, as well as send a GET request to retrieve all the user profiles that are stored in the database (maximum 3), or fetch specific users by ID. The created user profile is deleted from the database after 10 minutes. For the frontend, I used React JS, and used the built in fetch API to send a request to the server. The front end is deployed to Netlify, while the back end is deployed to Heroku.",
+          "I used Express.js for the server-side to handle incoming requests from the front-end of my app, and I used MongoDB for the database to store the API data. This is a simple CRUD API that allows users to build a “User Profile” with data like `Name`, `Username`, and `Age`. They can send a POST request to create a new user profile, send a PUT request to update the user profile they created, send a DELETE request to delete the user profile they have created, as well as send a GET request to retrieve all the user profiles that are stored in the database (maximum 3) or fetch specific users by ID. The created user profile is deleted from the database after 10 minutes. For the frontend, I used React JS and used the built-in fetch API to send a request to the server. The front end is deployed to Netlify, while the back end is deployed to Heroku.",
       },
     ],
     tags: [
