@@ -32,7 +32,7 @@ const projects = [
       {
         title: "Forum Website",
         content:
-          "This forum website is a full-stack application built with the MERN Stack and uses a serverless architecture with Netlify. Users can create an account with Netlify Identity, create posts and comment on them.",
+          "This forum website is a full-stack application built with Next, Express, and MongoDB and uses a serverless architecture with Netlify. Users can create an account with Netlify Identity, create posts and comment on them. Only authenticated users are allowed run CRUD operations. Others can READ and CREATE.",
       },
     ],
     extra: {
@@ -40,6 +40,7 @@ const projects = [
       text: "Work In Progress",
     },
     tags: [
+      { tag: "TypeScript", id: uuidv4() },
       { tag: "Next JS", id: uuidv4() },
       { tag: "Styled Component", id: uuidv4() },
       { tag: "Fetch API", id: uuidv4() },
