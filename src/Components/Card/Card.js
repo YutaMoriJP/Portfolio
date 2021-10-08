@@ -66,10 +66,14 @@ const Card = ({ header, img, description, tags, url, details, extra }) => {
               </TextLink>
             </Right>
           )}
-          <Text variant="h5" header="true">
-            {header}
-          </Text>
-          <Image src={img} alt={header} width="100%" height="180px" />{" "}
+          <a href={url} target="_blank" rel="noreferrer">
+            <Text variant="h5" header="true">
+              {header}
+            </Text>
+          </a>
+          <a href={url} target="_blank" rel="noreferrer">
+            <Image src={img} alt={header} width="100%" height="180px" />
+          </a>
           <Text bold="true" title="true">
             About Project:
           </Text>
