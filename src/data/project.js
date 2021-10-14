@@ -80,42 +80,43 @@ const projects = [
     ],
   },
   {
-    name: "React Components",
+    name: "Kantan-Components",
     img: components,
     id: uuidv4(),
-    url: "https://react-components-reusable.netlify.app/",
+    url: "https://kantan-components-docs.netlify.app/",
     description:
-      "This project contains a collection of re-usable React Components.",
+      "Kantan-Components is a React Components library with useful reusable components.",
     details: [
       {
-        title: "React Components",
+        title: "Kantan-Components",
         content:
-          "This project is a collection of re-usable React components that I have developed to achieve common needs like notifying the user with a message when something went wrong or notify them about a successful action, simple Modal component, and more!",
+          "Kantan-Components is a react components library that helps developers abstract common UI patterns like Modals, Tooltips, etc. into a single reusable component. ",
       },
     ],
     tags: [
       { tag: "JavaScript", id: uuidv4() },
       { tag: "React JS", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
+      { tag: "NPM", id: uuidv4() },
     ],
   },
   {
-    name: "Custom React Hooks",
+    name: "Kantan-Hooks",
     img: hooks,
     id: uuidv4(),
-    url: "https://custom-react-hooks.netlify.app/",
-    description: "This project contains a collection of custom React Hooks.",
+    url: "https://kantan-hooks-docs.netlify.app/",
+    description:
+      "Kantan-Hooks is a React Hooks library with useful custom hooks.",
     details: [
       {
-        title: "Custom React Hooks",
+        title: "Kantan-Hooks",
         content:
-          "This project is a collection of useful custom React hooks that I have developed to either reduce boilerplate code or simplifies Web API usage, like window.localstorage by simply passing the key and value as arguments to the useLocalStorage hook. It includes a demo as well as a the CodeSandbox link.",
+          "Kantan-Hooks is a useful react hooks library that helps you to simplify Web APIs like Localstorage or handle common states like a boolean state.",
       },
     ],
     tags: [
       { tag: "JavaScript", id: uuidv4() },
       { tag: "React JS", id: uuidv4() },
-      { tag: "Styled Component", id: uuidv4() },
+      { tag: "NPM", id: uuidv4() },
     ],
   },
   {
