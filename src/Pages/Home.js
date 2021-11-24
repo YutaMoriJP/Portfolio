@@ -26,7 +26,8 @@ export const Home = () => {
       <StyledHome>
         <HomeTitle variant="h4">
           <Text variant="h5">
-            Hi, I am Yuta, a front end web developer from Japan.
+            Hi, I am Yuta, a FullStack Developer from Japan, located in Victoria
+            BC.
           </Text>
           <NormalText variant="h6" delay={200} color="pink">
             See my{" "}
