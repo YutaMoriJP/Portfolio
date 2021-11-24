@@ -32,7 +32,7 @@ const About = () => {
             Developer at Redman/Brivity/Place, building automation tools. I was
             born in Japan, and I grew up in Germany. I am fluent in Japanese,
             German, and English. When I was 15, I moved to Canada to learn
-            English a new culture. I have now been 11 years in Canada,
+            English and a new culture. I have now been 11 years in Canada,
             completing my high school diploma and university degree. I have
             earned a major in Philosophy and a minor in Business from the
             University of Victoria.
