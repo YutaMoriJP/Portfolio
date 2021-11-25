@@ -28,14 +28,13 @@ const About = () => {
           <h1>ABOUT PAGE</h1>
           <Divider />
           <Text indent={1}>
-            Thank you for visiting my portfolio. I am Yuta, and I am a FullStack
-            Developer at Redman/Brivity/Place, building automation tools. I was
-            born in Japan, and I grew up in Germany. I am fluent in Japanese,
-            German, and English. When I was 15, I moved to Canada to learn
-            English and a new culture. I have now been 11 years in Canada,
-            completing my high school diploma and university degree. I have
-            earned a major in Philosophy and a minor in Business from the
-            University of Victoria.
+            Thank you for visiting my portfolio. I am Yuta, a FullStack
+            Developer at Brivity/Place, building automation tools. I was born in
+            Japan and grew up in Germany. I am fluent in Japanese, German, and
+            English. When I was 15, I moved to Canada to learn English and a new
+            culture. I have now been 11 years in Canada, completing my high
+            school diploma and university degree. I have earned a major in
+            Philosophy and a minor in Business from the University of Victoria.
           </Text>
 
           <Text indent={1}>
@@ -62,7 +61,7 @@ const About = () => {
               rel="noreferrer"
             >
               Forum Website
-            </Link>
+            </Link>{" "}
             to a{" "}
             <Link
               href="https://user-profile-crud-api.netlify.app/"
