@@ -19,15 +19,15 @@ import BuildIcon from "@material-ui/icons/Build";
 
 const useStyles = makeStyles({
   list: {
-    width: 250,
+    width: 250
   },
   fullList: {
-    width: "auto",
+    width: "auto"
   },
   close: {
     display: "flex",
-    justifyContent: "flex-end",
-  },
+    justifyContent: "flex-end"
+  }
 });
 
 const navText = {
@@ -37,7 +37,7 @@ const navText = {
   "/playground": "Playground",
   "/about": "About me",
   "/skills": "Skills",
-  "/contact": "Contact Me",
+  "/contact": "Contact Me"
 };
 
 const NavIcon = {
@@ -46,16 +46,16 @@ const NavIcon = {
   "/code-examples": <PaletteIcon />,
   "/about": <AccountBoxIcon />,
   "/skills": <BuildIcon />,
-  "/contact": <MailIcon />,
+  "/contact": <MailIcon />
 };
 
 export default function Drawer({ open, onOpen, onClose }) {
   const classes = useStyles();
 
-  const list = anchor => (
+  const list = (anchor) => (
     <div
       className={clsx(classes.list, {
-        [classes.fullList]: anchor === "top" || anchor === "bottom",
+        [classes.fullList]: anchor === "top" || anchor === "bottom"
       })}
       role="presentation"
       onClick={onClose}
@@ -67,47 +67,23 @@ export default function Drawer({ open, onOpen, onClose }) {
       </article>
       <Divider />
       <List>
-        {["/", "/project", "/skills", "/about", "/contact"].map(
-          (text, index) => (
-            <StyledLink
-              to={text}
-              key={text}
-              nopadding="true"
-              tabIndex={index + 1}
-            >
-              <ListItem button>
-                <ListItemIcon>{NavIcon[text]}</ListItemIcon>
-                <ListItemText>{navText[text]}</ListItemText>
-              </ListItem>
-            </StyledLink>
-          )
-        )}
+        {["/", "/project", "/skills", "/about", "/contact"].map((text, index) => (
+          <StyledLink to={text} key={text} nopadding="true" tabIndex={index + 1}>
+            <ListItem button>
+              <ListItemIcon>{NavIcon[text]}</ListItemIcon>
+              <ListItemText>{navText[text]}</ListItemText>
+            </ListItem>
+          </StyledLink>
+        ))}
       </List>
     </div>
   );
 
   return (
     <div>
-      <SwipeableDrawer
-        anchor="left"
-        open={open}
-        onClose={onClose}
-        onOpen={onOpen}
-      >
+      <SwipeableDrawer anchor="left" open={open} onClose={onClose} onOpen={onOpen}>
         {list("left")}
       </SwipeableDrawer>
     </div>
   );
 }
-/*
- {["/", "/project", "/code-examples", "/playground"].map(
-          (text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <StyledLink to={`${text}`}>{text}</StyledLink>
-            </ListItem>
-          )
-        )}
-        */

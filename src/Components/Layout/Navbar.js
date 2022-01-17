@@ -12,7 +12,7 @@ import Container from "@material-ui/core/Container";
 import styled from "styled-components";
 
 const NavBar = styled(AppBar)`
-  background: ${props => props.theme.navColor};
+  background: ${(props) => props.theme.navColor};
 `;
 
 const Navbar = () => {
@@ -33,32 +33,19 @@ const Navbar = () => {
               alignItems: "center",
               width: "100%",
               maxWidth: "1200px",
-              margin: "auto",
+              margin: "auto"
             }}
           >
-            <StyledLink to="/" tabIndex={1}>
-              Home
-            </StyledLink>
-            <StyledLink to="/project" tabIndex={2}>
-              Project
-            </StyledLink>
-            <StyledLink to="/skills" tabIndex={3}>
-              Skills
-            </StyledLink>
-            <StyledLink to="/about" tabIndex={4}>
-              About me
-            </StyledLink>
-            <StyledLink to="/contact" tabIndex={5}>
-              Contact me
-            </StyledLink>
+            <StyledLink to="/">Home</StyledLink>
+            <StyledLink to="/project">Project</StyledLink>
+            <StyledLink to="/skills">Skills</StyledLink>
+            <StyledLink to="/about">About me</StyledLink>
+            <StyledLink to="/contact">Contact me</StyledLink>
             <ThemeButton />
           </Container>
         )}
         {!matches && (
-          <IconButton
-            onClick={() => setOpen(prevOpen => !prevOpen)}
-            aria-label="navbar icon"
-          >
+          <IconButton onClick={() => setOpen((prevOpen) => !prevOpen)} aria-label="navbar icon">
             <MenuIcon />
           </IconButton>
         )}
