@@ -5,14 +5,13 @@ import Select from "../Select/Select";
 const Container = styled.article`
   margin: 10px;
   display: flex;
-  justify-content: ${props =>
-    ({ left: "flex-start", center: "center", right: "flex-end" }[
-      props.position
-    ] || "center")};
+  justify-content: ${(props) =>
+    ({ left: "flex-start", center: "center", right: "flex-end" }[props.position] || "center")};
 `;
 
 const Filter = ({ options, position, setFilterBy }) => {
-  const handleChange = event => setFilterBy(event.target.value);
+  const handleChange = (event) => setFilterBy(event.target.value);
+
   return (
     <>
       <Container position={position}>

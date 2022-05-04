@@ -65,12 +65,15 @@ export default function Drawer({ open, onOpen, onClose }) {
           <ChevronLeftIcon />
         </IconButton>
       </article>
+
       <Divider />
+
       <List>
         {["/", "/project", "/skills", "/about", "/contact"].map((text, index) => (
           <StyledLink to={text} key={text} nopadding="true" tabIndex={index + 1}>
             <ListItem button>
               <ListItemIcon>{NavIcon[text]}</ListItemIcon>
+
               <ListItemText>{navText[text]}</ListItemText>
             </ListItem>
           </StyledLink>

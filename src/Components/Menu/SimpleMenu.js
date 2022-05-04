@@ -5,12 +5,10 @@ import MenuItem from "@material-ui/core/MenuItem";
 import MenuIcon from "@material-ui/icons/Menu";
 export default function SimpleMenu({ menuitems, name = "Simple Menu" }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+
+  const handleClick = (event) => setAnchorEl(event.currentTarget);
+  const handleClose = () => setAnchorEl(null);
+
   return (
     <div>
       <Button
@@ -23,6 +21,7 @@ export default function SimpleMenu({ menuitems, name = "Simple Menu" }) {
       >
         {name}
       </Button>
+
       <Menu
         style={{ width: "100%" }}
         id="simple-menu"

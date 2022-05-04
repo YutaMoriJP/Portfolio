@@ -41,7 +41,9 @@ const Navbar = () => {
             }}
           >
             <StyledLink to="/">Home</StyledLink>
+
             <StyledLink to="/project">Project</StyledLink>
+            
             <StyledLink to="/contact">Contact me</StyledLink>
             <ThemeButton />
           </Container>

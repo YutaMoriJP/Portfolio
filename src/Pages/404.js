@@ -15,6 +15,7 @@ const Path = styled.p`
 
 const ErrorPage = () => {
   const { pathname } = useLocation();
+  
   return (
     <Center column={true}>
       <h1>

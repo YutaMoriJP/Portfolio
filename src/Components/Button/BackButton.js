@@ -6,13 +6,9 @@ import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 const BackButton = ({ children, color = "primary" }) => {
   const history = useHistory();
   const handleClick = () => history.goBack();
+
   return (
-    <Button
-      variant="contained"
-      color={color}
-      startIcon={<ArrowBackIcon />}
-      onClick={handleClick}
-    >
+    <Button variant="contained" color={color} startIcon={<ArrowBackIcon />} onClick={handleClick}>
       {children}
     </Button>
   );

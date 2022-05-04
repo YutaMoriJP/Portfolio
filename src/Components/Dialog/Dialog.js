@@ -15,11 +15,11 @@ const CloseContainer = styled.article`
 `;
 
 export default function AlertDialog({ open, setOpen, details }) {
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const handleClose = () => setOpen(false);
+
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <div>
       <Dialog
@@ -34,7 +34,9 @@ export default function AlertDialog({ open, setOpen, details }) {
             <CloseIcon />
           </IconButton>
         </CloseContainer>
+
         {renderPost(details)}
+
         <DialogActions>
           <Button onClick={handleClose} color="primary" autoFocus>
             Close

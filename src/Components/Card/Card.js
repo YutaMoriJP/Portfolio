@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Image from "../Image/Image";
@@ -17,14 +17,14 @@ const Text = styled(Typography)`
   margin: 0;
   text-align: left;
   line-height: 28px;
-  font-weight: ${props => props.bold && 900};
-  color: ${props => props.title && props.theme.titleColor};
-  ${props =>
+  font-weight: ${(props) => props.bold && 900};
+  color: ${(props) => props.title && props.theme.titleColor};
+  ${(props) =>
     props.header &&
     css`
       text-align: center;
       font-weight: 900;
-      color: ${props => props.theme.titleColor};
+      color: ${(props) => props.theme.titleColor};
     `};
 `;
 
@@ -45,9 +45,16 @@ const ButtonContainer = styled.article`
   justify-content: flex-start;
 `;
 
+const BaseLink = ({ children, ...rest }) => (
+  <a {...rest} target="_blank" rel="noreferrer">
+    {children}
+  </a>
+);
+
 const Card = ({ header, img, description, tags, url, details, extra }) => {
   const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
+  const handleOpen = useCallback(() => setOpen(true), []);
+
   return (
     <>
       <Grid item xs={12} sm={6} md={4} xl={4}>
@@ -55,9 +62,7 @@ const Card = ({ header, img, description, tags, url, details, extra }) => {
           {extra && (
             <Right>
               <TextLink
-                href={
-                  extra.url ? extra?.url : "#" + extra.text.replace(/\s/g, "_")
-                }
+                href={extra.url ? extra?.url : "#" + extra.text.replace(/\s/g, "_")}
                 target={extra.url ? "_blank" : "_self"}
                 rel="noreferrer"
                 id={extra.text.replace(/\s/g, "_")}
@@ -66,43 +71,43 @@ const Card = ({ header, img, description, tags, url, details, extra }) => {
               </TextLink>
             </Right>
           )}
-          <a href={url} target="_blank" rel="noreferrer">
+
+          <BaseLink href={url}>
             <Text variant="h5" header="true">
               {header}
             </Text>
-          </a>
-          <a href={url} target="_blank" rel="noreferrer">
+          </BaseLink>
+
+          <BaseLink href={url}>
             <Image src={img} alt={header} width="100%" height="180px" />
-          </a>
+          </BaseLink>
+
           <Text bold="true" title="true">
             About Project:
           </Text>
+
           <Text variant="subtitle2">{description}</Text>
+
           <ButtonContainer>
-            <Button
-              color="primary"
-              variant="contained"
-              endIcon={<MenuBookIcon />}
-              onClick={handleOpen}
-            >
+            <Button color="primary" variant="contained" endIcon={<MenuBookIcon />} onClick={handleOpen}>
               Read more
             </Button>
           </ButtonContainer>
+
           <Text bold="true" title="true">
             Code Technology used:
           </Text>
+
           <Tags tags={tags} />
-          <a href={url} target="_blank" rel="noreferrer">
-            <StyledButton
-              variant="contained"
-              color="primary"
-              endIcon={<ChevronRightIcon />}
-            >
+
+          <BaseLink href={url}>
+            <StyledButton variant="contained" color="primary" endIcon={<ChevronRightIcon />}>
               See Project
             </StyledButton>
-          </a>
+          </BaseLink>
         </PaperStyled>
       </Grid>
+
       <Dialog open={open} setOpen={setOpen} details={details} />
     </>
   );
