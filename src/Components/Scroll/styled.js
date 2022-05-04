@@ -12,24 +12,33 @@ const Icon = styled.article`
   bottom: 0;
   z-index: 2;
   cursor: pointer;
+  filter: brightness(0.2);
+
+  :hover {
+    filter: brightness(1);
+  }
+
   :active {
     transform: scale(0.95);
   }
+
+  ${(props) =>
+    props.right &&
+    css`
+      right: 0;
+    `}
+
+  ${(props) =>
+    props.left &&
+    css`
+      left: 0;
+    `}
+
   svg {
     width: 100%;
     height: 60%;
     color: var(--icon-primary-color);
   }
-  ${props =>
-    props.right &&
-    css`
-      right: 0;
-    `}
-  ${props =>
-    props.left &&
-    css`
-      left: 0;
-    `}
 `;
 
 export default Icon;

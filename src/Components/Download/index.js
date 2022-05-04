@@ -1,16 +1,19 @@
 import { useEffect, useReducer } from "react";
 import TextLink from "../../StyledComponent/Link";
 
-const layzLoad = state => state;
+const lazyLoad = (state) => state;
 
 const reducer = (state, action) => {
   switch (action.type) {
     case "pending":
       return { ...state, status: "pending" };
+
     case "resolved":
       return { ...state, status: "resolved", href: action.payload.href };
+
     case "rejected":
       return { ...state, status: "rejected", error: action.payload.error };
+
     default:
       throw new Error("invalid case");
   }
@@ -25,92 +28,99 @@ const reducer = (state, action) => {
  * @returns {element} download UI is rendered by <Download/>
  */
 
-const Download = ({
-  url = "",
-  download = "file.txt",
-  onOpen = () => null,
-  setMessageText = () => null,
-}) => {
+const Download = ({ url = "", download = "file.txt", onOpen = () => null, setMessageText = () => null }) => {
   const [{ status, error, href }, dispatch] = useReducer(
     reducer,
     {
       status: "idle",
       error: null,
-      href: "",
+      href: ""
     },
-    layzLoad
+    lazyLoad
   );
 
   useEffect(() => {
     let didCancel = false;
     if (!url) return;
+
     let controller = new AbortController();
     const signal = controller.signal;
+
     const downloadAsync = async () => {
       try {
         if (typeof url === "object") {
           const href = URL.createObjectURL(url);
+
           if (!didCancel) {
             dispatch({ type: "resolved", payload: { href } });
           }
         } else {
           dispatch({ type: "pending" });
+
           const res = await fetch(url, {
             method: "GET",
             headers: {
-              "Content-Type":
-                "application/json, image/*, text/*, charset=utf-8",
-              Authorization: "basic",
+              "Content-Type": "application/json, image/*, text/*, charset=utf-8",
+              Authorization: "basic"
             },
-            mode: "cors",
-            cache: "default",
+            cache: "default"
           });
+
           if (!res.ok && !didCancel) {
             dispatch({
               type: "rejected",
               payload: {
                 error: {
-                  message: `An error occured. Status code is ${res.status}`,
-                },
-              },
+                  message: `An error occurred. Status code is ${res.status}`
+                }
+              }
             });
             return;
           }
+
           const blob = await res.blob();
           const href = URL.createObjectURL(blob);
+
           if (!didCancel) {
             dispatch({ type: "resolved", payload: { href } });
           }
         }
+
         onOpen();
         setMessageText({
           messageText: "Content is ready to be downloaded!",
-          color: "seagreen",
+          color: "seagreen"
         });
       } catch (error) {
-        if (didCancel || signal.sborted) {
+        if (didCancel || signal.aborted) {
           return;
         }
+
         if (!didCancel) {
           dispatch({ type: "rejected", payload: { error } });
         }
       }
     };
+
     downloadAsync();
+
     return () => {
-      URL.revokeObjectURL(href); //revoking the url object here allows for multiple downloads or else a network error will happen
+      // Revoking the url object here allows for multiple downloads or else a network error will happen
+      URL.revokeObjectURL(href);
+      // Prevents side-effects when component unmounts.
       didCancel = true;
+      // Abort previous request
       controller.abort();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url]);
-  console.log("href", href);
+
   return (
     <>
       {status === "pending" && <p>loading...</p>}
-      {status === "rejected" && (
-        <p>{error.message || "Something went wrong"}</p>
-      )}
+
+      {status === "rejected" && <p>{error.message || "Something went wrong"}</p>}
+
       {status === "resolved" && (
         <TextLink href={href} download={download || "file"}>
           Download - {download || "file"}

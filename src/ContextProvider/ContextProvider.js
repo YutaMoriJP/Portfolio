@@ -7,12 +7,13 @@ export const useThemeContext = () => React.useContext(ThemeContext);
 const ThemeContextProvider = ({ children }) => {
   const [theme, setTheme] = React.useState(() => {
     const storedTheme = getStorage("ymThemeContext");
+
     return storedTheme === null ? "dark" : storedTheme;
   });
 
   const { clear: clearStorage } = useLocalStorage("ymThemeContext", theme);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const clear = React.useCallback(() => clearStorage(), []);
+
+  const clear = React.useCallback(() => clearStorage(), [clearStorage]);
 
   const value = React.useMemo(() => {
     return [theme, setTheme, clear];

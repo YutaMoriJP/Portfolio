@@ -8,13 +8,17 @@ import Scroll from "../Scroll/Scroll";
 
 const Layout = ({ children }) => {
   const classes = useStyle();
+
   return (
     <>
       <Navbar />
+
       <Container className={classes.container} maxWidth="xl">
         <main>{children}</main>
       </Container>
+
       <Footer />
+
       <Scroll />
     </>
   );

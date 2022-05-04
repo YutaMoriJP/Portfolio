@@ -21,6 +21,17 @@ export const Wrapper = styled.article`
   }
 `;
 
+const LINK_DATA = [
+  { href: "https://github.com/YutaMoriJP", target: "_blank", rel: "noreferrer", text: "Github" },
+  { href: "mailto:yuta.mori.licht@gmail.com", text: "Email me" },
+  {
+    href: "https://codesandbox.io/dashboard/drafts?workspace=e06bca6f-0c92-46e5-8f07-a3b58aa66c9c",
+    target: "_blank",
+    rel: "noreferrer",
+    text: "CodeSandbox"
+  }
+];
+
 const Contact = () => {
   return (
     <>
@@ -32,19 +43,9 @@ const Contact = () => {
         <Wrapper>
           <Text>See my Links below:</Text>
 
-          <TextLink href="https://github.com/YutaMoriJP" target="_blank" rel="noreferrer">
-            Github
-          </TextLink>
-
-          <TextLink href="mailto:yuta.mori.licht@gmail.com">Email me</TextLink>
-
-          <TextLink
-            href="https://codesandbox.io/dashboard/drafts?workspace=e06bca6f-0c92-46e5-8f07-a3b58aa66c9c"
-            target="_blank"
-            rel="noreferrer"
-          >
-            CodeSandbox
-          </TextLink>
+          {LINK_DATA.map(({ text, ...attrs }) => (
+            <TextLink {...attrs}>{text}</TextLink>
+          ))}
         </Wrapper>
       </Center>
     </>

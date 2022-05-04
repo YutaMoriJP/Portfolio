@@ -11,29 +11,19 @@ const Footer = () => {
       <Left>
         <p>
           This site was built with{" "}
-          <TextLink
-            href="https://create-react-app.dev/docs/getting-started/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Create-React-App.
-          </TextLink>
+          <TextLink href="https://create-react-app.dev/docs/getting-started/">Create-React-App.</TextLink>
         </p>
+
         <p>&#169;2021 All Rights Reserved.</p>
       </Left>
       <Right>
         <LinksWrapper>
           <p>Links</p>
-          <TextLink href="mailto:yuta.mori.licht@gmail.com">
-            Contact me
-          </TextLink>
-          <TextLink
-            href="https://github.com/YutaMoriJP"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </TextLink>
+
+          <TextLink href="mailto:yuta.mori.licht@gmail.com">Contact me</TextLink>
+
+          <TextLink href="https://github.com/YutaMoriJP">Github</TextLink>
+
           <TextLink
             href="https://codesandbox.io/dashboard/drafts?workspace=e06bca6f-0c92-46e5-8f07-a3b58aa66c9c"
             target="_blank"
@@ -41,14 +31,10 @@ const Footer = () => {
           >
             CodeSandbox
           </TextLink>
+
           <Link to="/about">About me</Link>
-          <TextLink
-            href="https://edabit.com/user/PGCDJpQMN8Sjn9Gm6"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Edabit - 30,000+XP
-          </TextLink>
+
+          <TextLink href="https://edabit.com/user/PGCDJpQMN8Sjn9Gm6">Edabit - 30,000+XP</TextLink>
         </LinksWrapper>
       </Right>
     </Wrapper>
