@@ -5,8 +5,6 @@ import ThemeProviders from "./GlobalStyle/ThemeProviders";
 import StyledGlobal from "./GlobalStyle/StyledGlobal";
 //CSS Reset
 import CssBaseLine from "@material-ui/core/CssBaseline";
-//Container from material UI
-//import Container from "@material-ui/core/Container";
 
 //React router
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -16,15 +14,8 @@ import Layout from "./Components/Layout/Layout";
 import Loading from "./Components/Loading/Loading";
 import ScrollToTop from "./Components/Scroll/index";
 
-//custom context hook
-
-//import { useGlobalContext } from "./ContextProvider/ContextProvider";
 import { useThemeContext } from "./ContextProvider/ContextProvider";
 
-//useStyle function using makeStyle
-//import useStyle from "./GlobalStyle/useStyle";
-
-//const CodeExamples = loadable(() => import("./Pages/CodeExamples"));
 const Home = lazy(() => import("./Pages/Home"));
 const Project = lazy(() => import("./Pages/Project"));
 const CodeExamples = lazy(() => import("./Pages/CodeExamples"));
@@ -37,41 +28,52 @@ const Resume = lazy(() => import("./Pages/Resume"));
 
 const App = () => {
   const [theme] = useThemeContext();
-  //const classes = useStyle();
+
   return (
     <>
       <ThemeProviders isDark={theme === "dark"}>
         <CssBaseLine />
+
         <StyledGlobal />
+
         <Router>
           <Layout isDark={theme === "dark"}>
             <ScrollToTop />
+
             <Suspense fallback={<Loading />}>
               <Switch>
                 <Route exact path="/">
                   <Home />
                 </Route>
+
                 <Route path="/code-examples">
                   <CodeExamples />
                 </Route>
+
                 <Route path="/playground">
                   <PlayGround />
                 </Route>
+
                 <Route path="/project">
                   <Project />
                 </Route>
+
                 <Route path="/about">
                   <About />
                 </Route>
+
                 <Route path="/skills">
                   <Skills />
                 </Route>
+
                 <Route path="/contact">
                   <Contact />
                 </Route>
+
                 <Route path="/resume">
                   <Resume />
                 </Route>
+
                 <Route>
                   <ErrorPage />
                 </Route>
@@ -83,50 +85,5 @@ const App = () => {
     </>
   );
 };
-/*
 
-const App = () => {
-  const [theme] = useThemeContext();
-  const classes = useStyle();
-  return (
-    <Container className={classes.container} maxWidth="xl">
-      <ThemeProviders isDark={theme === "dark"}>
-        <CssBaseLine />
-        <StyledGlobal />
-        <Router>
-          <Layout isDark={theme === "dark"}>
-            <ScrollToTop />
-            <Suspense fallback={<Loading />}>
-              <Switch>
-                <Route exact path="/">
-                  <Home />
-                </Route>
-                <Route path="/code-examples">
-                  <CodeExamples />
-                </Route>
-                <Route path="/playground">
-                  <PlayGround />
-                </Route>
-                <Route path="/project">
-                  <Project />
-                </Route>
-                <Route path="/about">
-                  <About />
-                </Route>
-                <Route path="/skills">
-                  <Skills />
-                </Route>
-                <Route>
-                  <ErrorPage />
-                </Route>
-              </Switch>
-            </Suspense>
-          </Layout>
-        </Router>
-      </ThemeProviders>
-    </Container>
-  );
-};
-
-*/
 export default App;

@@ -17,10 +17,14 @@ const NavBar = styled(AppBar)`
 
 const Navbar = () => {
   const classes = useStyle();
+
   const [open, setOpen] = useState(false);
+
   const onOpen = () => setOpen(true);
   const onClose = () => setOpen(false);
+
   const matches = useMediaQuery("(min-width:900px)");
+
   return (
     <NavBar position="static" className={classes.appbar} elevation={10}>
       <Toolbar variant="dense">
@@ -38,17 +42,17 @@ const Navbar = () => {
           >
             <StyledLink to="/">Home</StyledLink>
             <StyledLink to="/project">Project</StyledLink>
-            <StyledLink to="/skills">Skills</StyledLink>
-            <StyledLink to="/about">About me</StyledLink>
             <StyledLink to="/contact">Contact me</StyledLink>
             <ThemeButton />
           </Container>
         )}
+
         {!matches && (
           <IconButton onClick={() => setOpen((prevOpen) => !prevOpen)} aria-label="navbar icon">
             <MenuIcon />
           </IconButton>
         )}
+
         {!matches && <ThemeButton />}
       </Toolbar>
       <Drawer open={open} onOpen={onOpen} onClose={onClose} />

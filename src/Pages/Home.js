@@ -11,24 +11,24 @@ import StyledLink from "../StyledComponent/StyledLink";
 
 export const Home = () => {
   const handleHashClick = () => {
-    if ("scrollIntoView" in document.getElementById("project")) {
-      //console.log("scrollIntoView is supported!");
-      document.getElementById("project").scrollIntoView({ behavior: "smooth" });
+    const projectElement = document.getElementById("project");
+
+    if ("scrollIntoView" in projectElement) {
+      projectElement.scrollIntoView({ behavior: "smooth" });
     } else {
       window.location.hash = "project";
     }
   };
+
   return (
     <>
       <Helmet>
         <title>Home</title>
       </Helmet>
+
       <StyledHome>
         <HomeTitle variant="h4">
-          <Text variant="h5">
-            Hi, I am Yuta, a FullStack Developer from Japan, located in Victoria
-            BC.
-          </Text>
+          <Text variant="h5">Hi, I am Yuta, a Frontend Developer from Japan, located in Victoria BC.</Text>
           <NormalText variant="h6" delay={200} color="pink">
             See my{" "}
             <StyledLink nopadding={1} to="./project">
@@ -44,15 +44,14 @@ export const Home = () => {
             </StyledLink>
           </NormalText>
         </HomeTitle>
+
         <More>
           <Zoom delay={300} triggerOnce>
             <h1>See Projects</h1>
           </Zoom>
+
           <Zoom effect="bounce" triggerOnce delay={200}>
-            <IconButton
-              aria-label="Move down to Project page"
-              onClick={handleHashClick}
-            >
+            <IconButton aria-label="Move down to Project page" onClick={handleHashClick}>
               <ExpandMoreIcon />
             </IconButton>
           </Zoom>

@@ -6,7 +6,7 @@ import Button from "@material-ui/core/Button";
 import StyledLink from "../StyledComponent/StyledLink";
 import Home from "@material-ui/icons/Home";
 
-//styled component
+// Styled component
 const Path = styled.p`
   background-color: #ced4da;
   display: inline;

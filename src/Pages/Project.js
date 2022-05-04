@@ -5,8 +5,6 @@ import Grid from "@material-ui/core/Grid";
 import { Project as ProjectStyled } from "../StyledComponent/StyledHome";
 import Container from "@material-ui/core/Container";
 import { Zoom } from "react-awesome-reveal";
-//import Filter from "../Components/Filter/Filter";
-//import options from "../data/projectOptions";
 import Helmet from "react-helmet";
 import { useLocation } from "react-router-dom";
 
@@ -15,11 +13,9 @@ const Project = () => {
 
   // eslint-disable-next-line no-unused-vars
   const [filterBy, setFilterBy] = useState("all");
-  const filterFunc = datas =>
-    datas.filter(
-      data =>
-        filterBy === "all" || data.tags.some(({ tag }) => tag === filterBy)
-    );
+
+  const filterFunc = (datas) =>
+    datas.filter((data) => filterBy === "all" || data.tags.some(({ tag }) => tag === filterBy));
 
   return (
     <>
@@ -28,18 +24,14 @@ const Project = () => {
           <title>Project Page</title>
         </Helmet>
       )}
+
       <Container>
         {pathname !== "/project" ? (
           <Zoom triggerOnce>
             <ProjectStyled id="project">
               <h1>PROJECTS</h1>　
-              {/* <Filter
-                setFilterBy={setFilterBy}
-                options={options}
-                position="right"
-              /> */}
               <Grid container spacing={2} justify="center">
-                {filterFunc(projects).map(project => (
+                {filterFunc(projects).map((project) => (
                   <Card
                     {...project}
                     header={project.name}
@@ -57,13 +49,8 @@ const Project = () => {
         ) : (
           <ProjectStyled id="project">
             <h1>PROJECTS</h1>　
-            {/* <Filter
-                setFilterBy={setFilterBy}
-                options={options}
-                position="right"
-              /> */}
             <Grid container spacing={1} justify="center">
-              {filterFunc(projects).map(project => (
+              {filterFunc(projects).map((project) => (
                 <Card
                   header={project.name}
                   details={project.details}
