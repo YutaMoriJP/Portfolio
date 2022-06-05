@@ -10,24 +10,20 @@ import Home from "@material-ui/icons/Home";
 const Path = styled.p`
   background-color: #ced4da;
   display: inline;
-  color: ${props => props.theme.black};
+  color: ${(props) => props.theme.black};
 `;
 
 const ErrorPage = () => {
   const { pathname } = useLocation();
-  
+
   return (
     <Center column={true}>
       <h1>
         The page <Path>{pathname}</Path> you looked for was not found
       </h1>
+
       <StyledLink to="/">
-        <Button
-          size="large"
-          color="primary"
-          variant="contained"
-          endIcon={<Home />}
-        >
+        <Button size="large" color="primary" variant="contained" endIcon={<Home />}>
           Go back to Homepage
         </Button>
       </StyledLink>

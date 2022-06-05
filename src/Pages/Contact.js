@@ -9,7 +9,7 @@ export const Wrapper = styled.article`
   width: 240px;
   height: 240px;
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 9999px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +32,13 @@ const LINK_DATA = [
   }
 ];
 
+export const ContactLink = () =>
+  LINK_DATA.map(({ text, ...attrs }) => (
+    <TextLink {...attrs} key={text}>
+      {text}
+    </TextLink>
+  ));
+
 const Contact = () => {
   return (
     <>
@@ -43,9 +50,7 @@ const Contact = () => {
         <Wrapper>
           <Text>See my Links below:</Text>
 
-          {LINK_DATA.map(({ text, ...attrs }) => (
-            <TextLink {...attrs}>{text}</TextLink>
-          ))}
+          <ContactLink />
         </Wrapper>
       </Center>
     </>
