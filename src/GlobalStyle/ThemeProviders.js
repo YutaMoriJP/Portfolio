@@ -1,14 +1,14 @@
 import React, { useMemo } from "react";
 //Theme Providers
 import { ThemeProvider as StyledThemeProvider } from "styled-components";
-import { createMuiTheme, ThemeProvider as MaterialThemeProvider } from "@material-ui/core/styles";
+import { createTheme, ThemeProvider as MaterialThemeProvider } from "@material-ui/core/styles";
 //theme objects
 import { styledTheme, materialColors } from "./theme";
 
 const ThemeProviders = ({ isDark, children }) => {
   const materialTheme = useMemo(
     () =>
-      createMuiTheme({
+      createTheme({
         palette: {
           type: isDark ? "dark" : "light",
           primary: {

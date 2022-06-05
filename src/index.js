@@ -1,15 +1,15 @@
-//polyfill
+// polyfill
 import "core-js/es/map";
 import "core-js/es/set";
 import "raf/polyfill";
-//global font
+// global font
 import "./fonts.css";
 
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-//global context
+// global context
 import ContextProvider from "./ContextProvider/ContextProvider";
 
 const MainApp = () => {
