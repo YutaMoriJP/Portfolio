@@ -12,7 +12,7 @@ const Footer = () => {
           <TextLink href="https://create-react-app.dev/docs/getting-started/">Create-React-App.</TextLink>
         </p>
 
-        <p>&#169;2021 All Rights Reserved.</p>
+        <p>&#169;{new Date().getFullYear``} All Rights Reserved.</p>
       </Left>
       <Right>
         <LinksWrapper>
